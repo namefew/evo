@@ -1,0 +1,164 @@
+{
+  "type": "lobby.historyUpdated",
+  "args":
+  {
+    "LightningTable01":
+    {
+      "results":
+      [
+        [
+          {
+            "number": "18",
+            "multiplier": 200,
+            "color": "Yellow"
+          }
+        ],
+        [
+          {
+            "number": "5"
+          }
+        ],
+        [
+          {
+            "number": "8"
+          }
+        ],
+        [
+          {
+            "number": "9"
+          }
+        ],
+        [
+          {
+            "number": "34"
+          }
+        ],
+        [
+          {
+            "number": "16"
+          }
+        ],
+        [
+          {
+            "number": "3"
+          }
+        ],
+        [
+          {
+            "number": "5"
+          }
+        ],
+        [
+          {
+            "number": "4"
+          }
+        ],
+        [
+          {
+            "number": "26"
+          }
+        ],
+        [
+          {
+            "number": "16"
+          }
+        ],
+        [
+          {
+            "number": "18"
+          }
+        ],
+        [
+          {
+            "number": "34"
+          }
+        ],
+        [
+          {
+            "number": "36"
+          }
+        ],
+        [
+          {
+            "number": "10"
+          }
+        ],
+        [
+          {
+            "number": "23"
+          }
+        ],
+        [
+          {
+            "number": "8"
+          }
+        ],
+        [
+          {
+            "number": "1"
+          }
+        ],
+        [
+          {
+            "number": "3"
+          }
+        ],
+        [
+          {
+            "number": "24"
+          }
+        ],
+        [
+          {
+            "number": "35"
+          }
+        ],
+        [
+          {
+            "number": "26"
+          }
+        ],
+        [
+          {
+            "number": "20"
+          }
+        ],
+        [
+          {
+            "number": "3"
+          }
+        ],
+        [
+          {
+            "number": "29"
+          }
+        ],
+        [
+          {
+            "number": "35"
+          }
+        ],
+        [
+          {
+            "number": "26"
+          }
+        ],
+        [
+          {
+            "number": "14"
+          }
+        ],
+        [
+          {
+            "number": "7"
+          }
+        ],
+        [
+          {
+            "number": "17"
+          }
+        ]
+      ]
+    }
+  }
+}
