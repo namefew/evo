@@ -12,4 +12,21 @@ public class SicboResult {
     private Integer dice2;  // 骰子2点数
     private Integer dice3;  // 骰子3点数
     private LocalDateTime createTime;
+
+    public boolean equals(Object obj){
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        SicboResult other = (SicboResult) obj;
+        return tableId.equals(other.tableId) &&dice1!=null&&dice2!=null&&dice3!=null&&
+               dice1.equals(other.dice1) &&
+               dice2.equals(other.dice2) &&
+               dice3.equals(other.dice3);
+    }
+    public int hashCode(){
+        return tableId.hashCode()  + (dice1==null?0:dice1.hashCode()*7) + (dice2==null?0:dice2.hashCode()*49) + (dice3==null?0:dice3.hashCode()*343);
+    }
 }

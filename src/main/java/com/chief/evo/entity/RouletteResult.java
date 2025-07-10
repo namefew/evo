@@ -11,4 +11,19 @@ public class RouletteResult {
     private Integer result; // 轮盘结果数字
     private String color;   // 轮盘颜色
     private LocalDateTime createTime;
+
+    public boolean equals(Object obj){
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        RouletteResult other = (RouletteResult) obj;
+        return tableId.equals(other.tableId) &&result!=null&&
+               result.equals(other.result);
+    }
+    public int hashCode(){
+        return tableId.hashCode() * 11 + result.hashCode();
+    }
 }

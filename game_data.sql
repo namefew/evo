@@ -23,7 +23,7 @@ CREATE TABLE roulette_result (
     table_id VARCHAR(50) NOT NULL,
     round_id VARCHAR(50) COMMENT '轮次ID',
     result INT NOT NULL COMMENT '轮盘结果数字',
-    color VARCHAR(10) NOT NULL COMMENT '轮盘颜色',
+    color VARCHAR(10) COMMENT '轮盘颜色',
     create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (table_id) REFERENCES games(id)
 );
@@ -34,7 +34,7 @@ DROP TABLE IF EXISTS sicbo_result;
 CREATE TABLE sicbo_result (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     table_id VARCHAR(50) NOT NULL,
-    round_id VARCHAR(50) NOT NULL COMMENT '轮次ID',
+    round_id VARCHAR(50) COMMENT '轮次ID',
     dice1 INT NOT NULL COMMENT '骰子1点数',
     dice2 INT NOT NULL COMMENT '骰子2点数',
     dice3 INT NOT NULL COMMENT '骰子3点数',

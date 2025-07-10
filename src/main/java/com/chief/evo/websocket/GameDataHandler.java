@@ -2,7 +2,6 @@ package com.chief.evo.websocket;
 
 import com.chief.evo.service.GameResultService;
 import com.chief.evo.service.GameTableService;
-import org.springframework.stereotype.Component;
 import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.adapter.standard.StandardWebSocketSession;
@@ -15,23 +14,15 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 import javax.websocket.Session;
 
 import com.chief.evo.entity.GameTable;
 import com.chief.evo.entity.RouletteResult;
 import com.chief.evo.entity.SicboResult;
-import com.chief.evo.mapper.RouletteResultMapper;
-import com.chief.evo.mapper.SicboResultMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import java.time.LocalDateTime;
-
-@Component
 public class GameDataHandler extends TextWebSocketHandler {
     
     // 内存中维护的桌子信息 Map (id -> 桌子信息)
-    private final Map<String, GameTable> tableMap = new ConcurrentHashMap<>();
     private final ObjectMapper objectMapper = new ObjectMapper();
     
     // 注入Mapper
