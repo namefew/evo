@@ -48,8 +48,6 @@ public class GameDataHandler extends TextWebSocketHandler {
     protected void handleTextMessage(WebSocketSession session, TextMessage message) {
         String payload = message.getPayload();
         log.info("Received message: " + payload);
-        log.info("Received message: " + payload);
-
         try {
             JsonNode rootNode = objectMapper.readTree(payload);
             String messageType = rootNode.path("type").asText();

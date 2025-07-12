@@ -112,7 +112,7 @@ public class GameResultService {
         }
 
         // 处理匹配结果
-        if (matchIndex >= 0) {
+        if (matchedLength > 0) {
             // 匹配上了，那么传入列表中前matchedLength个元素是已经存在的
             if (matchedLength < latestResults.size()) {
                 List<RouletteResult> insertList = latestResults.subList(matchedLength, latestResults.size());
