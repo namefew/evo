@@ -15,7 +15,6 @@ CREATE TABLE games (
     create_time DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
-
 -- 轮盘结果表
 DROP TABLE IF EXISTS roulette_result;
 CREATE TABLE roulette_result (
@@ -39,9 +38,6 @@ CREATE TABLE sicbo_result (
     dice2 INT NOT NULL COMMENT '骰子2点数',
     dice3 INT NOT NULL COMMENT '骰子3点数',
     create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (table_id) REFERENCES table_info(id)
+    FOREIGN KEY (table_id) REFERENCES games(id)
 );
 create index idx_create_time on sicbo_result(create_time);
-
-
-

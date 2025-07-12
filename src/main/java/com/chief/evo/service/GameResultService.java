@@ -22,16 +22,19 @@ public class GameResultService {
 
     public List<SicboResult> addSicboResult(List<SicboResult> sicboResults, GameTable gameTable) {
         if (sicboResults.isEmpty()) return Collections.emptyList();
-
-        // 获取与传入列表数量相同的数据库最新记录
+        Collections.reverse(sicboResults);
+        // 获取与传入列表数量相同的数据库最新记录（倒序）
         List<SicboResult> latest = sicboResultMapper.findLatestByTableId(gameTable.getId(), sicboResults.size());
+        // 反转数据库记录顺序，使其变成正序（最新记录在后）
+        Collections.reverse(latest);
         if (latest.isEmpty()) {
             sicboResultMapper.insertList(sicboResults);
             return sicboResults;
         }
 
-        // 查找匹配位置
         int matchIndex = -1;
+        int matchedLength = -1; // 记录匹配的长度
+
         for (int i = 0; i <= latest.size(); i++) {
             int compareLength = Math.min(latest.size() - i, sicboResults.size());
 
@@ -48,21 +51,23 @@ public class GameResultService {
 
             if (isMatch) {
                 matchIndex = i;
+                matchedLength = compareLength; // 记录匹配的长度
                 break;
             }
         }
 
         // 处理匹配结果
         if (matchIndex >= 0) {
-            int startIndex = latest.size() - matchIndex;
-            if (startIndex < sicboResults.size()) {
-                List<SicboResult> insertList = sicboResults.subList(startIndex, sicboResults.size());
+            // 匹配上了，那么传入列表中前matchedLength个元素是已经存在的
+            if (matchedLength < sicboResults.size()) {
+                List<SicboResult> insertList = sicboResults.subList(matchedLength, sicboResults.size());
                 if (!insertList.isEmpty()) {
                     sicboResultMapper.insertList(insertList);
                 }
                 return insertList;
+            } else {
+                return Collections.emptyList(); // 全部数据已存在
             }
-            return Collections.emptyList(); // 全部数据已存在
         }
 
         // 无匹配时插入全部数据
@@ -70,19 +75,21 @@ public class GameResultService {
         return sicboResults;
     }
 
-
     public List<RouletteResult> addRouletteResult(List<RouletteResult> latestResults, GameTable gameTable) {
         if (latestResults.isEmpty()) return Collections.emptyList();
-
-        // 获取与传入列表数量相同的数据库最新记录
+        Collections.reverse(latestResults);
+        // 获取与传入列表数量相同的数据库最新记录（倒序）
         List<RouletteResult> latest = rouletteResultMapper.findLatestByTableId(gameTable.getId(), latestResults.size());
+        // 反转数据库记录顺序，使其变成正序（最新记录在后）
+        Collections.reverse( latest);
         if (latest.isEmpty()) {
             rouletteResultMapper.insertList(latestResults);
             return latestResults;
         }
 
-        // 查找匹配位置
         int matchIndex = -1;
+        int matchedLength = -1; // 记录匹配的长度
+
         for (int i = 0; i <= latest.size(); i++) {
             int compareLength = Math.min(latest.size() - i, latestResults.size());
 
@@ -99,21 +106,23 @@ public class GameResultService {
 
             if (isMatch) {
                 matchIndex = i;
+                matchedLength = compareLength; // 记录匹配的长度
                 break;
             }
         }
 
         // 处理匹配结果
         if (matchIndex >= 0) {
-            int startIndex = latest.size() - matchIndex;
-            if (startIndex < latestResults.size()) {
-                List<RouletteResult> insertList = latestResults.subList(startIndex, latestResults.size());
+            // 匹配上了，那么传入列表中前matchedLength个元素是已经存在的
+            if (matchedLength < latestResults.size()) {
+                List<RouletteResult> insertList = latestResults.subList(matchedLength, latestResults.size());
                 if (!insertList.isEmpty()) {
                     rouletteResultMapper.insertList(insertList);
                 }
                 return insertList;
+            } else {
+                return Collections.emptyList(); // 全部数据已存在
             }
-            return Collections.emptyList(); // 全部数据已存在
         }
 
         // 无匹配时插入全部数据

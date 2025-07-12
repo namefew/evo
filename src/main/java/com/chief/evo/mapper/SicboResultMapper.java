@@ -20,7 +20,7 @@ public interface SicboResultMapper {
     })
     void insertList(List<SicboResult> resultList);
 
-    @Select("SELECT * FROM sicbo_result WHERE table_id = #{tableId} ORDER BY create_time DESC LIMIT #{limit}")
+    @Select("SELECT * FROM sicbo_result WHERE table_id = #{tableId} ORDER BY id DESC LIMIT #{limit}")
     List<SicboResult> findLatestByTableId(String tableId, int limit);
 
 }

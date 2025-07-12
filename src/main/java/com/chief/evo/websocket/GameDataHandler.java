@@ -2,6 +2,7 @@ package com.chief.evo.websocket;
 
 import com.chief.evo.service.GameResultService;
 import com.chief.evo.service.GameTableService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.adapter.standard.StandardWebSocketSession;
@@ -20,6 +21,7 @@ import com.chief.evo.entity.GameTable;
 import com.chief.evo.entity.RouletteResult;
 import com.chief.evo.entity.SicboResult;
 import org.springframework.beans.factory.annotation.Autowired;
+@Slf4j
 public class GameDataHandler extends TextWebSocketHandler {
     
     // 内存中维护的桌子信息 Map (id -> 桌子信息)
@@ -45,7 +47,8 @@ public class GameDataHandler extends TextWebSocketHandler {
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) {
         String payload = message.getPayload();
-        System.out.println("Received message: " + payload);
+        log.info("Received message: " + payload);
+        log.info("Received message: " + payload);
 
         try {
             JsonNode rootNode = objectMapper.readTree(payload);
@@ -100,7 +103,7 @@ public class GameDataHandler extends TextWebSocketHandler {
                     table.setOpensAt(timeFormat.parse(timeStr));
                 } catch (ParseException e) {
                     // 记录解析错误
-                    System.err.println("Error parsing opensAt time: " + timeStr);
+                    log.error("Error parsing opensAt time: " + timeStr);
                 }
             }
             
@@ -170,6 +173,7 @@ public class GameDataHandler extends TextWebSocketHandler {
        List<RouletteResult> rouletteResults = convertResultsToRouletteResultList(data, gameTable.getId());
        return gameResultService.addRouletteResult(rouletteResults, gameTable);
     }
+
 
     private List<RouletteResult> convertResultsToRouletteResultList(JsonNode data, String tableId) {
         List<RouletteResult> rouletteResults = new ArrayList<>();

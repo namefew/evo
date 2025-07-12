@@ -19,7 +19,7 @@ public interface RouletteResultMapper {
     })
     void insertList(List<RouletteResult> resultList);
 
-    @Select("SELECT * FROM roulette_result WHERE table_id = #{tableId} ORDER BY create_time DESC LIMIT #{limit}")
+    @Select("SELECT * FROM roulette_result WHERE table_id = #{tableId} ORDER BY id DESC LIMIT #{limit}")
     List<RouletteResult> findLatestByTableId(String tableId, int limit);
 
 
