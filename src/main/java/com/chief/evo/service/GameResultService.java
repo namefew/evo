@@ -1,13 +1,12 @@
 package com.chief.evo.service;
 
-import com.chief.evo.entity.GameTable;
-import com.chief.evo.entity.RouletteResult;
-import com.chief.evo.entity.SicboResult;
+import com.chief.evo.entity.*;
 import com.chief.evo.mapper.RouletteResultMapper;
 import com.chief.evo.mapper.SicboResultMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
 import java.util.Collections;
 import java.util.List;
 
@@ -128,6 +127,13 @@ public class GameResultService {
         // 无匹配时插入全部数据
         rouletteResultMapper.insertList(latestResults);
         return latestResults;
+    }
+
+    public List<RouletteStats> queryAllRouletteStats(LocalDate fromDate, LocalDate toDate) {
+        return rouletteResultMapper.findByDate(fromDate, toDate);
+    }
+    public List<SicboStats> queryAllSicboStats(LocalDate fromDate, LocalDate toDate) {
+        return sicboResultMapper.findByDate(fromDate, toDate);
     }
 
 }
