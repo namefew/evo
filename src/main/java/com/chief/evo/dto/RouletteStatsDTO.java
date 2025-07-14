@@ -25,4 +25,31 @@ public class RouletteStatsDTO {
 
     private Map<Integer,Integer> numbs; //每个数字出现的次数
 
+    public Double getBigWinRate() {
+        return bigCount*2.0/totalCount-1.0;
+    }
+    public Double getSmallWinRate() {
+        return smallCount*2.0/totalCount-1.0;
+    }
+    public Double getOddWinRate() {
+        return oddCount*2.0/totalCount-1.0;
+    }
+    public Double getEvenWinRate() {
+        return evenCount*2.0/totalCount-1.0;
+    }
+    public Double getRedWinRate() {
+        return redCount*2.0/totalCount-1.0;
+    }
+    public Double getBlackWinRate() {
+        return blackCount*2.0/totalCount-1.0;
+    }
+    public Double getSection1_12WinRate() {
+        return section1_12*3.0/totalCount-1.0;
+    }
+    public Double getSection13_24WinRate() {
+        return section13_24*3.0/totalCount-1.0;
+    }
+    public Double getSection25_36WinRate() {
+        return section25_36*3.0/totalCount-1.0;
+    }
 }

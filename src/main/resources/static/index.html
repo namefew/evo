@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏数据统计</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .game-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .stats-table {
+            font-size: 0.9rem;
+        }
+        .stats-table th {
+            position: sticky;
+            top: 0;
+            background: white;
+        }
+        .dice-point {
+            display: inline-block;
+            width: 50px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            text-align: center;
+            margin: 2px;
+        }
+        /* 盈利率样式类 */
+        .win-rate-positive {
+            color: red;
+        }
+        .win-rate-negative {
+            color: green;
+        }
+        .win-rate-neutral {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="container py-4">
+    <h1 class="text-center mb-4"><i class="bi bi-graph-up"></i> 游戏数据统计</h1>
+
+    <!-- 日期选择器 -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-md-5">
+                    <label class="form-label">开始日期</label>
+                    <input type="date" id="startDate" class="form-control">
+                </div>
+                <div class="col-md-5">
+                    <label class="form-label">结束日期</label>
+                    <input type="date" id="endDate" class="form-control">
+                </div>
+                <div class="col-md-2 d-flex align-items-end">
+                    <button id="loadDataBtn" class="btn btn-primary w-100">
+                        <i class="bi bi-cloud-download"></i> 加载数据
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 游戏类型选择 -->
+    <ul class="nav nav-tabs mb-4" id="gameTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="roulette-tab" data-bs-toggle="tab"
+                    data-bs-target="#roulette" type="button" role="tab">
+                <i class="bi bi-arrow-repeat"></i> 轮盘游戏
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="sicbo-tab" data-bs-toggle="tab"
+                         data-bs-target="#sicbo" type="button" role="tab">
+                <i class="bi bi-dice-6"></i> 骰子游戏
+            </button>
+        </li>
+    </ul>
+
+    <!-- 轮盘游戏统计 -->
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="roulette" role="tabpanel">
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle"></i> 统计范围：大(19-36), 小(1-18), 单数, 双数, 红色, 黑色
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover stats-table">
+                    <thead class="table-light">
+                    <tr>
+                        <th>日期</th>
+                        <th>桌子</th>
+                        <th>总次数</th>
+                        <th>大</th>
+                        <th>小</th>
+                        <th>单数</th>
+                        <th>双数</th>
+                        <th>红色</th>
+                        <th>黑色</th>
+                        <th>1-12</th>
+                        <th>13-24</th>
+                        <th>25-36</th>
+                        <th>详细数据</th>
+                    </tr>
+                    </thead>
+                    <tbody id="rouletteStatsBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 骰子游戏统计 -->
+        <div class="tab-pane fade" id="sicbo" role="tabpanel">
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle"></i> 统计范围：大(11-17), 小(4-10), 单数, 双数, 点数出现次数
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover stats-table">
+                    <thead class="table-light">
+                    <tr>
+                        <th>日期</th>
+                        <th>桌子</th>
+                        <th>总次数</th>
+                        <th>大</th>
+                        <th>小</th>
+                        <th>单数</th>
+                        <th>双数</th>
+                        <th>点数统计</th>
+                        <th>豹子</th>
+                        <th>详细数据</th>
+                    </tr>
+                    </thead>
+                    <tbody id="sicboStatsBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 详细数据模态框 -->
+<div class="modal fade" id="detailsModal" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="modalContent"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // 设置默认日期
+    document.addEventListener('DOMContentLoaded', () => {
+        const today = new Date();
+        const sevenDaysAgo = new Date();
+        sevenDaysAgo.setDate(today.getDate() - 7);
+        today.setDate(today.getDate() + 1);
+        document.getElementById('startDate').value = formatDate(sevenDaysAgo);
+        document.getElementById('endDate').value = formatDate(today);
+    });
+
+    // 加载数据按钮事件
+    document.getElementById('loadDataBtn').addEventListener('click', loadStatsData);
+
+    // 日期格式化函数
+    function formatDate(date) {
+        return `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')}`;
+    }
+
+    // 加载统计数据
+    async function loadStatsData() {
+        const startDate = document.getElementById('startDate').value;
+        const endDate = document.getElementById('endDate').value;
+
+        if (!startDate || !endDate) {
+            alert('请选择开始日期和结束日期');
+            return;
+        }
+
+        try {
+            // 加载轮盘数据
+            const rouletteResponse = await fetch(`/api/stats/roulette?from=${startDate}&to=${endDate}`);
+            const rouletteData = await rouletteResponse.json();
+            renderRouletteStats(rouletteData);
+
+            // 加载骰子数据
+            const sicboResponse = await fetch(`/api/stats/sicbo?from=${startDate}&to=${endDate}`);
+            const sicboData = await sicboResponse.json();
+            renderSicboStats(sicboData);
+
+        } catch (error) {
+            console.error('加载数据失败:', error);
+            alert('加载数据失败，请检查控制台查看详情');
+        }
+    }
+
+    // 计算盈利率函数
+    function calculateWinRate(count, total, multiplier = 2) {
+        if (!total) return NaN;
+        return (count * multiplier / total - 1) * 100; // 转换为百分比
+    }
+
+    // 格式化盈利率为1位小数
+    function formatWinRate(rate) {
+        if (isNaN(rate)) return '--';
+        return rate.toFixed(1) + '%';
+    }
+
+    // 渲染轮盘统计数据
+    function renderRouletteStats(data) {
+        const tbody = document.getElementById('rouletteStatsBody');
+        tbody.innerHTML = '';
+
+        data.forEach(item => {
+            // 计算各项盈利率
+            const bigWinRate = calculateWinRate(item.bigCount, item.totalCount);
+            const smallWinRate = calculateWinRate(item.smallCount, item.totalCount);
+            const oddWinRate = calculateWinRate(item.oddCount, item.totalCount);
+            const evenWinRate = calculateWinRate(item.evenCount, item.totalCount);
+            const redWinRate = calculateWinRate(item.redCount, item.totalCount);
+            const blackWinRate = calculateWinRate(item.blackCount, item.totalCount);
+            const section1_12WinRate = calculateWinRate(item.section1_12, item.totalCount, 3);
+            const section13_24WinRate = calculateWinRate(item.section13_24, item.totalCount, 3);
+            const section25_36WinRate = calculateWinRate(item.section25_36, item.totalCount, 3);
+
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${item.date}</td>
+                <td>${item.tableTitle}</td>
+                <td>${item.totalCount}</td>
+                <td>${item.bigCount}${bigWinRate >= 0 ? ` <span class="${bigWinRate > 0 ? 'win-rate-positive' : bigWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(bigWinRate)})</span>` : ''}</td>
+                <td>${item.smallCount}${smallWinRate >= 0 ? ` <span class="${smallWinRate > 0 ? 'win-rate-positive' : smallWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(smallWinRate)})</span>` : ''}</td>
+                <td>${item.oddCount}${oddWinRate >= 0 ? ` <span class="${oddWinRate > 0 ? 'win-rate-positive' : oddWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">($${formatWinRate(oddWinRate)})</span>` : ''}</td>
+                <td>${item.evenCount}${evenWinRate >= 0 ? ` <span class="${evenWinRate > 0 ? 'win-rate-positive' : evenWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(evenWinRate)})</span>` : ''}</td>
+                <td>${item.redCount}${redWinRate >= 0 ? ` <span class="${redWinRate > 0 ? 'win-rate-positive' : redWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(redWinRate)})</span>` : ''}</td>
+                <td>${item.blackCount}${blackWinRate >= 0 ? ` <span class="${blackWinRate > 0 ? 'win-rate-positive' : blackWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(blackWinRate)})</span>` : ''}</td>
+                <td>${item.section1_12}${section1_12WinRate >= 0 ? ` <span class="${section1_12WinRate > 0 ? 'win-rate-positive' : section1_12WinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(section1_12WinRate)})</span>` : ''}</td>
+                <td>${item.section13_24}${section13_24WinRate >= 0 ? ` <span class="${section13_24WinRate > 0 ? 'win-rate-positive' : section13_24WinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(section13_24WinRate)})</span>` : ''}</td>
+                <td>${item.section25_36}${section25_36WinRate >= 0 ? ` <span class="${section25_36WinRate > 0 ? 'win-rate-positive' : section25_36WinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(section25_36WinRate)})</span>` : ''}</td>
+                <td>
+                    <button class="btn btn-sm btn-outline-primary"
+                            onclick="showDetails('${item.tableTitle} - ${item.date}', ${JSON.stringify(item.numbs)})">
+                        <i class="bi bi-eye"></i> 查看
+                    </button>
+                </td>
+            `;
+            tbody.appendChild(row);
+        });
+    }
+
+    // 渲染骰子统计数据
+    function renderSicboStats(data) {
+        const tbody = document.getElementById('sicboStatsBody');
+        tbody.innerHTML = '';
+
+        data.forEach(item => {
+            // 生成点数统计展示
+            const pointsHtml = `
+                <div class="d-flex">
+                    <span class="dice-point" title="点1">${item.dot1Count}</span>
+                    <span class="dice-point" title="点2">${item.dot2Count}</span>
+                    <span class="dice-point" title="点3">${item.dot3Count}</span>
+                    <span class="dice-point" title="点4">${item.dot4Count}</span>
+                    <span class="dice-point" title="点5">${item.dot5Count}</span>
+                    <span class="dice-point" title="点6">${item.dot6Count}</span>
+                </div>
+            `;
+
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${item.date}</td>
+                <td>${item.tableTitle}</td>
+                <td>${item.totalCount}</td>
+                <td>${item.bigCount}</td>
+                <td>${item.smallCount}</td>
+                <td>${item.oddCount}</td>
+                <td>${item.evenCount}</td>
+                <td>${pointsHtml}</td>
+                <td>${item.tripleCount}</td>
+                <td>
+                    <button class="btn btn-sm btn-outline-primary"
+                            onclick="showDetails('${item.tableTitle} - ${item.date}', ${JSON.stringify(item.sumNumbs)})">
+                        <i class="bi bi-eye"></i> 查看
+                    </button>
+                </td>
+            `;
+            tbody.appendChild(row);
+        });
+    }
+
+    // 显示详细数据
+    function showDetails(title, data) {
+        document.getElementById('modalTitle').textContent = `${title} - 详细数据`;
+
+        // 创建表格展示详细数据
+        let tableHtml = '<table class="table table-bordered"><thead><tr>';
+
+        // 表头
+        Object.keys(data).forEach(key => {
+            tableHtml += `<th>${key}</th>`;
+        });
+        tableHtml += '</tr></thead><tbody><tr>';
+
+        // 数据行
+        Object.values(data).forEach(value => {
+            tableHtml += `<td>${value}</td>`;
+        });
+        tableHtml += '</tr></tbody></table>';
+
+        document.getElementById('modalContent').innerHTML = tableHtml;
+
+        // 显示模态框
+        const modal = new bootstrap.Modal(document.getElementById('detailsModal'));
+        modal.show();
+    }
+</script>
+</body>
+</html>

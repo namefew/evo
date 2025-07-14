@@ -83,7 +83,7 @@ public interface RouletteResultMapper {
         "       FROM roulette_result",
         "       WHERE create_time BETWEEN #{startDate} AND #{endDate}",
         "       GROUP BY table_id, DATE(create_time), result" +
-        "   ) t group by table_id,date ORDER BY t.date",
+        "   ) t group by table_id,date ORDER BY table_id,t.date",
         "</script>"
     })
     List<RouletteStats> findByDate(LocalDate startDate, LocalDate endDate);

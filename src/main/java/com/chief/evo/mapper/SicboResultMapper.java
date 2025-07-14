@@ -62,7 +62,7 @@ public interface SicboResultMapper {
         "   WHERE create_time BETWEEN #{startDate} AND #{endDate}",
         ") t",
         "GROUP BY table_id, DATE(create_time)",
-        "ORDER BY date",
+        "ORDER BY table_id,date",
         "</script>"
     })
     List<SicboStats> findByDate(LocalDate startDate, LocalDate endDate);
