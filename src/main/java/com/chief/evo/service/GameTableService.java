@@ -21,6 +21,7 @@ public class GameTableService {
 
     public void insertList(List<GameTable> gameTables){
         gameTableMapper.insertList(gameTables);
+
         allTables = queryAll().stream().collect(Collectors.toMap(GameTable::getId, a->a,(a,b)->b));
     }
 

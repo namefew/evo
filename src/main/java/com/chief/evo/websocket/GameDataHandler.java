@@ -46,8 +46,7 @@ public class GameDataHandler extends TextWebSocketHandler {
 
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) {
-        String payload = message.getPayload();
-        log.info("Received message: " + payload);
+        String payload = message.getPayload();log.info("Received message: " + payload);
         try {
             JsonNode rootNode = objectMapper.readTree(payload);
             String messageType = rootNode.path("type").asText();
@@ -81,7 +80,7 @@ public class GameDataHandler extends TextWebSocketHandler {
             String tableId = entry.getKey();
             JsonNode tableInfo = entry.getValue();
             GameTable table = new GameTable();
-            
+
             // 设置基本字段
             table.setId(tableId);
             table.setTitle(tableInfo.path("title").asText());

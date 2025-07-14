@@ -35,7 +35,7 @@ public interface RouletteResultMapper {
         "   SUM(CASE WHEN t.result BETWEEN 19 AND 36 THEN t.cnt ELSE 0 END) AS bigCount,",
         "   SUM(CASE WHEN t.result BETWEEN 1 AND 18 THEN t.cnt ELSE 0 END) AS smallCount,",
         "   SUM(CASE WHEN t.result % 2 = 1 THEN t.cnt ELSE 0 END) AS oddCount,",
-        "   SUM(CASE WHEN t.result % 2 = 0 THEN t.cnt ELSE 0 END) AS evenCount,",
+        "   SUM(CASE WHEN t.result % 2 = 0 AND t.result!=0 THEN t.cnt ELSE 0 END) AS evenCount,",
         "   SUM(CASE WHEN t.result IN (1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36) THEN t.cnt ELSE 0 END) AS redCount,",
         "   SUM(CASE WHEN t.result IN (2,4,6,8,10,11,13,15,17,20,22,24,26,28,29,31,33,35) THEN t.cnt ELSE 0 END) AS blackCount,",
         "   SUM(CASE WHEN t.result BETWEEN 1 AND 12 THEN t.cnt ELSE 0 END) AS section1,",
