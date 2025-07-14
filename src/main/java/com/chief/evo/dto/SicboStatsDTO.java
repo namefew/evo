@@ -28,5 +28,16 @@ public class SicboStatsDTO {
 
     private Integer tripleCount;
 
-
+    public Double getBigWinRate() {
+        return bigCount*2.0 / totalCount - 1.0;
+    }
+    public Double getSmallWinRate() {
+        return smallCount*2.0 / totalCount - 1.0;
+    }
+    public Double getOddWinRate() {
+        return oddCount*2.0 / totalCount - 1.0;
+    }
+    public Double getEvenWinRate() {
+        return evenCount*2.0 / totalCount - 1.0;
+    }
 }

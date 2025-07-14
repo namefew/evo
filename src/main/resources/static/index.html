@@ -6,6 +6,7 @@
     <title>游戏数据统计</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         .game-card {
             transition: transform 0.3s, box-shadow 0.3s;
@@ -41,6 +42,12 @@
         }
         .win-rate-neutral {
             color: black;
+        }
+        /* 饼图容器 */
+        .chart-container {
+            position: relative;
+            height: 70vh;
+            width: 100%;
         }
     </style>
 </head>
@@ -79,7 +86,7 @@
         </li>
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="sicbo-tab" data-bs-toggle="tab"
-                         data-bs-target="#sicbo" type="button" role="tab">
+                    data-bs-target="#sicbo" type="button" role="tab">
                 <i class="bi bi-dice-6"></i> 骰子游戏
             </button>
         </li>
@@ -152,7 +159,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <div id="modalContent"></div>
+                <div class="chart-container">
+                    <canvas id="detailsChart"></canvas>
+                </div>
             </div>
         </div>
     </div>
@@ -234,6 +243,9 @@
             const section13_24WinRate = calculateWinRate(item.section13_24, item.totalCount, 3);
             const section25_36WinRate = calculateWinRate(item.section25_36, item.totalCount, 3);
 
+            // 修改点：使用encodeURIComponent转义JSON数据
+            const encodedNumbs = encodeURIComponent(JSON.stringify(item.numbs));
+
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td>${item.date}</td>
@@ -241,7 +253,7 @@
                 <td>${item.totalCount}</td>
                 <td>${item.bigCount}${bigWinRate >= 0 ? ` <span class="${bigWinRate > 0 ? 'win-rate-positive' : bigWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(bigWinRate)})</span>` : ''}</td>
                 <td>${item.smallCount}${smallWinRate >= 0 ? ` <span class="${smallWinRate > 0 ? 'win-rate-positive' : smallWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(smallWinRate)})</span>` : ''}</td>
-                <td>${item.oddCount}${oddWinRate >= 0 ? ` <span class="${oddWinRate > 0 ? 'win-rate-positive' : oddWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">($${formatWinRate(oddWinRate)})</span>` : ''}</td>
+                <td>${item.oddCount}${oddWinRate >= 0 ? ` <span class="${oddWinRate > 0 ? 'win-rate-positive' : oddWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(oddWinRate)})</span>` : ''}</td>
                 <td>${item.evenCount}${evenWinRate >= 0 ? ` <span class="${evenWinRate > 0 ? 'win-rate-positive' : evenWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(evenWinRate)})</span>` : ''}</td>
                 <td>${item.redCount}${redWinRate >= 0 ? ` <span class="${redWinRate > 0 ? 'win-rate-positive' : redWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(redWinRate)})</span>` : ''}</td>
                 <td>${item.blackCount}${blackWinRate >= 0 ? ` <span class="${blackWinRate > 0 ? 'win-rate-positive' : blackWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(blackWinRate)})</span>` : ''}</td>
@@ -250,7 +262,7 @@
                 <td>${item.section25_36}${section25_36WinRate >= 0 ? ` <span class="${section25_36WinRate > 0 ? 'win-rate-positive' : section25_36WinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(section25_36WinRate)})</span>` : ''}</td>
                 <td>
                     <button class="btn btn-sm btn-outline-primary"
-                            onclick="showDetails('${item.tableTitle} - ${item.date}', ${JSON.stringify(item.numbs)})">
+                            onclick="showDetails('${item.tableTitle} - ${item.date}', '${encodedNumbs}')">
                         <i class="bi bi-eye"></i> 查看
                     </button>
                 </td>
@@ -265,6 +277,12 @@
         tbody.innerHTML = '';
 
         data.forEach(item => {
+            // 计算大、小、单、双的盈利率
+            const bigWinRate = calculateWinRate(item.bigCount, item.totalCount);
+            const smallWinRate = calculateWinRate(item.smallCount, item.totalCount);
+            const oddWinRate = calculateWinRate(item.oddCount, item.totalCount);
+            const evenWinRate = calculateWinRate(item.evenCount, item.totalCount);
+
             // 生成点数统计展示
             const pointsHtml = `
                 <div class="d-flex">
@@ -277,20 +295,23 @@
                 </div>
             `;
 
+            // 修改点：使用encodeURIComponent转义JSON数据
+            const encodedSumNumbs = encodeURIComponent(JSON.stringify(item.sumNumbs));
+
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td>${item.date}</td>
                 <td>${item.tableTitle}</td>
                 <td>${item.totalCount}</td>
-                <td>${item.bigCount}</td>
-                <td>${item.smallCount}</td>
-                <td>${item.oddCount}</td>
-                <td>${item.evenCount}</td>
+                <td>${item.bigCount}${bigWinRate > 0 ? ` <span class="win-rate-positive">(${formatWinRate(bigWinRate)})</span>` : ''}</td>
+                <td>${item.smallCount}${smallWinRate > 0 ? ` <span class="win-rate-positive">(${formatWinRate(smallWinRate)})</span>` : ''}</td>
+                <td>${item.oddCount}${oddWinRate > 0 ? ` <span class="win-rate-positive">(${formatWinRate(oddWinRate)})</span>` : ''}</td>
+                <td>${item.evenCount}${evenWinRate > 0 ? ` <span class="win-rate-positive">(${formatWinRate(evenWinRate)})</span>` : ''}</td>
                 <td>${pointsHtml}</td>
                 <td>${item.tripleCount}</td>
                 <td>
                     <button class="btn btn-sm btn-outline-primary"
-                            onclick="showDetails('${item.tableTitle} - ${item.date}', ${JSON.stringify(item.sumNumbs)})">
+                            onclick="showDetails('${item.tableTitle} - ${item.date}', '${encodedSumNumbs}')">
                         <i class="bi bi-eye"></i> 查看
                     </button>
                 </td>
@@ -299,30 +320,76 @@
         });
     }
 
-    // 显示详细数据
-    function showDetails(title, data) {
-        document.getElementById('modalTitle').textContent = `${title} - 详细数据`;
+    // 显示详细数据（饼图）
+    function showDetails(title, encodedData) {
+        try {
+            // 修改点：解码URI组件并解析JSON
+            const data = JSON.parse(decodeURIComponent(encodedData));
 
-        // 创建表格展示详细数据
-        let tableHtml = '<table class="table table-bordered"><thead><tr>';
+            document.getElementById('modalTitle').textContent = `${title} - 分布饼图`;
 
-        // 表头
-        Object.keys(data).forEach(key => {
-            tableHtml += `<th>${key}</th>`;
-        });
-        tableHtml += '</tr></thead><tbody><tr>';
+            // 获取canvas的上下文
+            const ctx = document.getElementById('detailsChart').getContext('2d');
 
-        // 数据行
-        Object.values(data).forEach(value => {
-            tableHtml += `<td>${value}</td>`;
-        });
-        tableHtml += '</tr></tbody></table>';
+            // 修改点：销毁现有图表实例（如果存在）
+            const existingChart = Chart.getChart(ctx);
+            if (existingChart) {
+                existingChart.destroy();
+            }
 
-        document.getElementById('modalContent').innerHTML = tableHtml;
+            // 准备饼图数据
+            const labels = Object.keys(data);
+            const values = Object.values(data);
 
-        // 显示模态框
-        const modal = new bootstrap.Modal(document.getElementById('detailsModal'));
-        modal.show();
+            // 生成随机颜色
+            const backgroundColors = labels.map(() =>
+                `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, 0.7)`
+            );
+
+            // 创建饼图
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: values,
+                        backgroundColor: backgroundColors,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                        },
+                        title: {
+                            display: true,
+                            text: '数字分布饼图'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.raw || 0;
+                                    const total = context.chart.getDatasetMeta(0).total;
+                                    const percentage = Math.round((value / total) * 100);
+                                    return `${label}: ${value} (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // 显示模态框
+            const modal = new bootstrap.Modal(document.getElementById('detailsModal'));
+            modal.show();
+        } catch (error) {
+            console.error('解析数据失败:', error);
+            alert('无法显示详细数据，请检查控制台查看详情');
+        }
     }
 </script>
 </body>
