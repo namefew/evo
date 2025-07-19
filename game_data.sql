@@ -23,9 +23,10 @@ CREATE TABLE roulette_result (
     round_id VARCHAR(50) COMMENT '轮次ID',
     result INT NOT NULL COMMENT '轮盘结果数字',
     color VARCHAR(10) COMMENT '轮盘颜色',
-    create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (table_id) REFERENCES games(id)
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP
+
 );
+create index idx_table_id on roulette_result(table_id);
 create index idx_create_time on roulette_result(create_time);
 
 -- 骰子结果表
@@ -37,7 +38,7 @@ CREATE TABLE sicbo_result (
     dice1 INT NOT NULL COMMENT '骰子1点数',
     dice2 INT NOT NULL COMMENT '骰子2点数',
     dice3 INT NOT NULL COMMENT '骰子3点数',
-    create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (table_id) REFERENCES games(id)
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+create index idx_table_id on sicbo_result(table_id);
 create index idx_create_time on sicbo_result(create_time);
