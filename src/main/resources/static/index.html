@@ -384,7 +384,7 @@
                                         const total = context.chart.getDatasetMeta(0).total;
                                         const percentage = ((value / total) * 100).toFixed(1);
                                         const wins = ((value*peilv[label]-total)/total*100).toFixed(1);
-                                        return `${label}: ${value}【占比：${percentage}%】 (盈利:${wins}%)`;
+                                        return `${label}: ${value}【占比${percentage}%】 (赔率1:${peilv[label]} 盈利${wins}%)`;
                                     }
                                 }
                             }
