@@ -208,13 +208,14 @@
                 // 加载轮盘数据
                 const rouletteResponse = await fetch(`/api/stats/roulette?from=${startDate}&to=${endDate}`);
                 const rouletteData = await rouletteResponse.json();
-                renderRouletteStats(rouletteData);
+                window.rouletteData = rouletteData;
+                renderRouletteStats();
 
                 // 加载骰子数据
                 const sicboResponse = await fetch(`/api/stats/sicbo?from=${startDate}&to=${endDate}`);
                 const sicboData = await sicboResponse.json();
-                renderSicboStats(sicboData);
-
+                window.sicboData = sicboData;
+                renderSicboStats();
             } catch (error) {
                 console.error('加载数据失败:', error);
                 alert('加载数据失败，请检查控制台查看详情');
@@ -234,11 +235,11 @@
         }
 
         // 渲染轮盘统计数据
-        function renderRouletteStats(data) {
+        function renderRouletteStats() {
             const tbody = document.getElementById('rouletteStatsBody');
             tbody.innerHTML = '';
 
-            data.forEach(item => {
+            window.rouletteData.forEach(item => {
                 // 处理日期为 null 的情况
                 const dateDisplay = item.date === null ? '汇总' : item.date;
                 const rowClass = item.date === null ? 'bg-light' : ''; // 设置背景颜色
@@ -279,7 +280,7 @@
                     <td>${item.section25_36}${section25_36WinRate >= 0 ? ` <span class="${section25_36WinRate > 0 ? 'win-rate-positive' : section25_36WinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(section25_36WinRate)})</span>` : ''}</td>
                     <td>
                         <button class="btn btn-sm btn-outline-primary"
-                                onclick="showDetails('${item.tableTitle} - ${dateDisplay}', '${encodedNumbs}','${encodedPeilv}')">
+                                onclick="showDetails('${item.tableTitle} - ${dateDisplay}', '${encodedNumbs}','${encodedPeilv}','${item.tableId}',false)">
                             <i class="bi bi-eye"></i> 查看
                         </button>
                     </td>
@@ -289,11 +290,11 @@
         }
 
         // 渲染骰子统计数据
-        function renderSicboStats(data) {
+        function renderSicboStats() {
             const tbody = document.getElementById('sicboStatsBody');
             tbody.innerHTML = '';
 
-            data.forEach(item => {
+            window.sicboData.forEach(item => {
                 // 处理日期为 null 的情况
                 const dateDisplay = item.date === null ? '汇总' : item.date;
                 const rowClass = item.date === null ? 'bg-light' : ''; // 设置背景颜色
@@ -337,7 +338,7 @@
                     <td>${item.tripleCount}</td>
                     <td>
                         <button class="btn btn-sm btn-outline-primary"
-                                onclick="showDetails('${item.tableTitle} - ${dateDisplay}', '${encodedSumNumbs}','${encodedPeilv}')">
+                                onclick="showDetails('${item.tableTitle} - ${dateDisplay}', '${encodedSumNumbs}','${encodedPeilv}','${item.tableId}',true)">
                             <i class="bi bi-eye"></i> 查看
                         </button>
                     </td>
@@ -348,10 +349,10 @@
 
 
         // 显示详细数据（饼图）
-        function showDetails(title, encodedData,encodedPeilv) {
+         function showDetails(title, encodedData, encodedPeilv,tableId,isSicbo) {
             try {
                 const data = JSON.parse(decodeURIComponent(encodedData));
-                const peilv = JSON.parse(decodeURIComponent(encodedPeilv)); // 解码并解析 peilv
+                const peilv = JSON.parse(decodeURIComponent(encodedPeilv));
                 document.getElementById('modalTitle').textContent = `${title} - 分布饼图`;
 
                 const ctx = document.getElementById('detailsChart').getContext('2d');
@@ -363,7 +364,7 @@
 
                 // 将数据转换为数组并排序
                 const dataArray = Object.entries(data).map(([label, value]) => ({ label, value }));
-                dataArray.sort((a, b) => b.value - a.value); // 按 value 降序排序
+                dataArray.sort((a, b) => b.value - a.value);
 
                 // 重新提取 labels 和 values
                 const labels = dataArray.map(item => item.label);
@@ -374,8 +375,8 @@
                     `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, 0.7)`
                 );
 
-                // 创建饼图
-                new Chart(ctx, {
+                // 创建饼图并保存实例
+                const myChart = new Chart(ctx, {
                     type: 'pie',
                     data: {
                         labels: labels,
@@ -403,12 +404,21 @@
                                         const value = context.raw || 0;
                                         const total = context.chart.getDatasetMeta(0).total;
                                         const percentage = ((value / total) * 100).toFixed(1);
-                                        const wins = ((value*peilv[label]-total)/total*100).toFixed(1);
+                                        const wins = ((value * peilv[label] - total) / total * 100).toFixed(1);
                                         return `${label}: ${value}【占比${percentage}%】 (赔率1:${peilv[label]} 盈利${wins}%)`;
                                     }
                                 }
                             }
                         }
+                    }
+                });
+
+                // 修复：使用保存的图表实例
+                ctx.canvas.addEventListener('click', function(event) {
+                    const activePoints = myChart.getElementsAtEventForMode(event, 'nearest', { intersect: true }, true);
+                    if (activePoints.length > 0) {
+                        const clickedLabel = labels[activePoints[0].index];
+                        showHistoricalFundsCurve(clickedLabel, peilv,isSicbo,tableId);
                     }
                 });
 
@@ -420,6 +430,131 @@
             }
         }
 
+        // 新增：展示历史资金曲线函数
+        async function showHistoricalFundsCurve(label, peilv,isSicbo,tableId) {
+            try {
+                // 创建新的模态框
+                const modalId = 'historicalFundsModal';
+                let modalElement = document.getElementById(modalId);
+                
+                // 如果模态框不存在则创建
+                if (!modalElement) {
+                    modalElement = document.createElement('div');
+                    modalElement.className = 'modal fade';
+                    modalElement.id = modalId;
+                    modalElement.innerHTML = `
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">${label} - 历史资金曲线</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="chart-container">
+                                        <canvas id="historicalFundsChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    document.body.appendChild(modalElement);
+                }
+
+                // 设置标题
+                modalElement.querySelector('.modal-title').textContent = `${label} - 历史资金曲线`;
+                
+                // 显示模态框
+                const modal = new bootstrap.Modal(modalElement);
+                modal.show();
+                
+                // 获取canvas上下文
+                const ctx = document.getElementById('historicalFundsChart').getContext('2d');
+                
+                // 销毁现有图表
+                const existingChart = Chart.getChart(ctx);
+                if (existingChart) {
+                    existingChart.destroy();
+                }
+                
+
+                 // 直接从 data 对象提取历史资金数据
+                let tableData = [];
+                let sourceData = isSicbo ? window.sicboData:window.rouletteData
+
+                tableData = sourceData.filter(item => item.tableId === tableId && item.date !== null);
+                // 按日期排序
+                tableData.sort((a, b) => new Date(a.date) - new Date(b.date));
+                let cumulativeProfit = 0;
+                const dates = [];
+                const cumulativeProfits = []; // 累计收益
+                tableData.forEach(item => {
+                    let count = 0;
+                    if (isSicbo) {
+                        // 骰子游戏
+                        count = item.sumNumbs ? (item.sumNumbs[label] || 0) : 0;
+                    } else {
+                        // 轮盘游戏
+                        count = item.numbs ? (item.numbs[label] || 0) : 0;
+                    }
+                    const dailyProfit = (count * peilv[label]) - item.totalCount;
+                    cumulativeProfit += dailyProfit;
+                    dates.push(item.date);
+                    cumulativeProfits.push(cumulativeProfit);
+                });
+
+                // 创建折线图
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: dates,
+                        datasets: [{
+                            label: '资金变化',
+                            data: cumulativeProfits,
+                            borderColor: 'rgb(75, 192, 192)',
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderWidth: 2,
+                            fill: true
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: '历史资金曲线'
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return `资金: ${context.parsed.y.toFixed(2)}`;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: false,
+                                title: {
+                                    display: true,
+                                    text: '资金变化'
+                                }
+                            },
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: '日期'
+                                }
+                            }
+                        }
+                    }
+                });
+                
+            } catch (error) {
+                console.error('加载历史资金数据失败:', error);
+                alert('加载历史资金数据失败，请检查控制台查看详情');
+            }
+        }
 </script>
 </body>
 </html>
