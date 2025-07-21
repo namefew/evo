@@ -49,6 +49,13 @@
             height: 70vh;
             width: 100%;
         }
+       .bg-light {
+           background-color: #e0f0f0 !important;
+       }
+       .stats-table td {
+           background-color: transparent !important; /* 确保 td 不覆盖 tr 的背景颜色 */
+       }
+
     </style>
 </head>
 <body>
@@ -232,6 +239,10 @@
             tbody.innerHTML = '';
 
             data.forEach(item => {
+                // 处理日期为 null 的情况
+                const dateDisplay = item.date === null ? '汇总' : item.date;
+                const rowClass = item.date === null ? 'bg-light' : ''; // 设置背景颜色
+
                 // 计算各项盈利率
                 const bigWinRate = calculateWinRate(item.bigCount, item.totalCount);
                 const smallWinRate = calculateWinRate(item.smallCount, item.totalCount);
@@ -242,17 +253,19 @@
                 const section1_12WinRate = calculateWinRate(item.section1_12, item.totalCount, 3);
                 const section13_24WinRate = calculateWinRate(item.section13_24, item.totalCount, 3);
                 const section25_36WinRate = calculateWinRate(item.section25_36, item.totalCount, 3);
-                let peilv = {}
+
+                let peilv = {};
                 for (let i = 0; i <= 36; i++) {
                     peilv[i] = 36;
                 }
-                // 修改点：使用encodeURIComponent转义JSON数据
                 const encodedNumbs = encodeURIComponent(JSON.stringify(item.numbs));
                 const encodedPeilv = encodeURIComponent(JSON.stringify(peilv)); // 编码 peilv
 
                 const row = document.createElement('tr');
+                row.className = rowClass; // 应用背景颜色类
+
                 row.innerHTML = `
-                    <td>${item.date}</td>
+                    <td>${dateDisplay}</td>
                     <td>${item.tableTitle}</td>
                     <td>${item.totalCount}</td>
                     <td>${item.bigCount}${bigWinRate >= 0 ? ` <span class="${bigWinRate > 0 ? 'win-rate-positive' : bigWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(bigWinRate)})</span>` : ''}</td>
@@ -266,7 +279,7 @@
                     <td>${item.section25_36}${section25_36WinRate >= 0 ? ` <span class="${section25_36WinRate > 0 ? 'win-rate-positive' : section25_36WinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(section25_36WinRate)})</span>` : ''}</td>
                     <td>
                         <button class="btn btn-sm btn-outline-primary"
-                                onclick="showDetails('${item.tableTitle} - ${item.date}', '${encodedNumbs}','${encodedPeilv}')">
+                                onclick="showDetails('${item.tableTitle} - ${dateDisplay}', '${encodedNumbs}','${encodedPeilv}')">
                             <i class="bi bi-eye"></i> 查看
                         </button>
                     </td>
@@ -281,6 +294,10 @@
             tbody.innerHTML = '';
 
             data.forEach(item => {
+                // 处理日期为 null 的情况
+                const dateDisplay = item.date === null ? '汇总' : item.date;
+                const rowClass = item.date === null ? 'bg-light' : ''; // 设置背景颜色
+
                 // 计算大、小、单、双的盈利率
                 const bigWinRate = calculateWinRate(item.bigCount, item.totalCount);
                 const smallWinRate = calculateWinRate(item.smallCount, item.totalCount);
@@ -303,11 +320,13 @@
                 const encodedSumNumbs = encodeURIComponent(JSON.stringify(item.sumNumbs));
 
                 const row = document.createElement('tr');
-                const peilv = {"4":51,"5":21,"6":16,"7":13,"8":9,"9":7,"10":7,"11":7,"12":7,"13":9,"14":13,"15":16,"16":21,"17":51}
+                row.className = rowClass; // 应用背景颜色类
+
+                const peilv = {"4":51,"5":21,"6":16,"7":13,"8":9,"9":7,"10":7,"11":7,"12":7,"13":9,"14":13,"15":16,"16":21,"17":51};
                 const encodedPeilv = encodeURIComponent(JSON.stringify(peilv)); // 编码 peilv
 
                 row.innerHTML = `
-                    <td>${item.date}</td>
+                    <td>${dateDisplay}</td>
                     <td>${item.tableTitle}</td>
                     <td>${item.totalCount}</td>
                     <td>${item.bigCount}${bigWinRate > 0 ? ` <span class="win-rate-positive">(${formatWinRate(bigWinRate)})</span>` : ''}</td>
@@ -318,7 +337,7 @@
                     <td>${item.tripleCount}</td>
                     <td>
                         <button class="btn btn-sm btn-outline-primary"
-                                onclick="showDetails('${item.tableTitle} - ${item.date}', '${encodedSumNumbs}','${encodedPeilv}')">
+                                onclick="showDetails('${item.tableTitle} - ${dateDisplay}', '${encodedSumNumbs}','${encodedPeilv}')">
                             <i class="bi bi-eye"></i> 查看
                         </button>
                     </td>
@@ -326,6 +345,7 @@
                 tbody.appendChild(row);
             });
         }
+
 
         // 显示详细数据（饼图）
         function showDetails(title, encodedData,encodedPeilv) {
