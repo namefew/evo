@@ -60,7 +60,7 @@
 </head>
 <body>
 <div class="container py-4">
-    <h1 class="text-center mb-4"><i class="bi bi-graph-up"></i> 游戏数据统计</h1>
+    <h2 class="text-center mb-4"><i class="bi bi-graph-up"></i> 游戏数据统计</h2>
 
     <!-- 日期选择器 -->
     <div class="card mb-4">
@@ -88,13 +88,19 @@
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="roulette-tab" data-bs-toggle="tab"
                     data-bs-target="#roulette" type="button" role="tab">
-                <i class="bi bi-arrow-repeat"></i> 轮盘游戏
+                <i class="bi bi-arrow-repeat"></i> EVO轮盘游戏
             </button>
         </li>
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="sicbo-tab" data-bs-toggle="tab"
                     data-bs-target="#sicbo" type="button" role="tab">
-                <i class="bi bi-dice-6"></i> 骰子游戏
+                <i class="bi bi-dice-6"></i> EVO骰子游戏
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="db-stats-tab" data-bs-toggle="tab"
+                    data-bs-target="#db-stats" type="button" role="tab">
+                <i class="bi bi-database"></i> DB游戏数据统计
             </button>
         </li>
     </ul>
@@ -152,6 +158,80 @@
                     </thead>
                     <tbody id="sicboStatsBody"></tbody>
                 </table>
+            </div>
+        </div>
+        
+        <!-- 数据库统计 -->
+        <div class="tab-pane fade" id="db-stats" role="tabpanel">
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle"></i> DB游戏数据统计
+            </div>
+            
+            <!-- 数据库统计子标签 -->
+            <ul class="nav nav-tabs mb-3" id="dbStatsTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="db-roulette-tab" data-bs-toggle="tab"
+                            data-bs-target="#db-roulette" type="button" role="tab">
+                        <i class="bi bi-arrow-repeat"></i> DB轮盘游戏
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="db-sicbo-tab" data-bs-toggle="tab"
+                            data-bs-target="#db-sicbo" type="button" role="tab">
+                        <i class="bi bi-dice-6"></i> DB骰子游戏
+                    </button>
+                </li>
+            </ul>
+            
+            <!-- 数据库轮盘统计 -->
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="db-roulette" role="tabpanel">
+                    <div class="table-responsive">
+                        <table class="table table-hover stats-table">
+                            <thead class="table-light">
+                            <tr>
+                                <th>日期</th>
+                                <th>桌子</th>
+                                <th>总次数</th>
+                                <th>大</th>
+                                <th>小</th>
+                                <th>单数</th>
+                                <th>双数</th>
+                                <th>红色</th>
+                                <th>黑色</th>
+                                <th>1-12</th>
+                                <th>13-24</th>
+                                <th>25-36</th>
+                                <th>详细数据</th>
+                            </tr>
+                            </thead>
+                            <tbody id="dbRouletteStatsBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- 数据库骰子统计 -->
+                <div class="tab-pane fade" id="db-sicbo" role="tabpanel">
+                    <div class="table-responsive">
+                        <table class="table table-hover stats-table">
+                            <thead class="table-light">
+                            <tr>
+                                <th>日期</th>
+                                <th>桌子</th>
+                                <th>总次数</th>
+                                <th>大</th>
+                                <th>小</th>
+                                <th>单数</th>
+                                <th>双数</th>
+                                <th>点数统计</th>
+                                <th>豹子</th>
+                                <th>详细数据</th>
+                            </tr>
+                            </thead>
+                            <tbody id="dbSicboStatsBody"></tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -216,6 +296,17 @@
                 const sicboData = await sicboResponse.json();
                 window.sicboData = sicboData;
                 renderSicboStats();
+                
+                // 加载数据库统计数据
+                const dbRouletteResponse = await fetch(`/api/stats/db/roulette?from=${startDate}&to=${endDate}`);
+                const dbRouletteData = await dbRouletteResponse.json();
+                window.dbRouletteData = dbRouletteData;
+                renderDbRouletteStats();
+                
+                const dbSicboResponse = await fetch(`/api/stats/db/sicbo?from=${startDate}&to=${endDate}`);
+                const dbSicboData = await dbSicboResponse.json();
+                window.dbSicboData = dbSicboData;
+                renderDbSicboStats();
             } catch (error) {
                 console.error('加载数据失败:', error);
                 alert('加载数据失败，请检查控制台查看详情');
@@ -554,6 +645,119 @@
                 console.error('加载历史资金数据失败:', error);
                 alert('加载历史资金数据失败，请检查控制台查看详情');
             }
+        }
+
+        // 渲染数据库轮盘统计数据
+        function renderDbRouletteStats() {
+            const tbody = document.getElementById('dbRouletteStatsBody');
+            tbody.innerHTML = '';
+
+            window.dbRouletteData.forEach(item => {
+                // 处理日期为 null 的情况
+                const dateDisplay = item.date === null ? '汇总' : item.date;
+                const rowClass = item.date === null ? 'bg-light' : ''; // 设置背景颜色
+
+                // 计算各项盈利率
+                const bigWinRate = calculateWinRate(item.bigCount, item.totalCount);
+                const smallWinRate = calculateWinRate(item.smallCount, item.totalCount);
+                const oddWinRate = calculateWinRate(item.oddCount, item.totalCount);
+                const evenWinRate = calculateWinRate(item.evenCount, item.totalCount);
+                const redWinRate = calculateWinRate(item.redCount, item.totalCount);
+                const blackWinRate = calculateWinRate(item.blackCount, item.totalCount);
+                const section1_12WinRate = calculateWinRate(item.section1_12, item.totalCount, 3);
+                const section13_24WinRate = calculateWinRate(item.section13_24, item.totalCount, 3);
+                const section25_36WinRate = calculateWinRate(item.section25_36, item.totalCount, 3);
+
+                let peilv = {};
+                for (let i = 0; i <= 36; i++) {
+                    peilv[i] = 36;
+                }
+                const encodedNumbs = encodeURIComponent(JSON.stringify(item.numbs));
+                const encodedPeilv = encodeURIComponent(JSON.stringify(peilv)); // 编码 peilv
+
+                const row = document.createElement('tr');
+                row.className = rowClass; // 应用背景颜色类
+
+                row.innerHTML = `
+                    <td>${dateDisplay}</td>
+                    <td>${item.tableTitle}</td>
+                    <td>${item.totalCount}</td>
+                    <td>${item.bigCount}${bigWinRate >= 0 ? ` <span class="${bigWinRate > 0 ? 'win-rate-positive' : bigWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(bigWinRate)})</span>` : ''}</td>
+                    <td>${item.smallCount}${smallWinRate >= 0 ? ` <span class="${smallWinRate > 0 ? 'win-rate-positive' : smallWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(smallWinRate)})</span>` : ''}</td>
+                    <td>${item.oddCount}${oddWinRate >= 0 ? ` <span class="${oddWinRate > 0 ? 'win-rate-positive' : oddWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(oddWinRate)})</span>` : ''}</td>
+                    <td>${item.evenCount}${evenWinRate >= 0 ? ` <span class="${evenWinRate > 0 ? 'win-rate-positive' : evenWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(evenWinRate)})</span>` : ''}</td>
+                    <td>${item.redCount}${redWinRate >= 0 ? ` <span class="${redWinRate > 0 ? 'win-rate-positive' : redWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(redWinRate)})</span>` : ''}</td>
+                    <td>${item.blackCount}${blackWinRate >= 0 ? ` <span class="${blackWinRate > 0 ? 'win-rate-positive' : blackWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(blackWinRate)})</span>` : ''}</td>
+                    <td>${item.section1_12}${section1_12WinRate >= 0 ? ` <span class="${section1_12WinRate > 0 ? 'win-rate-positive' : section1_12WinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(section1_12WinRate)})</span>` : ''}</td>
+                    <td>${item.section13_24}${section13_24WinRate >= 0 ? ` <span class="${section13_24WinRate > 0 ? 'win-rate-positive' : section13_24WinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(section13_24WinRate)})</span>` : ''}</td>
+                    <td>${item.section25_36}${section25_36WinRate >= 0 ? ` <span class="${section25_36WinRate > 0 ? 'win-rate-positive' : section25_36WinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(section25_36WinRate)})</span>` : ''}</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-primary"
+                                onclick="showDetails('${item.tableTitle} - ${dateDisplay}', '${encodedNumbs}','${encodedPeilv}','${item.tableId}',false)">
+                            <i class="bi bi-eye"></i> 查看
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // 渲染数据库骰子统计数据
+        function renderDbSicboStats() {
+            const tbody = document.getElementById('dbSicboStatsBody');
+            tbody.innerHTML = '';
+
+            window.dbSicboData.forEach(item => {
+                // 处理日期为 null 的情况
+                const dateDisplay = item.date === null ? '汇总' : item.date;
+                const rowClass = item.date === null ? 'bg-light' : ''; // 设置背景颜色
+
+                // 计算大、小、单、双的盈利率
+                const bigWinRate = calculateWinRate(item.bigCount, item.totalCount);
+                const smallWinRate = calculateWinRate(item.smallCount, item.totalCount);
+                const oddWinRate = calculateWinRate(item.oddCount, item.totalCount);
+                const evenWinRate = calculateWinRate(item.evenCount, item.totalCount);
+
+                // 生成点数统计展示
+                const pointsHtml = `
+                    <div class="d-flex">
+                        <span class="dice-point" title="点1">${item.dot1Count}</span>
+                        <span class="dice-point" title="点2">${item.dot2Count}</span>
+                        <span class="dice-point" title="点3">${item.dot3Count}</span>
+                        <span class="dice-point" title="点4">${item.dot4Count}</span>
+                        <span class="dice-point" title="点5">${item.dot5Count}</span>
+                        <span class="dice-point" title="点6">${item.dot6Count}</span>
+                    </div>
+                `;
+
+                // 修改点：使用encodeURIComponent转义JSON数据
+                const encodedSumNumbs = encodeURIComponent(JSON.stringify(item.sumNumbs));
+
+                const row = document.createElement('tr');
+                row.className = rowClass; // 应用背景颜色类
+
+                const peilv = {"4":51,"5":21,"6":16,"7":13,"8":9,"9":7,"10":7,"11":7,"12":7,"13":9,"14":13,"15":16,"16":21,"17":51};
+                const encodedPeilv = encodeURIComponent(JSON.stringify(peilv)); // 编码 peilv
+
+                row.innerHTML = `
+                    <td>${dateDisplay}</td>
+                    <td>${item.tableTitle}</td>
+                    <td>${item.totalCount}</td>
+                    <td>${item.bigCount}${bigWinRate > 0 ? ` <span class="win-rate-positive">(${formatWinRate(bigWinRate)})</span>` : ''}</td>
+                    <td>${item.smallCount}${smallWinRate > 0 ? ` <span class="win-rate-positive">(${formatWinRate(smallWinRate)})</span>` : ''}</td>
+                    <td>${item.oddCount}${oddWinRate > 0 ? ` <span class="win-rate-positive">(${formatWinRate(oddWinRate)})</span>` : ''}</td>
+                    <td>${item.evenCount}${evenWinRate > 0 ? ` <span class="win-rate-positive">(${formatWinRate(evenWinRate)})</span>` : ''}</td>
+                    <td>${pointsHtml}</td>
+                    <td>${item.tripleCount}</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-primary"
+                                onclick="showDetails('${item.tableTitle} - ${dateDisplay}', '${encodedSumNumbs}','${encodedPeilv}','${item.tableId}',true)">
+                            <i class="bi bi-eye"></i> 查看
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(row);
+            });
         }
 </script>
 </body>

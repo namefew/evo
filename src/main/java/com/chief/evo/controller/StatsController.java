@@ -1,9 +1,12 @@
 package com.chief.evo.controller;
 import com.chief.evo.dto.RouletteStatsDTO;
 import com.chief.evo.dto.SicboStatsDTO;
+import com.chief.evo.entity.DbTable;
 import com.chief.evo.entity.GameTable;
 import com.chief.evo.entity.RouletteStats;
 import com.chief.evo.entity.SicboStats;
+import com.chief.evo.service.DbGameResultService;
+import com.chief.evo.service.DbTableService;
 import com.chief.evo.service.GameTableService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -30,6 +33,12 @@ public class StatsController {
     @Autowired
     private GameTableService gameTableService;
 
+    @Autowired
+    private DbGameResultService dbGameResultService;
+
+    @Autowired
+    private DbTableService dbTableService;
+
     @GetMapping("/roulette")
     public List<RouletteStatsDTO> rouletteStats(@RequestParam(name="from")  @DateTimeFormat(pattern = "yyyy-M-d") 
                                                 LocalDate fromDate, @RequestParam(name="to") @DateTimeFormat(pattern = "yyyy-M-d") LocalDate toDate) {
@@ -39,6 +48,66 @@ public class StatsController {
         for (RouletteStats stat : stats) {
             RouletteStatsDTO result = converteRouletteState(stat);
             result.setTableTitle(tableMap.get(stat.getTableId()).getTitle());
+            result.setTableId(stat.getTableId());
+            results.add(result);
+        }
+        Map<String, List<RouletteStatsDTO>> groups = results.stream().collect(Collectors.groupingBy(RouletteStatsDTO::getTableId));
+        List<RouletteStatsDTO> finalResults = new ArrayList<>();
+        groups.forEach((tableId, group) -> {
+            // 添加原始数据
+            finalResults.addAll(group);
+
+            // 创建聚合对象
+            RouletteStatsDTO sum = new RouletteStatsDTO();
+            sum.setTableId(tableId);
+            sum.setTableTitle(group.get(0).getTableTitle());
+            sum.setDate(null); // 聚合对象日期为空
+
+            // 聚合统计值
+            sum.setTotalCount(group.stream().mapToInt(RouletteStatsDTO::getTotalCount).sum());
+            sum.setBigCount(group.stream().mapToInt(RouletteStatsDTO::getBigCount).sum());
+            sum.setSmallCount(group.stream().mapToInt(RouletteStatsDTO::getSmallCount).sum());
+            sum.setOddCount(group.stream().mapToInt(RouletteStatsDTO::getOddCount).sum());
+            sum.setEvenCount(group.stream().mapToInt(RouletteStatsDTO::getEvenCount).sum());
+            sum.setRedCount(group.stream().mapToInt(RouletteStatsDTO::getRedCount).sum());
+            sum.setBlackCount(group.stream().mapToInt(RouletteStatsDTO::getBlackCount).sum());
+            sum.setSection1_12(group.stream().mapToInt(RouletteStatsDTO::getSection1_12).sum());
+            sum.setSection13_24(group.stream().mapToInt(RouletteStatsDTO::getSection13_24).sum());
+            sum.setSection25_36(group.stream().mapToInt(RouletteStatsDTO::getSection25_36).sum());
+
+            // 聚合数字统计
+            Map<Integer, Integer> sumNumbs = new LinkedHashMap<>();
+            for (int i = 0; i <= 36; i++) {
+                int finalI = i;
+                int total = group.stream()
+                        .mapToInt(dto -> dto.getNumbs().getOrDefault(finalI, 0))
+                        .sum();
+                sumNumbs.put(i, total);
+            }
+            sum.setNumbs(sumNumbs);
+
+            finalResults.add(sum);
+        });
+
+        // 按tableId和date排序
+        finalResults.sort(Comparator
+                .comparing(RouletteStatsDTO::getTableId)
+                .thenComparing(RouletteStatsDTO::getDate,
+                        Comparator.nullsLast(Comparator.naturalOrder()))
+        );
+
+        return finalResults;
+    }
+
+    @GetMapping("/db/roulette")
+    public List<RouletteStatsDTO> dbRouletteStats(@RequestParam(name="from")  @DateTimeFormat(pattern = "yyyy-M-d")
+                                                LocalDate fromDate, @RequestParam(name="to") @DateTimeFormat(pattern = "yyyy-M-d") LocalDate toDate) {
+        List<RouletteStats> stats =  dbGameResultService.queryAllRouletteStats(fromDate, toDate);
+        Map<Integer, DbTable> tableMap = dbTableService.getAllTables();
+        List<RouletteStatsDTO> results = new ArrayList<>();
+        for (RouletteStats stat : stats) {
+            RouletteStatsDTO result = converteRouletteState(stat);
+            result.setTableTitle(tableMap.get(Integer.parseInt(stat.getTableId())).getTableName());
             result.setTableId(stat.getTableId());
             results.add(result);
         }
@@ -155,6 +224,104 @@ public class StatsController {
             SicboStatsDTO result = new SicboStatsDTO();
             result.setTableId(stat.getTableId());
             result.setTableTitle(tableMap.get(stat.getTableId()).getTitle());
+            result.setDate(stat.getDate());
+            result.setTotalCount(stat.getTotalCount());
+            result.setBigCount(stat.getBigCount());
+            result.setSmallCount(stat.getSmallCount());
+            result.setOddCount(stat.getOddCount());
+            result.setEvenCount(stat.getEvenCount());
+            result.setDot1Count(stat.getDot1Count());
+            result.setDot2Count(stat.getDot2Count());
+            result.setDot3Count(stat.getDot3Count());
+            result.setDot4Count(stat.getDot4Count());
+            result.setDot5Count(stat.getDot5Count());
+            result.setDot6Count(stat.getDot6Count());
+            result.setTripleCount(stat.getTripleCount());
+
+            Map< Integer,Integer> numbs = new LinkedHashMap<>();
+            result.setSumNumbs(numbs);
+            numbs.put(4,stat.getNum4());
+            numbs.put(5,stat.getNum5());
+            numbs.put(6,stat.getNum6());
+            numbs.put(7,stat.getNum7());
+            numbs.put(8,stat.getNum8());
+            numbs.put(9,stat.getNum9());
+            numbs.put(10,stat.getNum10());
+            numbs.put(11,stat.getNum11());
+            numbs.put(12,stat.getNum12());
+            numbs.put(13,stat.getNum13());
+            numbs.put(14,stat.getNum14());
+            numbs.put(15,stat.getNum15());
+            numbs.put(16,stat.getNum16());
+            numbs.put(17,stat.getNum17());
+            results.add(result);
+        }
+
+        // 按tableId分组
+        Map<String, List<SicboStatsDTO>> groups = results.stream()
+                .collect(Collectors.groupingBy(SicboStatsDTO::getTableId));
+
+        // 创建新的结果集，包含原始数据和聚合数据
+        List<SicboStatsDTO> finalResults = new ArrayList<>();
+
+        groups.forEach((tableId, group) -> {
+            // 添加原始数据
+            finalResults.addAll(group);
+
+            // 创建聚合对象
+            SicboStatsDTO sum = new SicboStatsDTO();
+            sum.setTableId(tableId);
+            sum.setTableTitle(group.get(0).getTableTitle());
+            sum.setDate(null); // 聚合对象日期为空
+
+            // 聚合基本统计值
+            sum.setTotalCount(group.stream().mapToInt(SicboStatsDTO::getTotalCount).sum());
+            sum.setBigCount(group.stream().mapToInt(SicboStatsDTO::getBigCount).sum());
+            sum.setSmallCount(group.stream().mapToInt(SicboStatsDTO::getSmallCount).sum());
+            sum.setOddCount(group.stream().mapToInt(SicboStatsDTO::getOddCount).sum());
+            sum.setEvenCount(group.stream().mapToInt(SicboStatsDTO::getEvenCount).sum());
+            sum.setDot1Count(group.stream().mapToInt(SicboStatsDTO::getDot1Count).sum());
+            sum.setDot2Count(group.stream().mapToInt(SicboStatsDTO::getDot2Count).sum());
+            sum.setDot3Count(group.stream().mapToInt(SicboStatsDTO::getDot3Count).sum());
+            sum.setDot4Count(group.stream().mapToInt(SicboStatsDTO::getDot4Count).sum());
+            sum.setDot5Count(group.stream().mapToInt(SicboStatsDTO::getDot5Count).sum());
+            sum.setDot6Count(group.stream().mapToInt(SicboStatsDTO::getDot6Count).sum());
+            sum.setTripleCount(group.stream().mapToInt(SicboStatsDTO::getTripleCount).sum());
+
+            // 聚合数字统计
+            Map<Integer, Integer> sumNumbs = new LinkedHashMap<>();
+            for (int i = 4; i <= 17; i++) {
+                int finalI = i;
+                int total = group.stream()
+                        .mapToInt(dto -> dto.getSumNumbs().getOrDefault(finalI, 0))
+                        .sum();
+                sumNumbs.put(i, total);
+            }
+            sum.setSumNumbs(sumNumbs);
+
+            finalResults.add(sum);
+        });
+
+        // 按tableId和date排序
+        finalResults.sort(Comparator
+                .comparing(SicboStatsDTO::getTableId)
+                .thenComparing(SicboStatsDTO::getDate,
+                        Comparator.nullsLast(Comparator.naturalOrder()))
+        );
+
+        return finalResults;
+    }
+
+    @GetMapping("/db/sicbo")
+    public List<SicboStatsDTO> dbSicboStats(@RequestParam(name="from")  @DateTimeFormat(pattern = "yyyy-M-d")
+                                          LocalDate fromDate, @RequestParam(name="to") @DateTimeFormat(pattern = "yyyy-M-d") LocalDate toDate) {
+        List<SicboStats> stats =  dbGameResultService.queryAllSicboStats(fromDate, toDate);
+        Map<Integer, DbTable> tableMap = dbTableService.getAllTables();
+        List<SicboStatsDTO> results = new ArrayList<>();
+        for (SicboStats stat : stats) {
+            SicboStatsDTO result = new SicboStatsDTO();
+            result.setTableId(stat.getTableId());
+            result.setTableTitle(tableMap.get(Integer.parseInt(stat.getTableId())).getTableName());
             result.setDate(stat.getDate());
             result.setTotalCount(stat.getTotalCount());
             result.setBigCount(stat.getBigCount());

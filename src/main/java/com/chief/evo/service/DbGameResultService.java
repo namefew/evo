@@ -1,15 +1,13 @@
 package com.chief.evo.service;
 
-import com.chief.evo.entity.DbColorDiskResult;
-import com.chief.evo.entity.DbRouletteResult;
-import com.chief.evo.entity.DbSicboResult;
-import com.chief.evo.entity.DbTable;
+import com.chief.evo.entity.*;
 import com.chief.evo.mapper.DbColorDiskResultMapper;
 import com.chief.evo.mapper.DbRouletteResultMapper;
 import com.chief.evo.mapper.DbSicboResultMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
 import java.util.Collections;
 import java.util.List;
 
@@ -191,4 +189,13 @@ public class DbGameResultService {
         dbColorDiskResultMapper.insertList(colorDiskResults);
         return colorDiskResults;
     }
+
+
+    public List<RouletteStats> queryAllRouletteStats(LocalDate fromDate, LocalDate toDate) {
+        return dbRouletteResultMapper.findByDate(fromDate, toDate);
+    }
+    public List<SicboStats> queryAllSicboStats(LocalDate fromDate, LocalDate toDate) {
+        return dbSicboResultMapper.findByDate(fromDate, toDate);
+    }
+
 }

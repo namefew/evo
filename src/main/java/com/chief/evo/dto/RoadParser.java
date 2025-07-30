@@ -18,7 +18,8 @@ public class RoadParser {
             return bitString.length();
         }
 
-        public int getNextInteger(int e) {
+        public Integer getNextInteger(int e) {
+            if(e+this.pointer > this.length())return null;
             int t = Integer.parseInt(this.bitString.substring(this.pointer, e+this.pointer), 2);
             this.pointer += e;
             return t;
@@ -54,8 +55,8 @@ public class RoadParser {
         }
         public static Integer parseSingle(RS rs) {
             boolean t = 1 != rs.getNextInteger(1);
-            int a = rs.getNextInteger(6);
-            return t ? null : a;
+            if(t)return null;
+            return rs.getNextInteger(6);
         }
     }
     public static class ColorDiskParser{

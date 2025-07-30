@@ -59,13 +59,13 @@ public class DBDataHandler extends TextWebSocketHandler {
                     String dataStr = jsonNode.get("data").asText();
                     ((ObjectNode)jsonNode).put("data","{}");
                     JsonNode dataNode = objectMapper.readTree(dataStr);
-                    log.info("Message : {}\n jsonData : {}\n data : {}",rootNode.toString(),jsonNode.toString(),dataNode.toString());
+                    log.info("Type : {} data : {}",DBConstant.getNameByValue( id),dataNode.toString());
                     if (id==DBConstant.TABLE_DATA_UPDATE){
                         JsonNode gameTableMap = dataNode.path("gameTableMap");
                         updateGameTableMap(gameTableMap);
                     }
                 } else {
-                    log.info("Message : {}\n jsonData : {}",rootNode.toString(),jsonNode.toString());
+                    log.info("Type : {} jsonData : {}",DBConstant.getNameByValue( id),jsonNode.toString());
                 }
 
             } else {
