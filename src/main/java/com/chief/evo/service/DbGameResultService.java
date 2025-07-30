@@ -1,8 +1,10 @@
 package com.chief.evo.service;
 
+import com.chief.evo.entity.DbColorDiskResult;
 import com.chief.evo.entity.DbRouletteResult;
 import com.chief.evo.entity.DbSicboResult;
 import com.chief.evo.entity.DbTable;
+import com.chief.evo.mapper.DbColorDiskResultMapper;
 import com.chief.evo.mapper.DbRouletteResultMapper;
 import com.chief.evo.mapper.DbSicboResultMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,10 @@ public class DbGameResultService {
 
     @Autowired
     private DbSicboResultMapper dbSicboResultMapper;
+
+    @Autowired
+    private DbColorDiskResultMapper dbColorDiskResultMapper;
+
 
     public List<DbRouletteResult> addDbRouletteResult(List<DbRouletteResult> rouletteResults, DbTable gameTable) {
         if (rouletteResults.isEmpty()) return Collections.emptyList();
@@ -128,5 +134,61 @@ public class DbGameResultService {
         // 无匹配时插入全部数据
         dbSicboResultMapper.insertList(sicboResults);
         return sicboResults;
+    }
+
+
+    public List<DbColorDiskResult> addDbColorDiskResult(List<DbColorDiskResult> colorDiskResults, DbTable gameTable) {
+        if (colorDiskResults.isEmpty()) return Collections.emptyList();
+        // Collections.reverse(colorDiskResults);
+        // 获取与传入列表数量相同的数据库最新记录（倒序）
+        List<DbColorDiskResult> latest = dbColorDiskResultMapper.findLatestByTableId(gameTable.getTableId(), colorDiskResults.size());
+        // 反转数据库记录顺序，使其变成正序（最新记录在后）
+        Collections.reverse(latest);
+        if (latest.isEmpty()) {
+            dbColorDiskResultMapper.insertList(colorDiskResults);
+            return colorDiskResults;
+        }
+
+        int matchIndex = -1;
+        int matchedLength = -1; // 记录匹配的长度
+
+        for (int i = 0; i <= latest.size(); i++) {
+            int compareLength = Math.min(latest.size() - i, colorDiskResults.size());
+
+            if (compareLength <= 0) continue;
+
+            // 直接比较元素而非创建子列表
+            boolean isMatch = true;
+            for (int j = 0; j < compareLength; j++) {
+                if (!latest.get(i + j).equals(colorDiskResults.get(j))) {
+                    isMatch = false;
+                    break;
+                }
+            }
+
+            if (isMatch) {
+                matchIndex = i;
+                matchedLength = compareLength; // 记录匹配的长度
+                break;
+            }
+        }
+
+        // 处理匹配结果
+        if (matchIndex >= 0) {
+            // 匹配上了，那么传入列表中前matchedLength个元素是已经存在的
+            if (matchedLength < colorDiskResults.size()) {
+                List<DbColorDiskResult> insertList = colorDiskResults.subList(matchedLength, colorDiskResults.size());
+                if (!insertList.isEmpty()) {
+                    dbColorDiskResultMapper.insertList(insertList);
+                }
+                return insertList;
+            } else {
+                return Collections.emptyList(); // 全部数据已存在
+            }
+        }
+
+        // 无匹配时插入全部数据
+        dbColorDiskResultMapper.insertList(colorDiskResults);
+        return colorDiskResults;
     }
 }

@@ -2,7 +2,9 @@ package com.chief.evo.websocket;
 
 import com.chief.evo.dto.DBConstant;
 import com.chief.evo.dto.RoadParser;
+import com.chief.evo.entity.DbColorDiskResult;
 import com.chief.evo.entity.DbRouletteResult;
+import com.chief.evo.entity.DbSicboResult;
 import com.chief.evo.entity.DbTable;
 import com.chief.evo.service.DbGameResultService;
 import com.chief.evo.service.DbTableService;
@@ -59,7 +61,7 @@ public class DBDataHandler extends TextWebSocketHandler {
                     JsonNode dataNode = objectMapper.readTree(dataStr);
                     log.info("Message : {}\n jsonData : {}\n data : {}",rootNode.toString(),jsonNode.toString(),dataNode.toString());
                     if (id==DBConstant.TABLE_DATA_UPDATE){
-                        JsonNode gameTableMap = jsonNode.path("gameTableMap");
+                        JsonNode gameTableMap = dataNode.path("gameTableMap");
                         updateGameTableMap(gameTableMap);
                     }
                 } else {
@@ -98,20 +100,52 @@ public class DBDataHandler extends TextWebSocketHandler {
                     JsonNode roadInfo = tableInfo.path("roadPaper");
                     List<Integer> winNumbers =RoadParser.RouletteParser.parseBoot(roadInfo.path("winNumberRoad").asText());
                     List<DbRouletteResult> resultList = new ArrayList<>();
-                    for (int i = 0; i < winNumbers.size(); i++) {
+                    for (Integer winNumber : winNumbers) {
                         DbRouletteResult result = new DbRouletteResult();
                         result.setTableId(dbTable.getTableId());
-                        result.setResult(winNumbers.get(i));
+                        result.setResult(winNumber);
                         resultList.add(result);
                     }
-                    dbGameResultService.addDbRouletteResult(resultList);
+                    dbGameResultService.addDbRouletteResult(resultList, dbTable);
                 }
             }else if(DBConstant.gameTypeId_sicbo==dbTable.getGameTypeId()){
-                //TODO
+                JsonNode tableInfo = entry.getValue();
+                if(tableInfo.has("roadPaper")) {
+                    JsonNode roadInfo = tableInfo.path("roadPaper");
+                    List<List<Integer>> resultRoads =RoadParser.SicboParser.parseBoot(roadInfo.path("resultRoad").asText());
+                    List<DbSicboResult> resultList = convertToDbSicboResults(resultRoads, dbTable);
+                    dbGameResultService.addDbSicboResult(resultList, dbTable);
+                }
             }else if(DBConstant.gameTypeId_color_disk==dbTable.getGameTypeId()){
-                //TODO
+                JsonNode tableInfo = entry.getValue();
+                JsonNode roadInfo = tableInfo.path("roadPaper");
+                List<Integer> winNumbers =RoadParser.RouletteParser.parseBoot(roadInfo.path("singlePointRoad").asText());
+                List<DbColorDiskResult> resultList = new ArrayList<>();
+                for (Integer winNumber : winNumbers) {
+                    DbColorDiskResult result = new DbColorDiskResult();
+                    result.setTableId(dbTable.getTableId());
+                    result.setResult(winNumber);
+                    resultList.add(result);
+                }
+                dbGameResultService.addDbColorDiskResult(resultList, dbTable);
+
             }
         });
+    }
+
+    private static List<DbSicboResult> convertToDbSicboResults(List<List<Integer>> resultRoads, DbTable dbTable) {
+        List<DbSicboResult> resultList = new ArrayList<>();
+        for (int i = 0; i < resultRoads.size(); i++) {
+            DbSicboResult result = new DbSicboResult();
+            result.setTableId(dbTable.getTableId());
+            result.setDice1(resultRoads.get(i).get(0));
+            result.setDice2(resultRoads.get(i).get(1));
+            result.setDice3(resultRoads.get(i).get(2));
+
+            result.setTotal(resultRoads.get(i).get(3));
+            resultList.add(result);
+        }
+        return resultList;
     }
 
     private List<DbTable> convertGameTableMapToDbTableList(JsonNode gameTableMap) {

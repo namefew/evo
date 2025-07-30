@@ -4,7 +4,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-public class DbRouletteResult {
+public class DbColorDiskResult {
     private Long id;
     private Integer tableId;
     private Integer result;
@@ -17,12 +17,11 @@ public class DbRouletteResult {
         if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        DbRouletteResult other = (DbRouletteResult) obj;
+        DbColorDiskResult other = (DbColorDiskResult) obj;
         return tableId.equals(other.tableId) &&result!=null&&
                 result.equals(other.result);
     }
     public int hashCode(){
         return tableId.hashCode() * 11 + result.hashCode();
     }
-
 }

@@ -12,4 +12,21 @@ public class DbSicboResult {
     private Integer dice3;
     private Integer total;
     private LocalDateTime createTime;
+
+    public boolean equals(Object obj){
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        DbSicboResult other = (DbSicboResult) obj;
+        return tableId.equals(other.tableId) &&dice1!=null&&dice2!=null&&dice3!=null&&
+                dice1.equals(other.dice1) &&
+                dice2.equals(other.dice2) &&
+                dice3.equals(other.dice3);
+    }
+    public int hashCode(){
+        return tableId.hashCode()  + (dice1==null?0:dice1.hashCode()*7) + (dice2==null?0:dice2.hashCode()*49) + (dice3==null?0:dice3.hashCode()*343);
+    }
 }
