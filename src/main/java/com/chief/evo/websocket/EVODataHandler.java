@@ -22,9 +22,8 @@ import com.chief.evo.entity.RouletteResult;
 import com.chief.evo.entity.SicboResult;
 import org.springframework.beans.factory.annotation.Autowired;
 @Slf4j
-public class GameDataHandler extends TextWebSocketHandler {
+public class EVODataHandler extends TextWebSocketHandler {
     
-    // 内存中维护的桌子信息 Map (id -> 桌子信息)
     private final ObjectMapper objectMapper = new ObjectMapper();
     
     // 注入Mapper
@@ -46,7 +45,8 @@ public class GameDataHandler extends TextWebSocketHandler {
 
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) {
-        String payload = message.getPayload();log.info("Received message: " + payload);
+        String payload = message.getPayload();
+        log.info("Received message: " + payload);
         try {
             JsonNode rootNode = objectMapper.readTree(payload);
             String messageType = rootNode.path("type").asText();

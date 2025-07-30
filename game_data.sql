@@ -42,3 +42,40 @@ CREATE TABLE sicbo_result (
 );
 create index idx_table_id on sicbo_result(table_id);
 create index idx_create_time on sicbo_result(create_time);
+
+DROP TABLE IF EXISTS db_tables;
+CREATE TABLE db_tables (
+    table_id INT PRIMARY KEY COMMENT '桌子ID',
+    table_name VARCHAR(255) NOT NULL COMMENT '桌子名称',
+    game_casino_id INT NOT NULL COMMENT '游戏大厅ID',
+    game_casino_name VARCHAR(255) NOT NULL COMMENT '游戏大厅名称',
+    game_type_id INT NOT NULL COMMENT '游戏类型， 轮盘：2007  骰宝：2008  色碟：2022'
+    game_type_name VARCHAR(50) NOT NULL COMMENT '游戏类型名称:轮盘，骰宝，色碟，百家乐',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 轮盘结果表
+DROP TABLE IF EXISTS db_roulette_result;
+CREATE TABLE db_roulette_result (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    table_id INT NOT NULL,
+    result INT NOT NULL COMMENT '轮盘结果数字',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP
+
+);
+create index idx_table_id on db_roulette_result(table_id);
+create index idx_create_time on db_roulette_result(create_time);
+
+-- 骰子结果表
+DROP TABLE IF EXISTS db_sicbo_result;
+CREATE TABLE db_sicbo_result (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    table_id INT NOT NULL,
+    dice1 INT NOT NULL COMMENT '骰子1点数',
+    dice2 INT NOT NULL COMMENT '骰子2点数',
+    dice3 INT NOT NULL COMMENT '骰子3点数',
+    total INT NOT NULL COMMENT '骰子点数和',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+create index idx_table_id on db_sicbo_result(table_id);
+create index idx_create_time on db_sicbo_result(create_time);

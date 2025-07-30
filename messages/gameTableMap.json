@@ -1,0 +1,5631 @@
+{
+  "gameTableMap":
+  {
+    "2753":
+    {
+      "tableId": 2753,
+      "gameCasinoId": 4,
+      "gameCasinoName": "欧洲厅",
+      "tableName": "骰宝U53",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Tài Xỉu U53"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "SicBo U53"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "サイコボウ U53"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "주사위 보 U53"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "SicBo U53"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "骰宝U53"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "骰寶U53"
+        }
+      },
+      "physicsTableNo": "U53",
+      "gameStatus": 3,
+      "tableOpen": true,
+      "gameTypeId": 2008,
+      "gameTypeName": "骰宝",
+      "dealerId": 3040,
+      "dealerName": "Pusher",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/6698bda444f4dc893f1c459b.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "UA",
+      "roundId": 316835121,
+      "countdownEndTime": 1753860757747,
+      "totalBetCountDown": 25000,
+      "serverTime": 1753860732747,
+      "tableOnline":
+      {
+        "onlineNumber": 23,
+        "totalAmount": 0
+      },
+      "goodRoads": 0,
+      "roadPaper":
+      {
+        "singleDoubleRoad": "lwYqkAAoAAkAAoAAgAAtoAgAAoAAkAAoAAgAAoAAwAAkgAttogAAoAAkAAtoAgAAtAAkgAtoAkkAttogAAoAAgAAoAAgAAtAAgAAoAAkAAoAAgAAtAAgAAtAAgAAoAAgAAACqAlI",
+        "sumValueRoad": "lwYMprsvnspsqqpsntupovltvoososvornqqutsmptpqqqrpvpuqoqmnotwtoststtqvqsnqmvmvAAyABgA=",
+        "resultRoad": "lwFIl1JMy2pmOXPZNOVMxl1JNzGnVFLKJkSVMxlQ5czXJnMrJJVQba+lIpkrXLntNoKUQVMxpRBcrHLnsqoLdWyacl5RMqjLXM7NbeYymYlZJVzWZElLKLcUTKom1bLqTLntKpMtc1IolxBUiiUzFJnKbQTs126DczWXEFTMaua3Kxq5rkrWpFF7PZeUVMxlQ5MqiTDF7PZTMZc9AEiAJAA=",
+        "beatPlateRoad": "lwYMl2Zqmy6Taml2bqdpaZKmlS5smlaVdtlLJcupulKmpS5culW3ZNl6Zctna3pTlarpkpa3Jlm2XcupXLaklypJTpOm52265pcqarrlq7JakvaXqmlSZZMvaU8uAAyABgA=",
+        "bigSmallRoad": "lwYqgAAtoAgAAoAAgAAoAAkgAoAAgAAtAAkAAwAAgAAtAAkAAoAAgAAtAAgAAoAAkgAtoAkAAoAAkkAoAAgAAoAAgAAoAAkkktoAgAAttogAAoAAgAAoAAkgAoAAgAAoAAASmAFQ",
+        "resultOddEvenRoad": "lwYMl1ITMtKmYuXPSTThUzFl1ITcxadUNLKGZEhUzFlQ4XM1MmcsrJCVUDtr6lIoZK1MuelNoGlEDUzFpRA3KxcuekqoG3VpJpwl5QzKoctcs7NS3mLKZhlZIVc1JkSFLKG3FDMqhm1aS6kMuelKpDLXLUihlxA1IoZTMNJnCm0DOzU26C3M1JcQNTMWrmpcrFq5qZK1KkUN7PSXlDUzFlQ4TKoZMMN7PSUzDlz0AAyABgA="
+      },
+      "bootReport":
+      {
+        "totalCount": 72,
+        "items":
+        [
+          {
+            "betPointId": 3020,
+            "betPointName": "大",
+            "winCount": 33
+          },
+          {
+            "betPointId": 3019,
+            "betPointName": "小",
+            "winCount": 38
+          },
+          {
+            "betPointId": 3022,
+            "betPointName": "围骰",
+            "winCount": 1
+          },
+          {
+            "betPointId": 3017,
+            "betPointName": "单",
+            "winCount": 33
+          },
+          {
+            "betPointId": 3018,
+            "betPointName": "双",
+            "winCount": 38
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "u053;u053h",
+      "lastUpdateTableCacheTime": 1753860757760,
+      "goodRoadPoints":
+      [],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889ca6844f44a2b9f90940d.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889ca6b44f44a2b9f90940e.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753845114202,
+      "roadPaperVersion": 316834852,
+      "bootReportVersion": 316834852,
+      "bootNumberLimitListVersion": 1584175290,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c78e44f44a2b9f9093b8.jpg",
+      "dealerNameLanguageMap":
+      {
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Pusher"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Pusher"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2433":
+    {
+      "tableId": 2433,
+      "gameCasinoId": 7,
+      "gameCasinoName": "美洲厅",
+      "tableName": "闪电百家乐M34",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Bạc Tia Chớp M34"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "Ltn.Bac M34"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "雷バカラ M34"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "번개 바카라 M34"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Ltn.Bac M34"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "闪电百家乐M34"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "閃電百家樂M34"
+        }
+      },
+      "physicsTableNo": "M34",
+      "gameStatus": 4,
+      "tableOpen": true,
+      "gameTypeId": 2034,
+      "gameTypeName": "闪电百家乐",
+      "dealerId": 1750646869,
+      "dealerName": "Caro",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/6858c05944f4d44b59f41507.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "CO",
+      "roundId": 316835057,
+      "countdownEndTime": 1753860738644,
+      "totalBetCountDown": 20000,
+      "serverTime": 1753860718644,
+      "bootNo": "B0M342573001CP-A035",
+      "tableOnline":
+      {
+        "onlineNumber": 8,
+        "totalAmount": 0
+      },
+      "goodRoads": 0,
+      "roadPaper":
+      {
+        "winPointPlateRoad": "HgYGqlYuOAmlgoGAslGulwwGQxFwul0yFkymQtGAvGQulwwGUsgAAAAAAAAQWAgo",
+        "bigPairRoad": "HgYNogAAAAAAAgMAAAAAAAoAAAAAAAAgEAgAAAAAoFCoAAAAAgEAgkAAAAoFAAAAAAAgAAAAAAAAoFAAAAAAAgkEgAAAAAoAAAAAAAAgEAAAAAAAoFAAAAAAAAgyABo=",
+        "bigPairRoad3": "HgYNogAAAAAAAAAAAAgIIAAAAAAAAAAAoAAAAAAAAAAAAAgAIACAAAAAAAAAoAKECgAAAAAAAAgAIACCAgAAAAAAoAKAAAAAAAAAAAgAAAAAAAAAAAAAoAKAAAAAAAAAAAggIICAAAAAAAAAoAAAAAAAAAAAAAgAIAAAAAAAAAAAoAKAAAAAAAAAAAAgyABo",
+        "winLoseRoad": "HgYUoAAAAAAwAAAAAAiQAAAAAoAAAAAAgQIAAAAoWKAAAAgQIAAAAwAAAAAAgAAAAAAoUAAAAAgAAAAAAoUAAAAAgAAAAAAwAAAAAAgAAAAAAwAAAAAAgAAAAAAoAAAAAAgQAAAAAoUAAAAAAhOACgA=",
+        "cockroachPig": "FQYOgAwAgAwAqA8AgAwAoAwAgAwAoA/wBA2ABwA=",
+        "smallRoad": "FgYO8AqAwAgA8AoAwAoA8AgAwAoAwAoAAA6BBoA=",
+        "lightningBigPairRoad": "HgYNogAAAAAAAAAgJAAAAAAAAAoCAAAAAAAAAgBACAAAAAAAoBQigAAAAAAgBACCEAAAAAoBQAAAAAAAAgAAAAAAAAAAoBQAAAAAAAAgjBCAAAAAAAoAAAAAAAAAAgBAAAAAAAAAoBQAAAAAAAAAgyABoA==",
+        "bigEyeBoy": "GAYKqgwAgA/8oAwAqgwAqowAAAoAhMA=",
+        "lightningBeadPlateRoad": "HgYGoA4A4gMAGgJABgAwAaANgGgDABgAwAcAMAGgDQBgA0AaAMAXADABwAwAaAMAGADQBoAgAAAAAAAAAAAQWAgo"
+      },
+      "bootReport":
+      {
+        "totalCount": 31,
+        "items":
+        [
+          {
+            "betPointId": 5751,
+            "betPointName": "庄",
+            "winCount": 12
+          },
+          {
+            "betPointId": 5752,
+            "betPointName": "闲",
+            "winCount": 15
+          },
+          {
+            "betPointId": 5753,
+            "betPointName": "和",
+            "winCount": 4
+          },
+          {
+            "betPointId": 5754,
+            "betPointName": "庄对",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5755,
+            "betPointName": "闲对",
+            "winCount": 1
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "m034;m034h;m034s",
+      "lastUpdateTableCacheTime": 1753860758614,
+      "goodRoadPoints":
+      [],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9c544f44a2b9f9093d7.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9c544f44a2b9f9093d7.jpg",
+      "tableColour": 4,
+      "tableInfoVersion": 1753749329910,
+      "roadPaperVersion": 316835057,
+      "bootReportVersion": 316835057,
+      "bootNumberLimitListVersion": 1724130901,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9c544f44a2b9f9093d7.jpg",
+      "dealerNameLanguageMap":
+      {
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Caro"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Caro"
+        }
+      },
+      "joinMode": 1,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2566":
+    {
+      "tableId": 2566,
+      "gameCasinoId": 5,
+      "gameCasinoName": "国际厅",
+      "tableName": "极速百家乐C18",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Siêu tốc C18"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "SPD C18"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "極速バカラ  C18"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "스피드 C18"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "SPD C18"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "极速百家乐C18"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "極速百家樂C18"
+        }
+      },
+      "physicsTableNo": "C18",
+      "gameStatus": 3,
+      "tableOpen": true,
+      "gameTypeId": 2002,
+      "gameTypeName": "极速百家乐",
+      "dealerId": 3019,
+      "dealerName": "Tara",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/668fc7ae44f4dc893f1abd0d.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "PH",
+      "roundId": 316835177,
+      "countdownEndTime": 1753860758638,
+      "totalBetCountDown": 15000,
+      "serverTime": 1753860743638,
+      "bootNo": "B0C1825730015P-GP232",
+      "tableOnline":
+      {
+        "onlineNumber": 7,
+        "totalAmount": 0
+      },
+      "goodRoads": 0,
+      "roadPaper":
+      {
+        "bigRoad": "MQYZoAAAAAAgAAAAAAoUKAAAAgQAAAAAogAAAAAgQAAAAAoUKAAAAgAAAAAAoUKFAAAgQAAAAAoUKAAAAgQAAAAAoAAAAAAgAAAAAAoUAAAAAgAAAAAAoAAAAAAgQIEAAAogAAAAAgQIIAAAoAAAAAAgQIAAAAoUAAAAAgAAAAAAoAAAAAAARiADIA==",
+        "newBigPairRoad2": "MQYZoEAAAAAAAAAAAAgBAAAAAAAAAAAAoEOCGgAAAAAAAAgEIEAAAAAAAAAAo0AAAAAAAAAAAAgAIBAAAAAAAAAAoAKBCgQAAAAAAAgEAAAAAAAAAAAAoAKCCgAoEAAAAAgAIBAAAAAAAAAA4AaBCgAAAAAAAAgAIAQAAAAAAAAAoIAAAAAAAAAAAAgBAAAAAAAAAAAAoQKAAAAAAAAAAAgEAAAAAAAAAAAAoAAAAAAAAAAAAAgEIASAEgEAAAAAokAAAAAAAAAAAAgEICCCQAAAAAAAoEAAAAAAAAAAAAgIIASAAAAAAAAAoAKAAAAAAAAAAAgAAAAAAAAAAAAAoEAAAAAAAAAAAAARiADI",
+        "winPointPlateRoad": "MQYJulwwltumQqWGtFgyF0wmUyF0uuEwlgwFsylUsFwqtwo2UyF0yFwuGQyloyExwEIylhuFgolEsGEAAAAAAAgiBBA=",
+        "beatPlateRoad2": "MQYJoAghoA6LoAgAkAsAwAgAgAoAoAoAgAoAqAoAoAgAgA4LoAoAgAgiqAghsAoAgAoAgAgighgAoAwAgAiAgAwAoAiAghgAoAoAgAoAAAAAAAAAAgiBBAA=",
+        "bigPairRoad2": "MQYZoAAAAAAAAAAAAgCAAAAAAAAAAAoAcEaAAAAAAAAgAQIAAAAAAAAAowAAAAAAAAAAAgAQAAAAAAAAAAoAUAKAAAAAAAAgAAAAAAAAAAAAoAUEKAFAAAAAAgAQAAAAAAAAAA4A0AKAAAAAAAAgAQBAAAAAAAAAoIAAAAAAAAAAAgCAAAAAAAAAAAoQUAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgAQBIAkAAAAAAogAAAAAAAAAAAgAQEIIAAAAAAAoAAAAAAAAAAAAgIQBIAAAAAAAAoAUAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAARiADI=",
+        "bigPairRoad3": "MQYZoAAAAAAAAAAAAAgAQAAAAAAAAAAAoAOCugAAAAAAAAgAIEAAAAAAAAAAowAAAAAAAAAAAAgAIAAAAAAAAAAAoAKACgAAAAAAAAgAAAAAAAAAAAAAoAKCCgAoAAAAAAgAIAAAAAAAAAAA4C6ACgAAAAAAAAgAIAIAAAAAAAAAoIAAAAAAAAAAAAgAQAAAAAAAAAAAoQKAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAIAKABgAAAAAAogAAAAAAAAAAAAgAICCCAAAAAAAAoAAAAAAAAAAAAAgIIAGAAAAAAAAAoAKAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAARiADI",
+        "winLoseRoad": "MQYcoAAAAAAgAAAAAAoVKAAAAgSAAAAAsAAAAAAwAAAAAAgQAAAAAoUKAAAAgAAAAAAoVKFAAAgQAAAAAoUKAAAAgQAAAAAqAAAAAAgAAAAAAsUAAAAAgAAAAAAoAAAAAAgQIEAAAoAAAAAAwAAAAAAgRIAAAAwAAAAAAoAAAAAAiQIAAAAoUAAAAAgAAAAAAoAAAAAAARuADgA=",
+        "dragonBonusPlateRoad2": "MQYJkAYIdAFouQBgAyAbAKAEADABoA0AaAMAEgCUBoA0AQAMAFgvQBoAgAYIpQECGYBoAwASAMAGCKBDgA0AUAMAEIDABQA0AYgIEOACQBIAgAaAAAAAAAAAAAgiBBA=",
+        "bigSmallPlateRoad": "MQYJiUIl2pApRrFCBUiRIFSrUiUIFyJUoUKtCtUgVIFChAiSIFGBYiUaFCpUoRAAAAAAgiBBAA==",
+        "newBigPairRoa3": "MQYZoEAAAAAAAAAAgAAAAAAAAAAAoE4JoAAAAAAAgEgQAAAAAAAAo0AAAAAAAAAAgAgEAAAAAAAAoAoEoEAAAAAAgEAAAAAAAAAAoAoIoAoEAAAAgAgEAAAAAAAA4BoEoAAAAAAAgAgAAAAAAAAAoIAAAAAAAAAAgAAAAAAAAAAAoQoAAAAAAAAAgEAAAAAAAAAAoAAAAAAAAAAAgEgAgAgEAAAAokAAAAAAAAAAgEgIgkAAAAAAoEAAAAAAAAAAgIgAgAAAAAAAoAoAAAAAAAAAgAAAAAAAAAAAoEAAAAAAAAAAARiADIA=",
+        "bigPairRoad": "MQYZoAAAAAAAAgAAAAAAAAoHBoAAAAAgECAAAAAAowAAAAAAAgEAAAAAAAoFAoAAAAAgAAAAAAAAoFBoFAAAAgEAAAAAAA4FAoAAAAAgEAAAAAAAoIAAAAAAAgAAAAAAAAoVAAAAAAAgAAAAAAAAoAAAAAAAAgEAgEAAAAogAAAAAAAgEBggAAAAoAAAAAAAAgMAgAAAAAoFAAAAAAAgAAAAAAAAoAAAAAAAAARiADI=",
+        "dragonBonusPlateRoad": "MQYJkw0tkwy2ogw000wkl00gws00gwlgm0wkwwgw0owhwo0xgwkkg0AAAAAgiBBA",
+        "beatPlateRoad": "MQYJpCnaQlbEIUpSFK0pCHKUhCsLUhSEIQpiEYYpGEKUhQAAAAgiBBA=",
+        "smallRoad": "KwYVgAwAqg8AgAwAoA8Aqg8AgA8AqgwAoA8AgA/AgA/wqAABWBig",
+        "cockroachPig": "KAYcoA8AgAwAoA8AgAwAgAwAoAwAgAwAqA/8gAwAgAwAgAwAqAwAgAwAgAwAARuADgA=",
+        "bigEyeBoy": "LAYcwAgAwAgAwAqgwAqg8AgAwAgAwAoAwAoAwAqAwAgA8AqAwAqAwAgAwAoAAhsADkA=",
+        "newBigPairRoad": "MQYZoEAAAAAAAAgAAAAAAAAAoHgqAAAAAAgGBAAAAAAAo0AAAAAAAAgCAQAAAAAAoCgaBAAAAAgEAAAAAAAAoCgqAoEAAAgCAQAAAAAA4CgaAAAAAAgCAAAAAAAAoIAAAAAAAAgAAAAAAAAAoSgAAAAAAAgEAAAAAAAAoAAAAAAAAAgGAIAgEAAAokAAAAAAAAgGAoJAAAAAoEAAAAAAAAgKAIAAAAAAoCgAAAAAAAgAAAAAAAAAoEAAAAAAAAARiADI"
+      },
+      "bootReport":
+      {
+        "totalCount": 50,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 24
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 24
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 23
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 3
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 3
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 5
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 6
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 4
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 0
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "c018;c018h;c018s",
+      "lastUpdateTableCacheTime": 1753860758645,
+      "goodRoadPoints":
+      [],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c76344f44a2b9f9093b4.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c76344f44a2b9f9093b4.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753749329872,
+      "roadPaperVersion": 316835030,
+      "bootReportVersion": 316835030,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c76344f44a2b9f9093b4.jpg",
+      "dealerNameLanguageMap":
+      {
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Tara"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2446":
+    {
+      "tableId": 2446,
+      "gameCasinoId": 12,
+      "gameCasinoName": "越南厅",
+      "tableName": "经典百家乐J05",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Cổ Điển J05"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "CLA J05"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "クラシック J05"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "클래식 J05"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "CLA J05"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "经典百家乐J05"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "經典百家樂J05"
+        }
+      },
+      "physicsTableNo": "J05",
+      "gameStatus": 3,
+      "tableOpen": true,
+      "gameTypeId": 2001,
+      "gameTypeName": "经典百家乐",
+      "dealerId": 3857,
+      "dealerName": "Jeanette",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/67d1151a44f4821f5862832d.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "KS",
+      "roundId": 316835117,
+      "countdownEndTime": 1753860757188,
+      "totalBetCountDown": 25000,
+      "serverTime": 1753860732188,
+      "bootNo": "B0J0525730012P-JS069",
+      "tableOnline":
+      {
+        "onlineNumber": 13,
+        "totalAmount": 0
+      },
+      "goodRoads": 0,
+      "roadPaper":
+      {
+        "newBigPairRoad2": "BQYE4AgAAAAAAAAAAAgEAAAAAAAAAAAAoMAAAAAAAAAAAAgAIECAAAAAAAAAAASBgYA=",
+        "bigRoad": "BQYEoAAAAAAgAAAAAAoAAAAAAgQIAAAAAASBgYA=",
+        "winPointPlateRoad": "BQYBtmAyuQsVAAAGAAI=",
+        "beatPlateRoad2": "BQYB4UgAqAgAkAgAAAGAAIA=",
+        "bigPairRoad2": "BQYE4BAAAAAAAAAAAgAAAAAAAAAAAAoIAAAAAAAAAAAgAQIIAAAAAAAAAASBgYA=",
+        "bigPairRoad3": "BQYE4FAAAAAAAAAAAAgAAAAAAAAAAAAAoIAAAAAAAAAAAAgAIECAAAAAAAAAAASBgYA=",
+        "winLoseRoad": "BQYEoAAAAAAgAAAAAAqAAAAAAgSIAAAAAASBgYA=",
+        "dragonBonusPlateRoad2": "BQYBsKYANQEACIBAAAAGAAI=",
+        "newBigPairRoa3": "BQYE4CAAAAAAAAAAgEAAAAAAAAAAoMAAAAAAAAAAgAgQgAAAAAAAAASBgYA=",
+        "bigSmallPlateRoad": "BQYBuQItClQAAGAAIA==",
+        "dragonBonusPlateRoad": "BQYBsw1gigAAGAAI",
+        "bigPairRoad": "BQYE4AAAAAAAAgAAAAAAAAoIAAAAAAAgECgAAAAAAASBgYA=",
+        "beatPlateRoad": "BQYB5CsJQAAGAAI=",
+        "smallRoad": "AgYDwAgAwAAAMAgU",
+        "cockroachPig": "AQYCgAwAAAIAgMA=",
+        "bigEyeBoy": "AwYD8AgAwAAAMAgU",
+        "newBigPairRoad": "BQYE4AAAAAAAAAgEAAAAAAAAoMAAAAAAAAgCBIAAAAAAAASBgYA="
+      },
+      "bootReport":
+      {
+        "totalCount": 6,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 2
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 2
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 4
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 0
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 1
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 1
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 0
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "j005;j005h;j005s",
+      "lastUpdateTableCacheTime": 1753860757197,
+      "goodRoadPoints":
+      [],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c69744f4c717f69f4051.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c69744f4c717f69f4051.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753749327790,
+      "roadPaperVersion": 316834896,
+      "bootReportVersion": 316834896,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c69744f4c717f69f4051.jpg",
+      "dealerNameLanguageMap":
+      {
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Jeanette"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Jeanette"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2639":
+    {
+      "tableId": 2639,
+      "gameCasinoId": 8,
+      "gameCasinoName": "新旗舰厅",
+      "tableName": "极速百家乐B15",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Siêu tốc B15"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "SPD B15"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "極速バカラ B15"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "스피드 B15"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "SPD B15"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "极速百家乐B15"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "極速百家樂B15"
+        }
+      },
+      "physicsTableNo": "B15",
+      "gameStatus": 3,
+      "tableOpen": true,
+      "gameTypeId": 2002,
+      "gameTypeName": "极速百家乐",
+      "dealerId": 4095,
+      "dealerName": "Laurel",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/6850065a44f4632bd2144718.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "PH",
+      "roundId": 316835166,
+      "countdownEndTime": 1753860757094,
+      "totalBetCountDown": 15000,
+      "serverTime": 1753860742094,
+      "bootNo": "B0B1525730017P-X143",
+      "tableOnline":
+      {
+        "onlineNumber": 94,
+        "totalAmount": 0
+      },
+      "goodRoads": 1,
+      "roadPaper":
+      {
+        "newBigPairRoad2": "LAYTgoIASBAgAIIAAAoEKADhBAAAAAAAgAIBCAwgEAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoEKAAAAAAAAAAAgAAAAAAAAAAAAAoEKAAAAAAAAAAAgAIBCAEAAAAAAAowAAAAAAAAAAAAgAAAAAAAAAAAAAoEKAAAAAAAAAAAgAAAAAAAAAAAAAoEAAAAAAAAAAAAgAIBAAAAAAAAAAoEAAAAAAAAAAAAgIAAAAAAAAAAAAokKACgQAAAAAAAgAIASAAgEIACAEABOCiY",
+        "bigRoad": "LAYTgwIECCAoUKAAAAgQIEAAAoAAAAAAgAAAAAAoUAAAAAgAAAAAAoUAAAAAgQIAAAAogAAAAAgAAAAAAoUAAAAAgAAAAAAoAAAAAAgQAAAAAoAAAAAAgAAAAAAo0KAAAAgQIECBAABOCiY=",
+        "winPointPlateRoad": "LAYIoOYuESsEQnGEiluiGQwOQukwymUyGEumAyFwu14yGEwlgylgyF0oOUzGEwmQuFQwFguAAAAAAweBg4A=",
+        "beatPlateRoad2": "LAYIiAwAgikAgAgAwAoAoA8LgAgAiAgAoAgAoAoAgAoAoAgAgAghsAwAgAoAoAgAoAgAgAoAiAoAwAoAoAgAghgAgAgAghAAAAAAAweBg4A=",
+        "bigPairRoad2": "LAYTgoQBIEEACCAAAoAUAOEIAAAAAAgAQAICEAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAoAUAAAAAAAAAAgAAAAAAAAAAAAoAUAAAAAAAAAAgAQAIAgAAAAAAowAAAAAAAAAAAgAAAAAAAAAAAAoAUAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgAQAAAAAAAAAAoAAAAAAAAAAAAgIAAAAAAAAAAAogUAKAAAAAAAAgAQBIAEACABAEABOCiYA==",
+        "bigPairRoad3": "LAYTgoIAKBAgAIIAAAoAKADhLAAAAAAAgAIACAggAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoAKAAAAAAAAAAAgAAAAAAAAAAAAAoAKAAAAAAAAAAAgAIACABAAAAAAAowAAAAAAAAAAAAgAAAAAAAAAAAAAoAKAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAIAAAAAAAAAAAoAAAAAAAAAAAAAgIAAAAAAAAAAAAogKACgAAAAAAAAgAIAGAAgAIACABABOCiY",
+        "winLoseRoad": "LAYZiAAAAAAwAAAAAAgSIEAAAwAAAAAAoULAAAAgQIkAAAoAAAAAAgAAAAAAoUAAAAAgAAAAAAoUAAAAAgQIAAAAsAAAAAAwAAAAAAgAAAAAAoUAAAAAgAAAAAAoAAAAAAgQAAAAAoAAAAAAiAAAAAAoAAAAAAwAAAAAAoUAAAAAgQIECBAABmCjIA==",
+        "dragonBonusPlateRoad2": "LAYIhAUAIEUQCABAAoAaAJAFwuABgAxAYAJAEADQBoAgAaANAEADABghmAUAMAGgCQBAA0AYAMAEgDEBoAoASANAEADBDAAwAYAMEIAAAAAAAweBg4A=",
+        "newBigPairRoa3": "LAYTgogAgQgAggAAoEoA4RAAAAAAgAgEgMgEAAAAoAAAAAAAAAAAgAAAAAAAAAAAoEoAAAAAAAAAgAAAAAAAAAAAoEoAAAAAAAAAgAgEgAAAAAAAowAAAAAAAAAAgAAAAAAAAAAAoEoAAAAAAAAAgAAAAAAAAAAAoEAAAAAAAAAAgAgEAAAAAAAAoEAAAAAAAAAAgIAAAAAAAAAAokoAoEAAAAAAgAgAgAgEgAgAABOCiYA=",
+        "bigSmallPlateRoad": "LAYIoyKFKhQsRKl6hAgwKlCJUoRKlCBQrSKESpQiUIESjEkVIlChQgUKAAAAAweBg4A=",
+        "dragonBonusPlateRoad": "LAYIhogiggo0kugwxwkg00g00gwwmow0kg0wwkx0ok0gwgwwwAAAAweBg4A=",
+        "bigPairRoad": "LAYTgsAgUAggAoFA4QAAAAgEAgMAAAAoAAAAAAAAgAAAAAAAAoFAAAAAAAgAAAAAAAAoFAAAAAAAgEAgAAAAAowAAAAAAAgAAAAAAAAoFAAAAAAAgAAAAAAAAoAAAAAAAAgEAAAAAAAoAAAAAAAAgIAAAAAAAolAoAAAAAgEAgEAgEAABOCiYA==",
+        "beatPlateRoad": "LAYIjiEoQxSnoQjCkKUhSkIQtiFKQpCFI0xSkIQhCAAAAweBg4A=",
+        "smallRoad": "HwYN/Aqo/AgAwAqowAqAwAoAwAoA/wAA0CBk",
+        "cockroachPig": "GwYOoAwAgAwAoAwAoAwAgAwAgA//qD/wAA4CBsA=",
+        "bigEyeBoy": "IgYT8AgA8AqAwAqowAqAwAqAwAqAwAgAwAgA8AgA8AABMBCU",
+        "newBigPairRoad": "LAYTgqAIEgCCAAoGgOEAAAAAgCAYDgEAAAoAAAAAAAAAgAAAAAAAAAoGgAAAAAAAgAAAAAAAAAoGgAAAAAAAgCAYAAAAAAowAAAAAAAAgAAAAAAAAAoGgAAAAAAAgAAAAAAAAAoEAAAAAAAAgCAQAAAAAAoEAAAAAAAAgIAAAAAAAAomgKBAAAAAgCAIAgGAIAABOCiY"
+      },
+      "bootReport":
+      {
+        "totalCount": 45,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 16
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 16
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 25
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 4
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 3
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 3
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 4
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 3
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 0
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "b015;b015h;b015s",
+      "lastUpdateTableCacheTime": 1753860757129,
+      "goodRoadPoints":
+      [
+        {
+          "goodRoadType": 1,
+          "goodRoadFlag": true,
+          "betPoint": true,
+          "putPoint": true,
+          "sort": 2,
+          "num": 6
+        }
+      ],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9f444f4c717f69f40e3.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9f444f4c717f69f40e3.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753749327440,
+      "roadPaperVersion": 316835004,
+      "bootReportVersion": 316835004,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9f444f4c717f69f40e3.jpg",
+      "dealerNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Laurel"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "Laurel"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "Laurel"
+        },
+        "alb":
+        {
+          "languageCode": "alb",
+          "content": "Laurel"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "Laurel"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Laurel"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Laurel"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Laurel"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2710":
+    {
+      "tableId": 2710,
+      "gameCasinoId": 12,
+      "gameCasinoName": "越南厅",
+      "tableName": "经典百家乐J19",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Cổ Điển J19"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "CLA J19"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "クラシック J19"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "클래식 J19"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "CLA J19"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "经典百家乐J19"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "經典百家樂J19"
+        }
+      },
+      "physicsTableNo": "J19",
+      "gameStatus": 2,
+      "tableOpen": true,
+      "gameTypeId": 2001,
+      "gameTypeName": "经典百家乐",
+      "dealerId": 3751,
+      "dealerName": "Venus",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/67afeeff44f4821f5860cc53.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "VN",
+      "roundId": 316835257,
+      "countdownEndTime": 1753860782428,
+      "totalBetCountDown": 25000,
+      "serverTime": 1753860757428,
+      "bootNo": "B0J1925730008P-JS501",
+      "tableOnline":
+      {
+        "onlineNumber": 20,
+        "totalAmount": 0
+      },
+      "goodRoads": 9,
+      "roadPaper":
+      {
+        "newBigPairRoad2": "MwYXgAIACAQAAAAAAAoAAAAAAAAAAAAAgAIAQAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoEAAAAAAAAAAAAgAIBCAQgEAAAAAoQAAAAAAAAAAAAgAIASAQAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoEAAAAAAAAAAAAgEAAAAAAAAAAAAoEAAAAAAAAAAAAggIFCAQgQAAAAAoIAAAAAAAAAAAAgEAAAAAAAAAAAAogOAEAAAAAAAAAgAIBAAAAAAAAAAoEKLAAAAAAAAAAgAIICAAgYAAAAA4AqCCgQAAAAAAAgAIICCggMIEAAAABeCiw",
+        "bigRoad": "MwYXgQIAAAAoAAAAAAgQAAAAAoAAAAAAgAAAAAAoAAAAAAgQIEAAAoAAAAAAgQIAAAAoAAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgwIEAAAoAAAAAAgAAAAAAo0AAAAAgQAAAAAoUQAAAAgQYEAAAoUKAAAAgQYMCAAABeCiw=",
+        "winPointPlateRoad": "MwYJyGAwGUoFwumQymQwGAwGWwFwyF0yGUwGUyGYwWQmVVwFUxNssGQwmFtFQyF4yGTtlFwlgsFosNowMyAAABAiCBA=",
+        "beatPlateRoad2": "MwYJgAgAgAoAgAghoAgAoAgAgAgAgAsAgAghgAoAgAoAgAoAgAwAkAgAkAqAgAoAyA4LgAgAoAqAwAgAgAwAgAmA4UqAoAgAgAwAiAwAiAkAAAAABAiCBAA=",
+        "bigPairRoad2": "MwYXgAQAIAAAAAAAAoAAAAAAAAAAAAgAQBAAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgAQAIAEAAAAAAoQAAAAAAAAAAAgAQBIAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAggQIIAECAAAAAoIAAAAAAAAAAAgAAAAAAAAAAAAogcAQAAAAAAAAgAQAAAAAAAAAAoAUUAAAAAAAAAgAQQIAEDAAAAA4BUEKAAAAAAAAgAQQIKEBCBAAAABeCiwA==",
+        "bigPairRoad3": "MwYXgAIACAAAAAAAAAoAAAAAAAAAAAAAgAIAEAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAIACAAgAAAAAAoQAAAAAAAAAAAAgAIAGAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAggIECAAgQAAAAAoIAAAAAAAAAAAAgAAAAAAAAAAAAAogOAsAAAAAAAAAgAIAAAAAAAAAAAoAKKAAAAAAAAAAgAIICAAgYAAAAA4FKCCgAAAAAAAAgAIICCggIIEAAAABeCiw",
+        "winLoseRoad": "MwYigQIAAAAoAAAAAAgQAAAAAoAAAAAAgAAAAAAoAAAAAAgQIEAAAsAAAAAAgQIAAAAoAAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgAAAAAAwAAAAAAkQJAAAAqAAAAAAgAAAAAAoAAAAAAyAAAAAAoAAAAAAgQAAAAAoVAAAAAwAAAAAAgQAAAAAwAAAAAAgTAAAAAoVKAAAAgQAAAAAwAAAAAAiAAAAAAwAAAAAAiSAAAAAACKBEI",
+        "dragonBonusPlateRoad2": "MwYJgAQAMAEgCABAh0AYANAGADABgAwATAIAGCHABIAgAaAMAGgDABQAyAYAIgEoDABoApAeC8AGADQBqAoAYAMAFACABmAsKSgNAEACABQAhAUAMQEQAAAAABAiCBA=",
+        "newBigPairRoa3": "MwYXgAgAgEAAAAAAoAAAAAAAAAAAgAgAAAAAAAAAoAAAAAAAAAAAgAAAAAAAAAAAoEAAAAAAAAAAgAgEgEgEAAAAoQAAAAAAAAAAgAgAgEAAAAAAoAAAAAAAAAAAgAAAAAAAAAAAoEAAAAAAAAAAgEAAAAAAAAAAoEAAAAAAAAAAgggUgEgQAAAAoIAAAAAAAAAAgEAAAAAAAAAAog4BAAAAAAAAgAgEAAAAAAAAoEosAAAAAAAAgAgggAgYAAAA4CoIoEAAAAAAgAgggogMgQAAABeCiwA=",
+        "bigSmallPlateRoad": "MwYJoUIFShQqUIlCBAgVqFCBUoRIEShIhQKVWBUk3KECJFkUKFihTuVYlChYo2INIAABAiCBAA==",
+        "dragonBonusPlateRoad": "MwYJggwkgg0w0wwwwmgwwkg0w0woywilw0p8ww01owwogzsl0ggohoxiAABAiCBA",
+        "bigPairRoad": "MwYXgEAgAAAAAoAAAAAAAAgEAAAAAAAoAAAAAAAAgAAAAAAAAoAAAAAAAAgEAgEAAAAoQAAAAAAAgEAgAAAAAoAAAAAAAAgAAAAAAAAoAAAAAAAAgAAAAAAAAoAAAAAAAAgkCgECAAAoIAAAAAAAgAAAAAAAAonAAAAAAAgEAAAAAAAoFFAAAAAAgEEgEDAAA4FBoAAAAAgEEgsBgQAABeCiwA==",
+        "beatPlateRoad": "MwYJhCFIQpCkIQhaEIUhSFIYlCVYUzyEKVxCGIT5WkIYjiMgABAiCBA=",
+        "smallRoad": "KAYawAgAwAgAwAgA8AgA/AgAwAgA/AgA8AgAwAqo/AgAwAgAwAoA/AgAARkADUA=",
+        "cockroachPig": "JgYagAwAoA8AgAwAgAwAoAwAgA8AgA8AgA/AqowAgAwAgAwAoAwAgA8AABoBDMA=",
+        "bigEyeBoy": "KQYWqg8AgA8AqAwAoA/wgA8AoAwAoA/8gAwAgA8AgA8AgAwAABYAisA=",
+        "newBigPairRoad": "MwYXgCAIBAAAAAoAAAAAAAAAgCAAAAAAAAoAAAAAAAAAgAAAAAAAAAoEAAAAAAAAgCAYBgEAAAoQAAAAAAAAgCAIBAAAAAoAAAAAAAAAgAAAAAAAAAoEAAAAAAAAgEAAAAAAAAoEAAAAAAAAgiBYBgQAAAoIAAAAAAAAgEAAAAAAAAojgAAAAAAAgCAQAAAAAAoGiwAAAAAAgCCIAgYAAA4CgqBAAAAAgCCIKgOBAAABeCiw"
+      },
+      "bootReport":
+      {
+        "totalCount": 52,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 15
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 15
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 31
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 6
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 5
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 7
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 0
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "tableAnchorId": 1751446193038,
+      "anchorLanguage": 3,
+      "anchorNameMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "珂萱"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "珂萱"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "珂萱"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "珂萱"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Venus"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "珂萱"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "珂萱"
+        }
+      },
+      "tableAnchorHeadPictureUrl": "https://activitymanager.werhliuich.com/pre/casino-manage/anchorimage/686e86e744f44a2b9f8c8ef0.png",
+      "tableAnchorName": "珂萱",
+      "videoUrl": "j019;j019h;j019s",
+      "lastUpdateTableCacheTime": 1753860757450,
+      "goodRoadPoints":
+      [
+        {
+          "goodRoadType": 1,
+          "goodRoadFlag": true,
+          "betPoint": true,
+          "putPoint": true,
+          "sort": 2,
+          "num": 5
+        },
+        {
+          "goodRoadType": 11,
+          "goodRoadFlag": true,
+          "betPoint": false,
+          "putPoint": false,
+          "sort": 7
+        },
+        {
+          "goodRoadType": 9,
+          "goodRoadFlag": true,
+          "betPoint": false,
+          "putPoint": false,
+          "sort": 8
+        }
+      ],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889bd4344f44a2b9f9091fe.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889bd4344f44a2b9f9091fe.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753855071513,
+      "roadPaperVersion": 316834983,
+      "bootReportVersion": 316834983,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889bd4344f44a2b9f9091fe.jpg",
+      "dealerNameLanguageMap":
+      {
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Venus"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "珂萱"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "珂萱"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "deskVideo": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2199":
+    {
+      "tableId": 2199,
+      "gameCasinoId": 12,
+      "gameCasinoName": "越南厅",
+      "tableName": "主播百家乐L10",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Bac MC L10"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "ANC L10"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "アンカー L10"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "BJ바카라 L10"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "ANC L10"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "主播百家乐L10"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "主播百家樂L10"
+        }
+      },
+      "physicsTableNo": "L10",
+      "gameStatus": 4,
+      "tableOpen": true,
+      "gameTypeId": 2030,
+      "gameTypeName": "主播百家乐",
+      "dealerId": 4049,
+      "dealerAccount": "250",
+      "dealerName": "DOTTIE",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/666fd67644f4dc893f15b98c.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "VN",
+      "roundId": 316835056,
+      "countdownEndTime": 1753860743166,
+      "totalBetCountDown": 25000,
+      "serverTime": 1753860718166,
+      "bootNo": "B0L1025730008P-JS189",
+      "tableOnline":
+      {
+        "onlineNumber": 17,
+        "totalAmount": 0
+      },
+      "goodRoads": 0,
+      "roadPaper":
+      {
+        "newBigPairRoad2": "HwYSgEIAAAAAAAAAAAoEAAAAAAAAAAAAgIIACAQAAAAAAAoAAAAAAAAAAAAAgEAAAAAAAAAAAAoAKBCgAoAKCAAAgEAAAAAAAAAAAAoAAAAAAAAAAAAAgBAAAAAAAAAAAAoAKDAAAAAAAAAAgAIBCAEgBAAAAAoIKAAAAAAAAAAAgAAAAAAAAAAAAA4AQAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgCIAAAAAAAAAAAooAAAAAAAAAAAAARGACQA=",
+        "bigRoad": "HwYSgQAAAAAoAAAAAAgQIAAAAoAAAAAAgAAAAAAoUKFCgAgAAAAAAoAAAAAAgAAAAAAoUAAAAAgQIEAAAoUAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgQAAAAAogAAAAAARGACQ",
+        "winPointPlateRoad": "HwYGyFgwlhsGAumQymEolUyuQulwqmVoGAuFwwtUsFsmF0uGQusIAAAAAAAgWBAo",
+        "beatPlateRoad2": "HwYGgAgAoAiAgAgAoAgAoAoAoAoAqAgAoAghoAqAgAgAghgiqAoAgA4LgAoAhFgAqAwAAAAAAAAAAgWBAoA=",
+        "bigPairRoad2": "HwYSgAQAAAAAAAAAAoAAAAAAAAAAAAgIQAIAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAoAUAKAFACggAAgAAAAAAAAAAAAoAAAAAAAAAAAAgCAAAAAAAAAAAoAUEAAAAAAAAAgAQAIAkAQAAAAoIUAAAAAAAAAAgAAAAAAAAAAAA4AgAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgEQAAAAAAAAAAooAAAAAAAAAAAARGACQ",
+        "bigPairRoad3": "HwYSgAIAAAAAAAAAAAoAAAAAAAAAAAAAgIIACAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoAKACgAoAKCAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAQAAAAAAAAAAAoAKCAAAAAAAAAAgAIACABgAgAAAAoIKAAAAAAAAAAAgAAAAAAAAAAAAA4CwAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgBYAAAAAAAAAAAooAAAAAAAAAAAAARGACQA=",
+        "winLoseRoad": "HwYTgQAAAAAoAAAAAAiQIAAAAoAAAAAAgAAAAAAoUKFCoAgAAAAAAoAAAAAAgAAAAAAoVAAAAAgQIEAAAqUAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgQAAAAAqAAAAAAwAAAAAAABOACY=",
+        "dragonBonusPlateRoad2": "HwYGwAYANAGIDABgAkAYANAGgDQBoAlAYAJAGCGQBqAgAYAMEOCLUBIAgAWC4AEgCCLAA1AUAAAAAAAAAAAgWBAo",
+        "newBigPairRoa3": "HwYSgEgAAAAAAAAAoEAAAAAAAAAAgIgAgEAAAAAAoAAAAAAAAAAAgEAAAAAAAAAAoAoEoAoAoIAAgEAAAAAAAAAAoAAAAAAAAAAAgAAAAAAAAAAAoAoMAAAAAAAAgAgEgAgAAAAAoIoAAAAAAAAAgAAAAAAAAAAA4BAAAAAAAAAAgAAAAAAAAAAAoAAAAAAAAAAAgAgAAAAAAAAAooAAAAAAAAAAARGACQA=",
+        "bigSmallPlateRoad": "HwYGgUIlGhAqQKkSpUqwKlCpFoQKFCrUoXKFShQq2AAAAAAgWBAo",
+        "bigPairRoad": "HwYSgEAAAAAAAoAAAAAAAAgMAgAAAAAoAAAAAAAAgAAAAAAAAoFAoFAoIAgAAAAAAAAoAAAAAAAAgAAAAAAAAoFBAAAAAAgEAgEAAAAoNAAAAAAAgAAAAAAAA4AAAAAAAAgAAAAAAAAoAAAAAAAAgEAAAAAAAooAAAAAAAARGACQ",
+        "dragonBonusPlateRoad": "HwYGww0xwwkw0000lwkwk1gwww1kgsgkgg1oAAAAAgWBAoA=",
+        "beatPlateRoad": "HwYGhCkYQpClKUrCkKVhCEK0hyFIQrgAAAAgWBAo",
+        "cockroachPig": "FwYLgA/AgAwAgA8Aqg8AqqwAoAAgoABc",
+        "smallRoad": "GgYQwAoAwAoA/AgAwAgAwAqA8AgA8AoA8AoAAg8ACEA=",
+        "bigEyeBoy": "GwYRoAwAoAwAgA/AoA8AoAwAgAwAgAwAoA/AoAABGBCA",
+        "newBigPairRoad": "HwYSgGAAAAAAAAoEAAAAAAAAgKAIBAAAAAoAAAAAAAAAgEAAAAAAAAoCgaAoCggAgEAAAAAAAAoAAAAAAAAAgAAAAAAAAAoCgwAAAAAAgCAYAgAAAAoKgAAAAAAAgAAAAAAAAA4AAAAAAAAAgAAAAAAAAAoAAAAAAAAAgCAAAAAAAAooAAAAAAAAARGACQA="
+      },
+      "bootReport":
+      {
+        "totalCount": 32,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 15
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 15
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 16
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 1
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 0
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 5
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 4
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 3
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 1
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "tableAnchorId": 20573,
+      "anchorLanguage": 1,
+      "anchorNameMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "雅静"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "雅静"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "雅静"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "雅静"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "BenBen"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "雅静"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "雅静"
+        }
+      },
+      "tableAnchorHeadPictureUrl": "https://activitymanager.werhliuich.com/pre/casino-manage/anchorimage/681de94c44f4632bd20f6348.png",
+      "tableAnchorName": "雅静",
+      "videoUrl": "l010;l010h;l010s",
+      "lastUpdateTableCacheTime": 1753860758155,
+      "goodRoadPoints":
+      [],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c73b44f4c717f69f409f.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c73b44f4c717f69f409f.jpg",
+      "tableColour": 3,
+      "tableInfoVersion": 1753855070995,
+      "virtualPictureUrl": "https://game-manage.s3.ap-east-1.amazonaws.com/pre/game-manage/gametable/pic/64c6f2b744f46e0428d0ea6d",
+      "roadPaperVersion": 316835056,
+      "bootReportVersion": 316835056,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c73b44f4c717f69f409f.jpg",
+      "dealerNameLanguageMap":
+      {
+        "en":
+        {
+          "languageCode": "en",
+          "content": "BenBen"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "雅静"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "雅静"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "deskVideo": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2650":
+    {
+      "tableId": 2650,
+      "gameCasinoId": 8,
+      "gameCasinoName": "新旗舰厅",
+      "tableName": "极速百家乐B32",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Siêu tốc B32"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "SPD B32"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "極速バカラ B32"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "스피드 B32"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "SPD B32"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "极速百家乐B32"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "極速百家樂B32"
+        }
+      },
+      "physicsTableNo": "B32",
+      "gameStatus": 2,
+      "tableOpen": true,
+      "gameTypeId": 2002,
+      "gameTypeName": "极速百家乐",
+      "dealerId": 3028,
+      "dealerName": "Judy",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/668fc80644f4dc893f1abd38.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "PH",
+      "roundId": 316835258,
+      "countdownEndTime": 1753860772592,
+      "totalBetCountDown": 15000,
+      "serverTime": 1753860757592,
+      "bootNo": "B0B3225730018P-X179",
+      "tableOnline":
+      {
+        "onlineNumber": 29,
+        "totalAmount": 0
+      },
+      "goodRoads": 9,
+      "roadPaper":
+      {
+        "newBigPairRoad2": "KAYUwAAAAAAAAAAAAAoAAAAAAAAAAAAAgBAAAAAAAAAAAAoIAAAAAAAAAAAAgEAAAAAAAAAAAAoAAAAAAAAAAAAAgEIAQAAAAAAAAAoIKAAAAAAAAAAAgAAAAAAAAAAAAAoAKBAAAAAAAAAAgAAAAAAAAAAAAAoEAAAAAAAAAAAAgkIBCAQAAAAAAAogKACigAAAAAAAgAIIAAAAAAAAAAogKAAAAAAAAAAAggIBAAAAAAAAAA4QaACggoAKBAAAgAAAAAAAAAAAAAoEKBAAAAAAAAAAAhOACgA=",
+        "bigRoad": "KAYUwAAAAAAoAAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgQAAAAAoUAAAAAgAAAAAAoUAAAAAgAAAAAAoAAAAAAgwIAAAAo0KIAAAgQQAAAAo0AAAAAgwAAAAAoUKFCgAgAAAAAAoUAAAAAAhOACgA=",
+        "winPointPlateRoad": "KAYHvF0uF1yF0yFwotUwGEwkwwmQzGAyFUlF0ut4sFQtOEvFUmF4yFukl1omUyGEygABQaCgwA==",
+        "beatPlateRoad2": "KAYHwAoAgiqAgAoAgAghqAoAgAoAoAgAoAgAwAgAgAoAwAoAqAwAgAgAyAoAwAoAgAwAgA8LoAqAoAoAgAoAoAAABQaCgwA=",
+        "bigPairRoad2": "KAYUwAAAAAAAAAAAAoAAAAAAAAAAAAgCAAAAAAAAAAAoIAAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgAQBAAAAAAAAAoIUAAAAAAAAAAgAAAAAAAAAAAAoAUAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAggQAIAAAAAAAAogUAKKAAAAAAAgAQQAAAAAAAAAogUAAAAAAAAAAggQAAAAAAAAAA4Q0AKCFACgAAAgAAAAAAAAAAAAoAUAAAAAAAAAAAhOACgA=",
+        "bigPairRoad3": "KAYUwAAAAAAAAAAAAAoAAAAAAAAAAAAAgAgAAAAAAAAAAAoIAAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAIAEAAAAAAAAAoIKAAAAAAAAAAAgAAAAAAAAAAAAAoAKAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAggIACAAAAAAAAAogKACigAAAAAAAgAIIAAAAAAAAAAogKAAAAAAAAAAAggIAAAAAAAAAAA4S6ACggoAKAAAAgAAAAAAAAAAAAAoAKAAAAAAAAAAAAhOACgA=",
+        "winLoseRoad": "KAYewAAAAAAoAAAAAAgAAAAAAqAAAAAAgAAAAAAoAAAAAAgQAAAAAqUAAAAAgAAAAAAoUAAAAAgAAAAAAoAAAAAAgAAAAAAwAAAAAAgQAAAAAoAAAAAAwAAAAAAoVAAAAAwAAAAAAgQAAAAAyAAAAAAoAAAAAAwAAAAAAoAAAAAAgAAAAAAwAAAAAAgAAAAAAsUKlCgAgAAAAAAoUAAAAAAh2ADw",
+        "dragonBonusPlateRoad2": "KAYHoAaAMEWoDABoAwAQIdQGgCABIA0AQANAGACgBgAwAaAKAEgCUBQAgAYAKQEgCgBIAgAUAMAHwuQBqAkAaAIAGgDQAAABQaCgwA==",
+        "newBigPairRoa3": "KAYUwAAAAAAAAAAAoAAAAAAAAAAAgAAAAAAAAAAAoIAAAAAAAAAAgEAAAAAAAAAAoAAAAAAAAAAAgEgAAAAAAAAAoIoAAAAAAAAAgAAAAAAAAAAAoAoEAAAAAAAAgAAAAAAAAAAAoEAAAAAAAAAAgkgEgEAAAAAAogoAooAAAAAAgAggAAAAAAAAogoAAAAAAAAAgggEAAAAAAAA4RoAoIoAoEAAgAAAAAAAAAAAoEoEAAAAAAAAAhOACgA=",
+        "bigSmallPlateRoad": "KAYHkVKFWBUgUKtShUiUIkCxAgVLFSrYoULNSxUoSIF6pVqRKESIABQaCgw=",
+        "dragonBonusPlateRoad": "KAYHo0w1w0wg10gk0g0woww0oklogwpkokgow+k1k0g00ABQaCgw",
+        "bigPairRoad": "KAYUwAAAAAAAAoAAAAAAAAgAAAAAAAAoIAAAAAAAgAAAAAAAAoAAAAAAAAgEAAAAAAAoNAAAAAAAgAAAAAAAAoFAAAAAAAgAAAAAAAAoAAAAAAAAgkAgAAAAAolAooAAAAgEEAAAAAAolAAAAAAAgkAAAAAAA4VAoNAoAAgAAAAAAAAoFAAAAAAAAhOACgA=",
+        "beatPlateRoad": "KAYHxSFYUhCtIUpCkMQhTFK4hDNMUhiHqVpSFKABQaCgwA==",
+        "smallRoad": "HwYR/wqo/AoAwAoAwAgAwAgAwAgA/AgA8AoAwAARCACI",
+        "cockroachPig": "HgYR/Aqg/AgA8AqAwAqAwAgAwAgAwAgA8AoAwAABEAiE",
+        "bigEyeBoy": "IAYO/8oA8AqgwAgAwAgA/wgA/8gA8AqAAA6BhoA=",
+        "newBigPairRoad": "KAYUwAAAAAAAAAoAAAAAAAAAgAAAAAAAAAoIAAAAAAAAgEAAAAAAAAoAAAAAAAAAgGAAAAAAAAoKgAAAAAAAgAAAAAAAAAoCgQAAAAAAgAAAAAAAAAoEAAAAAAAAgmAYBAAAAAoigKKAAAAAgCCAAAAAAAoigAAAAAAAgiAQAAAAAA4SgKCoCgQAgAAAAAAAAAoGgQAAAAAAAhOACgA="
+      },
+      "bootReport":
+      {
+        "totalCount": 41,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 20
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 20
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 14
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 7
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 1
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 5
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 0
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "b032;b032h;b032s",
+      "lastUpdateTableCacheTime": 1753860757611,
+      "goodRoadPoints":
+      [
+        {
+          "goodRoadType": 9,
+          "goodRoadFlag": true,
+          "betPoint": false,
+          "putPoint": false,
+          "sort": 8
+        }
+      ],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9dc44f44a2b9f9093e2.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9dc44f44a2b9f9093e2.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753749327570,
+      "roadPaperVersion": 316835099,
+      "bootReportVersion": 316835099,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9dc44f44a2b9f9093e2.jpg",
+      "dealerNameLanguageMap":
+      {
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Judy"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2525":
+    {
+      "tableId": 2525,
+      "gameCasinoId": 10,
+      "gameCasinoName": "韩国厅",
+      "tableName": "极速百家乐H16",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Siêu tốc H16"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "SPD H16"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "極速バカラ H16"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "스피드 H16"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "SPD H16"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "极速百家乐H16"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "極速百家樂H16"
+        }
+      },
+      "physicsTableNo": "H16",
+      "gameStatus": 3,
+      "tableOpen": true,
+      "gameTypeId": 2002,
+      "gameTypeName": "极速百家乐",
+      "dealerId": 4166,
+      "dealerName": "Phoebe",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/6859233544f4632bd2154654.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "PH",
+      "roundId": 316835172,
+      "countdownEndTime": 1753860758079,
+      "totalBetCountDown": 15000,
+      "serverTime": 1753860743079,
+      "bootNo": "B0H1625730016P-KR048",
+      "tableOnline":
+      {
+        "onlineNumber": 30,
+        "totalAmount": 0
+      },
+      "goodRoads": 8,
+      "roadPaper":
+      {
+        "bigRoad": "OQYdgAAAAAAoAAAAAAgAAAAAAoUKAAAAgQQAAAAoUAAAAAgQIAAAAoAAAAAAgQIECBAoAAAAAAgAAAAAAoUAAAAAgQIAAAAoUAAAAAgAAAAAAoUAAAAAgQAAAAAoUKAAAAgAAAAAAoUKFCgAgQAAAAAoUQAAAAgAAAAAAoUKAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgAAAAAAAB2AjgA==",
+        "newBigPairRoad2": "OQYdgAAAAAAAAAAAAAoEAAAAAAAAAAAAgAAAAAAAAAAAAAoAOAGgAAAAAAAAgAIJAAAAAAAAAAoQKBAAAAAAAAAAgEIBCAEAAAAAAAoYAAAAAAAAAAAAgAIASAAgIIACAQoAAAAAAAAAAAAAgEAAAAAAAAAAAA4IqBAAAAAAAAAAgUIACAAAAAAAAAoAKCAAAAAAAAAAgEAAAAAAAAAAAAoAKEAAAAAAAAAAgMIAAAAAAAAAAAoAKFCggAAAAAAAgQAAAAAAAAAAAAoAKACgAoIKBAAAgEIBAAAAAAAAAAoAKJAAAAAAAAAAgBAAAAAAAAAAAA4AaBCgQAAAAAAAgBAAAAAAAAAAAAoMAAAAAAAAAAAAgQAAAAAAAAAAAA4AgAAAAAAAAAAAgEAAAAAAAAAAAAAB2Ajg",
+        "winPointPlateRoad": "OQYKqGUiFEtmUsGAtFGymQyFwo9AuFgsNgyFEwFtwmSmFQul1yEUw2BkFUw01wV0omUouUyGQmmUlFwtmUylwytStmAAAABAmCBI",
+        "beatPlateRoad2": "OQYKgAoAgAoA4LoAgAgAwAsAoAgAgAghuAgAghgAiAgAgAoAgA6UoAkAgAgAoAqAgAoAsAiAgAoAsAqAkAoAoAoAqAoAgAgAoAoAwAgi4LoAoAgiqAkA4UgAAAAABAmCBIA=",
+        "bigPairRoad2": "OQYdgAAAAAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAoAcAaAAAAAAAAgAQQAAAAAAAAAoQUAAAAAAAAAAgAQAIAgAAAAAAoYAAAAAAAAAAAgAQBIAEBCABAAoAAAAAAAAAAAAgAAAAAAAAAAAA4JUAAAAAAAAAAgQQAIAAAAAAAAoAUEAAAAAAAAAgAAAAAAAAAAAAoAUIAAAAAAAAAgIQAAAAAAAAAAoAUIKCAAAAAAAgQAAAAAAAAAAAoAUAKAFBCgAAAgAQAAAAAAAAAAoAUQAAAAAAAAAgCAAAAAAAAAAA4A0AKAAAAAAAAgCAAAAAAAAAAAoIAAAAAAAAAAAgQAAAAAAAAAAA4BAAAAAAAAAAAgAAAAAAAAAAAAAB2Ajg=",
+        "winLoseRoad": "OQYfgAAAAAAoAAAAAAgAAAAAAoUKAAAAgQAAAAAwAAAAAAsUAAAAAgQIAAAAuAAAAAAgQIESBAoAAAAAAgAAAAAAqUAAAAAkQIAAAAoVAAAAAgAAAAAAoWAAAAAiQAAAAAoWKgAAAkAAAAAAoUKFSgAgQAAAAAoUAAAAAwAAAAAAgAAAAAAoUKAAAAgAAAAAAqAAAAAAkAAAAAAoAAAAAAgAAAAAAAB+Ajw=",
+        "bigPairRoad3": "OQYdgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoAOAugAAAAAAAAgAIIAAAAAAAAAAoQKAAAAAAAAAAAgAIACABAAAAAAAoYAAAAAAAAAAAAgAIAGAAgIIACAAoAAAAAAAAAAAAAgAAAAAAAAAAAAA4NKAAAAAAAAAAAgQIACAAAAAAAAAoAKCAAAAAAAAAAgAAAAAAAAAAAAAoAKEAAAAAAAAAAgIIAAAAAAAAAAAoAKECggAAAAAAAgQAAAAAAAAAAAAoAKACgAoIKAAAAgAIAAAAAAAAAAAoAKIAAAAAAAAAAgAgAAAAAAAAAAA4C6ACgAAAAAAAAgAgAAAAAAAAAAAoIAAAAAAAAAAAAgQAAAAAAAAAAAA4FAAAAAAAAAAAAgAAAAAAAAAAAAAAB2Ajg",
+        "dragonBonusPlateRoad2": "OQYKgAaAIAEgDwXIAwAYAKAEwDQBgAwAYIZwGADBDgAhAYAMAEgDABaU0AZAIAEADQBqAwASAJgGICABoA2ASgMgGgCQBoAlAaAMAGACQBoAoAQIvBegDQBgi1ARALCmAAAAAABAmCBI",
+        "bigSmallPlateRoad": "OQYKoRKFS5UoQLFaJAgUK9ChQo0IFSBdiQqFCpVgVK0GhUjVaVSpUqxIECpEsULkSJQi0rkAAABAmCBI",
+        "newBigPairRoa3": "OQYdgAAAAAAAAAAAoEAAAAAAAAAAgAAAAAAAAAAAoA4BoAAAAAAAgAgkAAAAAAAAoQoEAAAAAAAAgEgEgAAAAAAAoYAAAAAAAAAAgAgAgAgIgAgEoAAAAAAAAAAAgEAAAAAAAAAA4KoEAAAAAAAAgUgAgAAAAAAAoAoIAAAAAAAAgEAAAAAAAAAAoAoQAAAAAAAAgMgAAAAAAAAAoAoUoIAAAAAAgQAAAAAAAAAAoAoAoAoIoEAAgEgEAAAAAAAAoAokAAAAAAAAgAAAAAAAAAAA4BoEoEAAAAAAgAAAAAAAAAAAoMAAAAAAAAAAgQAAAAAAAAAA4CAAAAAAAAAAgEAAAAAAAAAAAB2AjgA=",
+        "bigPairRoad": "OQYdgAAAAAAAAoAAAAAAAAgAAAAAAAAoHAoAAAAAgEEAAAAAAoVAAAAAAAgEAgAAAAAoYAAAAAAAgEAgEBgEAoAAAAAAAAgAAAAAAAA4NAAAAAAAgUAgAAAAAoFBAAAAAAgAAAAAAAAoFCAAAAAAgMAAAAAAAoFCoIAAAAgQAAAAAAAoFAoFBoAAgEAAAAAAAoFEAAAAAAgAAAAAAAA4FAoAAAAAgAAAAAAAAoIAAAAAAAgQAAAAAAA4AAAAAAAAgAAAAAAAAAB2Ajg=",
+        "dragonBonusPlateRoad": "OQYKg0gk8kwwom0wwwnwwwhwwkwt0ygg01wkmxg02ly0k0l0wwk0og800w1iswAABAmCBIA=",
+        "beatPlateRoad": "OQYKhSFOUhDFqQhC8IQjCFIdpKEKVhS0YUtWVKUrSEKUxDlKQrLkAABAmCBI",
+        "smallRoad": "NAYhwAgAwAqAwAgAwAqA8AgA8AgAwAqgwAgA8AgA8AoAwAqA8AgAwAqAwAoAwAoAwAgA8AAiCAEI",
+        "cockroachPig": "MwYegAwAqo/AgAwAgA/AoA8AoAwAqgwAgA8AgAwAoAwAgA8AgAwAqgwAqAwAgAwAAR2ADwA=",
+        "bigEyeBoy": "NQYb8AgAwAgAwAgA/Aqg/woAwAoAwAoAwAqg/Aqg/AgAwAgA8AoAwAoA/AAxqADY",
+        "newBigPairRoad": "OQYdgAAAAAAAAAoEAAAAAAAAgAAAAAAAAAoDgKAAAAAAgCCQAAAAAAoSgQAAAAAAgGAYAAAAAAoYAAAAAAAAgCAIAgKAIBoAAAAAAAAAgEAAAAAAAA4KgQAAAAAAgWAIAAAAAAoCggAAAAAAgEAAAAAAAAoChAAAAAAAgOAAAAAAAAoChaCAAAAAgQAAAAAAAAoCgKAoKgQAgGAQAAAAAAoCiQAAAAAAgAAAAAAAAA4CgaBAAAAAgAAAAAAAAAoMAAAAAAAAgQAAAAAAAA4AAAAAAAAAgEAAAAAAAAAB2Ajg"
+      },
+      "bootReport":
+      {
+        "totalCount": 58,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 29
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 29
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 27
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 2
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 7
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 8
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 4
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 4
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 2
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 0
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "h016;h016h;h016s",
+      "lastUpdateTableCacheTime": 1753860758253,
+      "goodRoadPoints":
+      [
+        {
+          "goodRoadType": 3,
+          "goodRoadFlag": true,
+          "betPoint": true,
+          "putPoint": true,
+          "sort": 3,
+          "num": 5
+        },
+        {
+          "goodRoadType": 8,
+          "goodRoadFlag": true,
+          "betPoint": true,
+          "putPoint": true,
+          "sort": 11
+        }
+      ],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c6aa44f4c717f69f405f.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c6aa44f4c717f69f405f.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753749329408,
+      "roadPaperVersion": 316835044,
+      "bootReportVersion": 316835044,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c6aa44f4c717f69f405f.jpg",
+      "dealerNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Phoebe"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "Phoebe"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "Phoebe"
+        },
+        "alb":
+        {
+          "languageCode": "alb",
+          "content": "Phoebe"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "Phoebe"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Phoebe"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Phoebe"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Phoebe"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2655":
+    {
+      "tableId": 2655,
+      "gameCasinoId": 8,
+      "gameCasinoName": "新旗舰厅",
+      "tableName": "经典百家乐B09",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Cổ Điển B09"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "CLA B09"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "クラシック B09"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "클래식 B09"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "CLA B09"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "经典百家乐B09"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "經典百家樂B09"
+        }
+      },
+      "physicsTableNo": "B09",
+      "gameStatus": 3,
+      "tableOpen": true,
+      "gameTypeId": 2001,
+      "gameTypeName": "经典百家乐",
+      "dealerId": 3079,
+      "dealerName": "Charm",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/66aca91844f4aab6c6f4f66b.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "PH",
+      "roundId": 316835119,
+      "countdownEndTime": 1753860757457,
+      "totalBetCountDown": 25000,
+      "serverTime": 1753860732457,
+      "bootNo": "B0B0925730013P-X069",
+      "tableOnline":
+      {
+        "onlineNumber": 51,
+        "totalAmount": 0
+      },
+      "goodRoads": 0,
+      "roadPaper":
+      {
+        "newBigPairRoad2": "IwYQokKBAAAAAAAAAAgAIBAAAAAAAAAAoEAAAAAAAAAAAAgAIAQAAAAAAAAA4AQAAAAAAAAAAAgBAAAAAAAAAAAAogOAIAAAAAAAAAgBIASCEAAAAAAAogAAAAAAAAAAAAgkIBAAAAAAAAAAoAAAAAAAAAAAAAgBAAAAAAAAAAAAoAAAAAAAAAAAAAgEIOCAQAAAAAAAoUKBDgCoAKDAAAgEIAAAAAAAAAAAABCBB4A=",
+        "bigRoad": "IwYQo0AAAAAgQAAAAAoAAAAAAgQAAAAAoAAAAAAgAAAAAAo0AAAAAgQIIAAAogAAAAAgwAAAAAoAAAAAAgAAAAAAoAAAAAAgQYAAAAoUKFCgAgQAAAAAABCBB4A=",
+        "winPointPlateRoad": "IwYGymKwmQwGUsFwtlwomYtlwuFwzF0vGAxGAolwkmAsd4yGGylsomVyFAAAaAAw",
+        "beatPlateRoad2": "IwYGoA0AoAgAgAoAgAgh4LghoAwA4UghghghwAoAwAgAwAgAoAgioAgAmAwAgAsAoA4UoAqAgAgAAAaAAwA=",
+        "bigPairRoad2": "IwYQogUAAAAAAAAAAgAQAAAAAAAAAAoAAAAAAAAAAAAgAQBAAAAAAAAA4AgAAAAAAAAAAgCAAAAAAAAAAAogcAgAAAAAAAAgCQBIIgAAAAAAogAAAAAAAAAAAggQAAAAAAAAAAoAAAAAAAAAAAAgCAAAAAAAAAAAoAAAAAAAAAAAAgAQcIAAAAAAAAoQUAOAVACggAAgAQAAAAAAAAAAABCBB4A=",
+        "winLoseRoad": "IwYaoAAAAAA0AAAAAAoAAAAAAgQAAAAAoAAAAAAgQAAAAAoAAAAAAgAAAAAAoAAAAAAwAAAAAAoAAAAAAgQIAAAAwAAAAAAoAAAAAAwAAAAAAgAAAAAAwAAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgTAAAAAwAAAAAAgAAAAAAsUKFCoAgQAAAAAABqBDI",
+        "bigPairRoad3": "IwYQogKAAAAAAAAAAAgAIAAAAAAAAAAAoAAAAAAAAAAAAAgAIAEAAAAAAAAA4CwAAAAAAAAAAAgAQAAAAAAAAAAAogOBQAAAAAAAAAgAYAGCBAAAAAAAogAAAAAAAAAAAAggIAAAAAAAAAAAoAAAAAAAAAAAAAgAgAAAAAAAAAAAoAAAAAAAAAAAAAgAIOCAAAAAAAAAoQKADgUoAKCAAAgAIAAAAAAAAAAAABCBB4A=",
+        "dragonBonusPlateRoad2": "IwYG0AVANAEADABoAgAYIbBeCHQBQA8KYIYEMCGgBIAoAYAKAGADQBgikAYAMwFADABsA0AeFNAGoDABgAAAaAAw",
+        "newBigPairRoa3": "IwYQokoEAAAAAAAAgAgEAAAAAAAAoEAAAAAAAAAAgAgAAAAAAAAA4BAAAAAAAAAAgAAAAAAAAAAAog4CAAAAAAAAgAgAggAAAAAAogAAAAAAAAAAgkgEAAAAAAAAoAAAAAAAAAAAgAAAAAAAAAAAoAAAAAAAAAAAgEg4gEAAAAAAoUoE4CoAoMAAgEgAAAAAAAAAABCBB4A=",
+        "bigSmallPlateRoad": "IwYGiSolCBEoULlCpYuUKFCRUkQJECpQqQKdiBGiXKkWBQAAaAAw",
+        "bigPairRoad": "IwYQolAAAAAAAgEAAAAAAAoAAAAAAAAgEAAAAAAA4AAAAAAAAgAAAAAAAAonAAAAAAAgEAggAAAAogAAAAAAAgkAAAAAAAoAAAAAAAAgAAAAAAAAoAAAAAAAAgEHgAAAAAoVA4FAoIAgEAAAAAAAABCBB4A=",
+        "dragonBonusPlateRoad": "IwYG0q0gw0gwsw0o8wggokowow0wkwzow20801wwAAaAAwA=",
+        "beatPlateRoad": "IwYGpqkIUhDkKY5CEMUxDEKQpCeIWpylYQAAaAAw",
+        "cockroachPig": "FwYO8AgA/AgAwAgA/AgAwAoAwAoA/AoAAg0AB0A=",
+        "smallRoad": "GAYQgA/AqgwAoAwAgAwAgAwAgAwAoA/AgAwAABAAh8A=",
+        "bigEyeBoy": "GgYP8AqgwAoAwAqq8AgAwAgA8AgAwAgAwAAA8Ah0",
+        "newBigPairRoad": "IwYQomgQAAAAAAgCAQAAAAAAoEAAAAAAAAgCAAAAAAAA4AAAAAAAAAgAAAAAAAAAojgAAAAAAAgCAIIAAAAAogAAAAAAAAgmAQAAAAAAoAAAAAAAAAgAAAAAAAAAoAAAAAAAAAgGDoBAAAAAoWgeAoCgwAgGAAAAAAAAABCBB4A="
+      },
+      "bootReport":
+      {
+        "totalCount": 36,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 14
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 14
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 16
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 6
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 3
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 2
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 3
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 6
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 2
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 5
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 0
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "b009;b009h;b009s",
+      "lastUpdateTableCacheTime": 1753860757466,
+      "goodRoadPoints":
+      [],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889ca3444f44a2b9f909404.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889ca3444f44a2b9f909404.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753749330050,
+      "roadPaperVersion": 316834866,
+      "bootReportVersion": 316834866,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889ca3444f44a2b9f909404.jpg",
+      "dealerNameLanguageMap":
+      {
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Charm"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2657":
+    {
+      "tableId": 2657,
+      "gameCasinoId": 8,
+      "gameCasinoName": "新旗舰厅",
+      "tableName": "经典百家乐B11",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Cổ Điển B11"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "CLA B11"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "クラシック B11"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "클래식 B11"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "CLA B11"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "经典百家乐B11"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "經典百家樂B11"
+        }
+      },
+      "physicsTableNo": "B11",
+      "gameStatus": 2,
+      "tableOpen": true,
+      "gameTypeId": 2001,
+      "gameTypeName": "经典百家乐",
+      "dealerId": 4081,
+      "dealerName": "Cecelia",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/6850026444f4d44b59f3203b.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "PH",
+      "roundId": 316835255,
+      "countdownEndTime": 1753860782214,
+      "totalBetCountDown": 25000,
+      "serverTime": 1753860757214,
+      "bootNo": "B0B1125730014P-X005",
+      "tableOnline":
+      {
+        "onlineNumber": 24,
+        "totalAmount": 0
+      },
+      "goodRoads": 0,
+      "roadPaper":
+      {
+        "bigRoad": "DwYIoUKIAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgQIEAAAoUKAAAAgAAAAAAAAiAg4A=",
+        "newBigPairRoad2": "DwYIoEKBCiAAAAAAAAgEAAAAAAAAAAAAoAAAAAAAAAAAAAgSAAAAAAAAAAAAoUAAAAAAAAAAAAgJIACAAgBAAAAAoAKACgAAAAAAAAgEAAAAAAAAAAAAAAiAg4A=",
+        "winPointPlateRoad": "DwYDymUul4yEkuWGuNAqFwmlEqmAAAABAKCAQA==",
+        "beatPlateRoad2": "DwYDoAoAoAwAgAoAlFsAiigAgAghoAoAoAgAAAAABAKCAQA=",
+        "bigPairRoad2": "DwYIoAUAKIAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgUAAAAAAAAAAAoQAAAAAAAAAAAgKQAIAEAQAAAAoAUAKAAAAAAAAgAAAAAAAAAAAAAAiAg4A=",
+        "bigPairRoad3": "DwYIoAKACiAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgRQAAAAAAAAAAAoQAAAAAAAAAAAAgIoACAAgAQAAAAoAKACgAAAAAAAAgAAAAAAAAAAAAAAAiAg4A=",
+        "winLoseRoad": "DwYJoUKAAAAwAAAAAAgAAAAAAoAAAAAAkAAAAAAsAAAAAAiQIEAAAoUKAAAAgAAAAAAAAmAhAA==",
+        "dragonBonusPlateRoad2": "DwYD0AaAJAFADABIAii7AMUUADABAhkAaANAGAAAAAABAKCAQA==",
+        "newBigPairRoa3": "DwYIoEoEogAAAAAAgEAAAAAAAAAAoAAAAAAAAAAAgQAAAAAAAAAAoUAAAAAAAAAAgIgAgAgAAAAAoAoAoAAAAAAAgEAAAAAAAAAAAAiAg4A=",
+        "bigSmallPlateRoad": "DwYDiRKkiBUpRqNChQqVKkAAABAKCAQ=",
+        "bigPairRoad": "DwYIoFAogAAAAgAAAAAAAAoAAAAAAAAgQAAAAAAAoQAAAAAAAgMAgEAAAAoFAoAAAAAgAAAAAAAAAAiAg4A=",
+        "dragonBonusPlateRoad": "DwYD00kowki2xgwgk00wAABAKCAQ",
+        "beatPlateRoad": "DwYDpSmIUlaMIQpSkAABAKCAQA==",
+        "cockroachPig": "CAYHgAwAgA8AoAwAgAAAeAgw",
+        "smallRoad": "CQYHgA8AgA8AoAwAgAAQYAA8",
+        "bigEyeBoy": "CgYHgA/AgA8AgA8AgAAQYAA8",
+        "newBigPairRoad": "DwYIoGgaIAAAAAgEAAAAAAAAoAAAAAAAAAgQAAAAAAAAoUAAAAAAAAgKAIAgAAAAoCgKAAAAAAgEAAAAAAAAAAiAg4A="
+      },
+      "bootReport":
+      {
+        "totalCount": 16,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 8
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 8
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 7
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 1
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 2
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 1
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 3
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 1
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "b011;b011h;b011s",
+      "lastUpdateTableCacheTime": 1753860757356,
+      "goodRoadPoints":
+      [],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9bd44f44a2b9f9093d5.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9bd44f44a2b9f9093d5.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753749329984,
+      "roadPaperVersion": 316835048,
+      "bootReportVersion": 316835048,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9bd44f44a2b9f9093d5.jpg",
+      "dealerNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Cecelia"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "Cecelia"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "Cecelia"
+        },
+        "alb":
+        {
+          "languageCode": "alb",
+          "content": "Cecelia"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "Cecelia"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Cecelia"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Cecelia"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Cecelia"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2209":
+    {
+      "tableId": 2209,
+      "gameCasinoId": 4,
+      "gameCasinoName": "欧洲厅",
+      "tableName": "极速百家乐U21",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Siêu tốc U21"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "SPD U21"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "極速バカラ U21"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "스피드 U21"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "SPD U21"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "极速百家乐U21"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "極速百家樂U21"
+        }
+      },
+      "physicsTableNo": "U21",
+      "gameStatus": 2,
+      "tableOpen": true,
+      "gameTypeId": 2002,
+      "gameTypeName": "极速百家乐",
+      "dealerId": 3401,
+      "dealerName": "Jons",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/66ebc77844f4aa8267ceac00.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "UA",
+      "roundId": 316835253,
+      "countdownEndTime": 1753860771774,
+      "totalBetCountDown": 15000,
+      "serverTime": 1753860756774,
+      "bootNo": "B0U2125730017P-CBUKR007",
+      "tableOnline":
+      {
+        "onlineNumber": 24,
+        "totalAmount": 0
+      },
+      "goodRoads": 2,
+      "roadPaper":
+      {
+        "bigRoad": "DwYKgQAAAAAoAAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgQIAAAAoUKFAAABAmABQ",
+        "newBigPairRoad2": "DwYKgIIAAAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoEAAAAAAAAAAAAgEAAAAAAAAAAAAoAAAAAAAAAAAAAgEIECBEAAAAAAAoAOAGgAoQAAAAABAmABQA=",
+        "winPointPlateRoad": "DwYDyNQumAymQwmQmmQqVyolsykmAAABAKCAQA==",
+        "beatPlateRoad2": "DwYDiAgAoAgAoAgAoAgAoAgAkAkioA4LoAsAAAAABAKCAQA=",
+        "bigPairRoad2": "DwYKgIQAAAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgAQIIEgAAAAAAoAcAaAFCAAAAABAmABQ",
+        "bigPairRoad3": "DwYKgIIAAAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAIECBCAAAAAAAoAOAugAoQAAAAABAmABQA=",
+        "winLoseRoad": "DwYKiQAAAAAoAAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgSJAAAAoUKFgAABAmABQ",
+        "dragonBonusPlateRoad2": "DwYDxAQANAGADQBgA0AYAJAGACIBkikAeC9AEwAAAAABAKCAQA==",
+        "bigSmallPlateRoad": "DwYDo0KlCpQiQKkClSqXKlYAABAKCAQ=",
+        "newBigPairRoa3": "DwYKgIgAAAAAAAAAoAAAAAAAAAAAgAAAAAAAAAAAoAAAAAAAAAAAgAAAAAAAAAAAoEAAAAAAAAAAgEAAAAAAAAAAoAAAAAAAAAAAgEgQgQAAAAAAoA4BoAoQAAAABAmABQA=",
+        "bigPairRoad": "DwYKgMAAAAAAAoAAAAAAAAgAAAAAAAAoAAAAAAAAgAAAAAAAAoAAAAAAAAgAAAAAAAAoAAAAAAAAgECgQAAAAoHAoFCAAABAmABQ",
+        "dragonBonusPlateRoad": "DwYDxg0w0w0wkwiyk80mAABAKCAQ",
+        "beatPlateRoad": "DwYDjCkKQpCkJSpylgABAKCAQA==",
+        "smallRoad": "CwYGgA/8gAwAoA8AAgWAAwA=",
+        "cockroachPig": "CgYGgA/wgAwAoA8AAgWAAwA=",
+        "bigEyeBoy": "DAYHgA//gAwAgA8AgAAAeAgw",
+        "newBigPairRoad": "DwYKgKAAAAAAAAoAAAAAAAAAgAAAAAAAAAoAAAAAAAAAgAAAAAAAAAoEAAAAAAAAgEAAAAAAAAoAAAAAAAAAgGBIEAAAAAoDgKAoQAAABAmABQA="
+      },
+      "bootReport":
+      {
+        "totalCount": 16,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 8
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 8
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 8
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 0
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 3
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 1
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 0
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "u021;u021h;u021s",
+      "lastUpdateTableCacheTime": 1753860756799,
+      "goodRoadPoints":
+      [
+        {
+          "goodRoadType": 2,
+          "goodRoadFlag": true,
+          "betPoint": true,
+          "putPoint": true,
+          "sort": 1,
+          "num": 4
+        }
+      ],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c7bb44f4c717f69f40b3.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c7bb44f4c717f69f40b3.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753845114032,
+      "roadPaperVersion": 316835072,
+      "bootReportVersion": 316835072,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c7bb44f4c717f69f40b3.jpg",
+      "dealerNameLanguageMap":
+      {
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Jons"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Jons"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Jons"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2594":
+    {
+      "tableId": 2594,
+      "gameCasinoId": 5,
+      "gameCasinoName": "国际厅",
+      "tableName": "轮盘E37",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Roulette E37"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "Rou E37"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "ホイール E37"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "룰렛 E37"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Rou E37"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "轮盘E37"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "輪盤E37"
+        }
+      },
+      "physicsTableNo": "E37",
+      "gameStatus": 3,
+      "tableOpen": true,
+      "gameTypeId": 2007,
+      "gameTypeName": "轮盘",
+      "dealerId": 3104,
+      "dealerName": "Deza",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/670cce9444f43fb72cdf3ec1.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "KR",
+      "roundId": 316835124,
+      "countdownEndTime": 1753860758566,
+      "totalBetCountDown": 25000,
+      "serverTime": 1753860733566,
+      "tableOnline":
+      {
+        "onlineNumber": 5,
+        "totalAmount": 0
+      },
+      "roadPaper":
+      {
+        "dozenColumnRoad": "TgEn7qpxzrz7ypyzzprp5krx67zzyzzrprzpx5xy7r6ACeAE4A==",
+        "oddEvenRoad": "TgYWgAAoAAkgAoAAkAAttAkAAtoAwAAoAAgAAtAAgAAtoAkAAoAAkgAoAAgAAtAAgAAtAAAhWACw",
+        "bigSmallRoad": "TgYWoAAkgAoAAgAAtoAkAAoAAkkAoAAwAAkAAtAAkgAoAAkkAoAAgAAtAAgAAtAAgAAoAAARWACw",
+        "winNumberRoad": "TgYHvS5VCxJsXq8GjVpSpMezAh0LuGlPo1aUyPGsRKeKbXySboAAAAwaBgw=",
+        "blackRedRoad": "TgYWoAAkAAoAAgAAoAAgAAtoAgAAtAAgAAtoAwAAtAAkAAoAAkAAttAkgAtAAgAAtoAgAAABaAio"
+      },
+      "bootReport":
+      {
+        "totalCount": 39,
+        "items":
+        [
+          {
+            "betPointId": 3706,
+            "betPointName": "红",
+            "winCount": 23
+          },
+          {
+            "betPointId": 3707,
+            "betPointName": "黑",
+            "winCount": 15
+          },
+          {
+            "betPointId": 3100,
+            "betPointName": "零",
+            "winCount": 1
+          },
+          {
+            "betPointId": 3711,
+            "betPointName": "大",
+            "winCount": 16
+          },
+          {
+            "betPointId": 3710,
+            "betPointName": "小",
+            "winCount": 22
+          },
+          {
+            "betPointId": 3708,
+            "betPointName": "单",
+            "winCount": 21
+          },
+          {
+            "betPointId": 3709,
+            "betPointName": "双",
+            "winCount": 17
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "e037;e037h",
+      "lastUpdateTableCacheTime": 1753860758572,
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c6b244f4c717f69f406b.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c6b244f4c717f69f406b.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753749340896,
+      "roadPaperVersion": 316834669,
+      "bootReportVersion": 316834669,
+      "bootNumberLimitListVersion": 1618527953,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c6b244f4c717f69f406b.jpg",
+      "dealerNameLanguageMap":
+      {
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Deza"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2212":
+    {
+      "tableId": 2212,
+      "gameCasinoId": 4,
+      "gameCasinoName": "欧洲厅",
+      "tableName": "极速百家乐U24",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Siêu tốc U24"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "SPD U24"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "極速バカラ U24"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "스피드 U24"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "SPD U24"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "极速百家乐U24"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "極速百家樂U24"
+        }
+      },
+      "physicsTableNo": "U24",
+      "gameStatus": 4,
+      "tableOpen": true,
+      "gameTypeId": 2002,
+      "gameTypeName": "极速百家乐",
+      "dealerId": 2442,
+      "dealerName": "Luck",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/6644e54344f4c3698c95d1b8.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "UA",
+      "roundId": 316835103,
+      "countdownEndTime": 1753860743939,
+      "totalBetCountDown": 15000,
+      "serverTime": 1753860728939,
+      "bootNo": "B0U2425730018P-CBUKR038",
+      "tableOnline":
+      {
+        "onlineNumber": 13,
+        "totalAmount": 0
+      },
+      "goodRoads": 9,
+      "roadPaper":
+      {
+        "newBigPairRoad2": "LQYUgIAAAAAAAAAAAAoAKACgAAAAAAAAgAAAAAAAAAAAAAoEAAAAAAAAAAAAgBIAAAAAAAAAAAoAAAAAAAAAAAAAgEIBgAAAAAAAAAogOAGgAAAAAAAAgAIAQAAAAAAAAAoEKBCgQAAAAAAAgBIBAAAAAAAAAA4AaDCjQAAAAAAAgBAAAAAAAAAAAAoAKACgQAAAAAAAgAIDAAAAAAAAAAogKAAAAAAAAAAAgGAAAAAAAAAAAAokKACiQoEAAAAAgAIAQAAAAAAAAAoAKAAAAAAAAAAAAhOACgA=",
+        "bigRoad": "LQYUgAAAAAAoUKAAAAgAAAAAAoAAAAAAgQAAAAAoAAAAAAgQAAAAAo0KAAAAgQAAAAAoUKAAAAgQAAAAAoUKIAAAgAAAAAAoUKAAAAgQAAAAAo0AAAAAgAAAAAAo0KNAAAgQAAAAAoUAAAAAAhOACgA=",
+        "winPointPlateRoad": "LQYIyNEyl0mGUuFQomQuFUtNsmlguGEwmEuGQtmFw1ouEkymEqGBqloklwyk4umUteUsFwqk0AAABAeCA4A=",
+        "beatPlateRoad2": "LQYIiAoAoAoAgAoAghgAoAgAhFoAyA4LoAgAghoAoAoAgigA4LqAsAwAghoAoAoAgAiAoAwAoAhFoAwAoAoA2AoAgAghoAoAAAAABAeCA4A=",
+        "bigPairRoad2": "LQYUgIAAAAAAAAAAAoAUAKAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgCQAAAAAAAAAAoAAAAAAAAAAAAgAQCAAAAAAAAAogcAaAAAAAAAAgAQBAAAAAAAAAoAUAKAAAAAAAAgCQAAAAAAAAAA4A0EKMAAAAAAAgCAAAAAAAAAAAoAUAKAAAAAAAAgAQEAAAAAAAAAogUAAAAAAAAAAgEAAAAAAAAAAAogUAKIFAAAAAAgAQBAAAAAAAAAoAUAAAAAAAAAAAhOACgA=",
+        "bigPairRoad3": "LQYUgIAAAAAAAAAAAAoAKACgAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAYAAAAAAAAAAAoAAAAAAAAAAAAAgAIAUAAAAAAAAAogOAugAAAAAAAAgAIAEAAAAAAAAAoAKACgAAAAAAAAgAoAAAAAAAAAAA4C6CCjAAAAAAAAgAQAAAAAAAAAAAoAKACgAAAAAAAAgAICAAAAAAAAAAogKAAAAAAAAAAAgBQAAAAAAAAAAAogKACiAoAAAAAAgAIAEAAAAAAAAAoAKAAAAAAAAAAAAhOACgA=",
+        "winLoseRoad": "LQYdiAAAAAAoUKAAAAgAAAAAAoAAAAAAgQAAAAAoAAAAAAgQAAAAAoAAAAAAyAAAAAAoUAAAAAgQAAAAAoUKAAAAgQAAAAAoVLAAAAwAAAAAAgAAAAAAoUKAAAAgRAAAAAoAAAAAAwAAAAAAoAAAAAAgAAAAAAoAAAAAAwAAAAAAoUAAAAA2AAAAAAoAAAAAAgQAAAAAoUAAAAAAhyADoA==",
+        "dragonBonusPlateRoad2": "LQYIxASANAEgCABoAgQwAJAGACCLIApAWC5AGADBDoA0AaAMEWADwXqA2AUAMEMgDQBoAwAYgJAFACQBBF0AUAJAGgCsBoAwAQIZAEgAAAAABAeCA4A=",
+        "newBigPairRoa3": "LQYUgIAAAAAAAAAAoAoAoAAAAAAAgAAAAAAAAAAAoEAAAAAAAAAAgAgAAAAAAAAAoAAAAAAAAAAAgEgEAAAAAAAAog4BoAAAAAAAgAgAAAAAAAAAoEoEoEAAAAAAgAgEAAAAAAAA4BoMo0AAAAAAgAAAAAAAAAAAoAoAoEAAAAAAgAgMAAAAAAAAogoAAAAAAAAAgEAAAAAAAAAAokoAokoEAAAAgAgAAAAAAAAAoAoAAAAAAAAAAhOACgA=",
+        "bigSmallPlateRoad": "LQYIo1KlShEoUKkCBUk3KlChEiRKEC5FjSKFSpEoQakipAiWKkSXEoUKlQAABAeCA4A=",
+        "dragonBonusPlateRoad": "LQYIxk0kg0ggkwgkpskww000ww812owk00wxkokg0ok0r0wgkkAABAeCA4A=",
+        "bigPairRoad": "LQYUgIAAAAAAAoFAoAAAAAgAAAAAAAAoAAAAAAAAgEAAAAAAAoAAAAAAAAgEAAAAAAAonAoAAAAAgEAAAAAAAoFAoAAAAAgEAAAAAAA4FBowAAAAgAAAAAAAAoFAoAAAAAgEBAAAAAAolAAAAAAAgAAAAAAAAolAolAAAAgEAAAAAAAoFAAAAAAAAhOACgA=",
+        "beatPlateRoad": "LQYIjSlIUhCkIUzykIUpSEOVtiFKUhGmKQpilN0hClAABAeCA4A=",
+        "smallRoad": "IwYRwAqA/AgAwAgA//gD/DoDwDoAwAgAwAqAwAARCACI",
+        "cockroachPig": "IgYW8AgAwAoAwAqgwAoAwAgAwAqAwAoAwAqgwAgAwAgA8AgAABaAioA=",
+        "bigEyeBoy": "JgYagAwAoAwAqowAoAwAgAwAoAwAgAwAqgwAgAwAgA8AoA8AgAwAgAwAABoAjMA=",
+        "newBigPairRoad": "LQYUgIAAAAAAAAoCgKAAAAAAgAAAAAAAAAoEAAAAAAAAgCAAAAAAAAoAAAAAAAAAgGAQAAAAAAojgKAAAAAAgCAAAAAAAAoGgaBAAAAAgCAQAAAAAA4Cg6NAAAAAgAAAAAAAAAoCgKBAAAAAgCAwAAAAAAoigAAAAAAAgEAAAAAAAAomgKJoEAAAgCAAAAAAAAoCgAAAAAAAAhOACgA="
+      },
+      "bootReport":
+      {
+        "totalCount": 46,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 25
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 25
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 16
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 5
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 2
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 5
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 7
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 2
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 6
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 2
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "u024;u024h;u024s",
+      "lastUpdateTableCacheTime": 1753860757089,
+      "goodRoadPoints":
+      [
+        {
+          "goodRoadType": 9,
+          "goodRoadFlag": true,
+          "betPoint": false,
+          "putPoint": false,
+          "sort": 8
+        }
+      ],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c79e44f44a2b9f9093be.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c79e44f44a2b9f9093be.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753845114096,
+      "roadPaperVersion": 316835103,
+      "bootReportVersion": 316835103,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c79e44f44a2b9f9093be.jpg",
+      "dealerNameLanguageMap":
+      {
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Luck"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2468":
+    {
+      "tableId": 2468,
+      "gameCasinoId": 8,
+      "gameCasinoName": "新旗舰厅",
+      "tableName": "闪电百家乐X14",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Bạc Tia Chớp X14"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "Ltn.Bac X14"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "雷バカラ X14"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "번개 바카라 X14"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Ltn.Bac X14"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "闪电百家乐X14"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "閃電百家樂X14"
+        }
+      },
+      "physicsTableNo": "X14",
+      "gameStatus": 2,
+      "tableOpen": true,
+      "gameTypeId": 2034,
+      "gameTypeName": "闪电百家乐",
+      "dealerId": 2044,
+      "dealerName": "Chiyo",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/64f1eefe44f4c3b80aa26972.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "PH",
+      "roundId": 316835252,
+      "countdownEndTime": 1753860776699,
+      "totalBetCountDown": 20000,
+      "serverTime": 1753860756699,
+      "bootNo": "B0X142573001CP-X092",
+      "tableOnline":
+      {
+        "onlineNumber": 16,
+        "totalAmount": 0
+      },
+      "goodRoads": 1,
+      "roadPaper":
+      {
+        "winPointPlateRoad": "DwYDwmXwE0wFUqlUyE0yGVyEwuGBAAABAKCAQA==",
+        "bigPairRoad": "DwYKoFDAAAAAAgAAAAAAAAoAAAAAAAAgAAAAAAAAoFAoAAAAAgAAAAAAAAoAAAAAAAAgAAAAAAAAoIAAAAAAAgEAgEBAAAAAqCBI",
+        "bigPairRoad3": "DwYKoAKGAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoAKACgAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoIAAAAAAAAAAAAgAIACAAgIAAAAAAAqCBIA=",
+        "winLoseRoad": "DwYKoXAAAAAgAAAAAAoAAAAAAgAAAAAAoUKAAAAgAAAAAAoAAAAAAgAAAAAAqAAAAAAgQIEQAAAAqCBI",
+        "smallRoad": "CwYKgAwAgAwAgAwAgA8AgA8AAAoBBMA=",
+        "cockroachPig": "CgYIoAwAgA8AgAwAgA8AAAgBA8A=",
+        "lightningBigPairRoad": "DwYKoBQwAAAAAAAgCAAAAAAAAAoAAAAAAAAAAgCAAAAAAAAAoBQCgIAAAAAgAAAAAAAAAAoAAAAAAAAAAgAAAAAAAAAAoIAAAAAAAAAgBACAEBAAAAAAqCBI",
+        "bigEyeBoy": "DAYIgA8AgAwAoA/AgA8AAAgBA8A=",
+        "lightningBeadPlateRoad": "DwYDoA3AYAlAGAFQBoA0AoANAGADUBgAwAYAMQEAAAABAKCAQA=="
+      },
+      "bootReport":
+      {
+        "totalCount": 16,
+        "items":
+        [
+          {
+            "betPointId": 5751,
+            "betPointName": "庄",
+            "winCount": 8
+          },
+          {
+            "betPointId": 5752,
+            "betPointName": "闲",
+            "winCount": 8
+          },
+          {
+            "betPointId": 5753,
+            "betPointName": "和",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5754,
+            "betPointName": "庄对",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5755,
+            "betPointName": "闲对",
+            "winCount": 3
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "x014;x014h;x014s",
+      "lastUpdateTableCacheTime": 1753860756740,
+      "goodRoadPoints":
+      [
+        {
+          "goodRoadType": 1,
+          "goodRoadFlag": true,
+          "betPoint": true,
+          "putPoint": true,
+          "sort": 2,
+          "num": 4
+        }
+      ],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9eb44f44a2b9f9093e8.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9eb44f44a2b9f9093e8.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753749328358,
+      "roadPaperVersion": 316834987,
+      "bootReportVersion": 316834987,
+      "bootNumberLimitListVersion": 1724130901,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9eb44f44a2b9f9093e8.jpg",
+      "dealerNameLanguageMap":
+      {
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Chiyo"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Chiyo"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2728":
+    {
+      "tableId": 2728,
+      "gameCasinoId": 10,
+      "gameCasinoName": "韩国厅",
+      "tableName": "极速百家乐H28",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Siêu tốc H28"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "SPD H28"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "極速バカラ H28"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "스피드 H28"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "SPD H28"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "极速百家乐H28"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "極速百家樂H28"
+        }
+      },
+      "physicsTableNo": "H28",
+      "gameStatus": 2,
+      "tableOpen": true,
+      "gameTypeId": 2002,
+      "gameTypeName": "极速百家乐",
+      "dealerId": 1750931377,
+      "dealerName": "Irma",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/685d17b244f4d44b59f493f2.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "PH",
+      "roundId": 316835259,
+      "countdownEndTime": 1753860773597,
+      "totalBetCountDown": 15000,
+      "serverTime": 1753860758597,
+      "bootNo": "B0H282573000EP-KR066",
+      "tableOnline":
+      {
+        "onlineNumber": 10,
+        "totalAmount": 0
+      },
+      "goodRoads": 2,
+      "roadPaper":
+      {
+        "bigRoad": "NgYToUKFChQgQIIABRoUKAABRgQIAABQoAAAABQgAAAAAAoUAAAAAgQAAAAAoAAAAAAgwIAAAAoAAAAAAgQIAAAAoAAAAAAgQIMAAAoUAAAAAgAAAAAAoAAAAAAgwIAAAAoUKFAAABBKACY=",
+        "newBigPairRoad2": "NgYToEOEKgA4IeEGgggKIACCQAAAACiQoEKACgAAAAACiQgEIBCAAAAAACgAoIAAAAAAAAACgAgAAAAAAAAAAAAA4AaBAAAAAAAAAAgEIAAAAAAAAAAAoEAAAAAAAAAAAAgkIASBEAAAAAAAoEAAAAAAAAAAAAgEIBiAEAAAAAAAoAAAAAAAAAAAAAgEIBCCAgAAAAAAoEOAEAAAAAAAAAgEAAAAAAAAAAAAoMAAAAAAAAAAAAggIACAAAAAAAAAoAKADgBoAAAAAABBKACY",
+        "winPointPlateRoad": "NgYKwluultt01ylqwk4olUuOAwGYylEimQwFAqtgtmUwFgymAxFwuWUwFwuF0yGAoF5yGUtmAyuAnGQsFUulsugAAAAAAAAQmAhI",
+        "beatPlateRoad2": "NgYKoA8UoA6L8LqAoA0AoAwAoAoAjFgAgAwAoAoAoAgAgAgAqAgA4LoAgAgAoAgAwAgikhoAgAhFghoAgAgAgAyAgAoA4LgAqAgAwAgAgAoAoA4LoAAAAAAAAAAAAQmAhIA=",
+        "bigPairRoad2": "NgYToAcIqAHBHhDQQgMQAIIAAAABRAoAUAKAAAAABRAgAQAIAAAAABQAoIAAAAAAAABQAgAAAAAAAAAAAA4A0AAAAAAAAAAgAQAAAAAAAAAAoAAAAAAAAAAAAggQBIEgAAAAAAoAAAAAAAAAAAAgAQCIAgAAAAAAoAAAAAAAAAAAAgAQAIIEAAAAAAoAcAQAAAAAAAAgAAAAAAAAAAAAoIAAAAAAAAAAAggQAIAAAAAAAAoAUAOANAAAAAABBKACYA==",
+        "bigPairRoad3": "NgYToAOFSgA4K+EugggJYACCAAAAACiAoAKACgAAAAACiAgAIACAAAAAACgAoIAAAAAAAAACgAgAAAAAAAAAAAAA4C6AAAAAAAAAAAgAIAAAAAAAAAAAoAAAAAAAAAAAAAggIAKBBAAAAAAAoAAAAAAAAAAAAAgAIAWABAAAAAAAoAAAAAAAAAAAAAgAIACCAgAAAAAAoAOAsAAAAAAAAAgAAAAAAAAAAAAAoIAAAAAAAAAAAAggIACAAAAAAAAAoAKADgLoAAAAAABBKACY",
+        "winLoseRoad": "NgYeoWKFSxU0AAAABQoAAAAAAwAAAAAAoUAAAAAiQIAAAAwAAAAAAoUKAAAAgQIAAAAqAAAAAAgAAAAAAoUAAAAAgQAAAAAoAAAAAAgAAAAAAwAAAAAAgSAAAAAoAAAAAAgQIAAAAoAAAAAAgQIAAAAyAAAAAAgAAAAAAoUAAAAAgAAAAAAqAAAAAAgAAAAAAwAAAAAAgQAAAAAoUKFAAABB2ADw",
+        "dragonBonusPlateRoad2": "NgYK0AfFNAFov4XKA0AVANAFACQBIAhi4AMAFADQBIAkAYAMAEACUBgA8F6AMAGADQBgAoAYIokOgDABBFwQ6AMAGACABSAgAaALBeADUBAAoAYAMAGgCQBYL0AAAAAAAAAAAAAQmAhI",
+        "bigSmallPlateRoad": "NgYKiXql29ViSolipUo0IEiJUqQIFCrQuRIFCJAkUKUSBAoVIEChZoRLkCLQsUKFSpcqAAAAAAAQmAhI",
+        "newBigPairRoa3": "NgYToE4SoA4J4RoIgIgAgkAAAAokoEoAoAAAAAokgEgEgAAAAAoAoIAAAAAAAAoAgAAAAAAAAAAA4BoEAAAAAAAAgEgAAAAAAAAAoEAAAAAAAAAAgkgAgQAAAAAAoEAAAAAAAAAAgEgEgAAAAAAAoAAAAAAAAAAAgEgEgggAAAAAoE4BAAAAAAAAgEAAAAAAAAAAoMAAAAAAAAAAgggAgAAAAAAAoAoA4BoAAAAABBKACYA=",
+        "bigPairRoad": "NgYToHCoHB4VBgMAggAAFEoFAoAAAFEgEAgAAAFAoIAAAAAFAgAAAAAAAA4FAAAAAAAgEAAAAAAAoAAAAAAAAgkAgQAAAAoAAAAAAAAgEAgAAAAAoAAAAAAAAgEAgkAAAAoHAAAAAAAgAAAAAAAAoIAAAAAAAgkAgAAAAAoFA4FAAAABBKACYA==",
+        "dragonBonusPlateRoad": "NgYK0+0t+l0q0okkhwwo0kkwwglw80ww0wowi0wgw0wwgpg0sw1goww0ks0AAAAAAQmAhIA=",
+        "beatPlateRoad": "NgYKp6nfVpqmKUjCGKUpCEKw5SEKQxCVIQhSEIZhTkKwxCFKcoAAAAAQmAhI",
+        "smallRoad": "IgYL8AgA/AqqwCoA//qrwIoI8AAgqABY",
+        "cockroachPig": "HwYR8AqAwAqA8AqgwAqA8AgAwAgAwAgAwAqA8AAhCACI",
+        "bigEyeBoy": "JQYW8AgA//gAwAoA8AoAwAqAwAqA8AgAwAoAwAgAwAgA8AgAABaAioA=",
+        "newBigPairRoad": "NgYToHhKA4LhKCgKAIJAAAKJoGgKAAAAKJgGAYAAAAKAoIAAAAAAKAgAAAAAAAAA4CgQAAAAAAgGAAAAAAAAoEAAAAAAAAgmAIEAAAAAoEAAAAAAAAgGAYAAAAAAoAAAAAAAAAgGAYIgAAAAoHgAAAAAAAgEAAAAAAAAoMAAAAAAAAgiAIAAAAAAoCgOAoAAAABBKACY"
+      },
+      "bootReport":
+      {
+        "totalCount": 55,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 26
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 26
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 23
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 6
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 4
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 6
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 6
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 5
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 2
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 5
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 3
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 2
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "h028;h028h;h028s",
+      "lastUpdateTableCacheTime": 1753860758629,
+      "goodRoadPoints":
+      [
+        {
+          "goodRoadType": 2,
+          "goodRoadFlag": true,
+          "betPoint": true,
+          "putPoint": true,
+          "sort": 1,
+          "num": 4
+        }
+      ],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c69644f44a2b9f909369.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c69644f44a2b9f909369.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753826188673,
+      "roadPaperVersion": 316835069,
+      "bootReportVersion": 316835069,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c69644f44a2b9f909369.jpg",
+      "dealerNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Irma"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "Irma"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "Irma"
+        },
+        "alb":
+        {
+          "languageCode": "alb",
+          "content": "Irma"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "Irma"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Irma"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Irma"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Irma"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2736":
+    {
+      "tableId": 2736,
+      "gameCasinoId": 10,
+      "gameCasinoName": "韩国厅",
+      "tableName": "极速百家乐H35",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Siêu tốc H35"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "SPD H35"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "極速バカラ H35"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "스피드 H35"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "SPD H35"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "极速百家乐H35"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "極速百家樂H35"
+        }
+      },
+      "physicsTableNo": "H35",
+      "gameStatus": 3,
+      "tableOpen": true,
+      "gameTypeId": 2002,
+      "gameTypeName": "极速百家乐",
+      "dealerId": 3250,
+      "dealerName": "Clide",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/66c6efbb44f4dc893f2512ee.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "PH",
+      "roundId": 316835173,
+      "countdownEndTime": 1753860758152,
+      "totalBetCountDown": 15000,
+      "serverTime": 1753860743152,
+      "bootNo": "B0H3525730018P-KR021",
+      "tableOnline":
+      {
+        "onlineNumber": 9,
+        "totalAmount": 0
+      },
+      "goodRoads": 0,
+      "roadPaper":
+      {
+        "bigRoad": "CwYIgAAAAAAoAAAAAAgAAAAAAo0AAAAAgAAAAAAoAAAAAAgQAAAAAoUAAAAAAgeABAA=",
+        "newBigPairRoad2": "CwYIgEAAAAAAAAAAAAoAAAAAAAAAAAAAgEAAAAAAAAAAAAokKAAAAAAAAAAAgEAAAAAAAAAAAAoEAAAAAAAAAAAAgBIAAAAAAAAAAAoAKAAAAAAAAAAAAgeABAA=",
+        "winPointPlateRoad": "CwYCwGUwGElF0wGUuFgyl0AAKAAQ",
+        "beatPlateRoad2": "CwYCgAoAgAoAwAoAgAoAghgAoAoAAAKAAQA=",
+        "bigPairRoad2": "CwYIgAAAAAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAogUAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgCQAAAAAAAAAAoAUAAAAAAAAAAAgeABAA=",
+        "bigPairRoad3": "CwYIgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAogKAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAYAAAAAAAAAAAoAKAAAAAAAAAAAAgeABAA=",
+        "winLoseRoad": "CwYKgAAAAAAoAAAAAAgAAAAAAoAAAAAAwAAAAAAoAAAAAAgAAAAAAoAAAAAAgQAAAAAoUAAAAAAgmABQ",
+        "dragonBonusPlateRoad2": "CwYCwASAMAGgCgBIAwAaAIEOADQBIAAAKAAQ",
+        "bigSmallPlateRoad": "CwYCgVIESxUgRKFCpUAAKAAQ",
+        "newBigPairRoa3": "CwYIgEAAAAAAAAAAoAAAAAAAAAAAgEAAAAAAAAAAokoAAAAAAAAAgEAAAAAAAAAAoEAAAAAAAAAAgAgAAAAAAAAAoAoAAAAAAAAAAgeABAA=",
+        "bigPairRoad": "CwYIgAAAAAAAAoAAAAAAAAgAAAAAAAAolAAAAAAAgAAAAAAAAoAAAAAAAAgEAAAAAAAoFAAAAAAAAgeABAA=",
+        "dragonBonusPlateRoad": "CwYCwkw0okw0gw0kAAKAAQA=",
+        "beatPlateRoad": "CwYChSFMUhSEKUAAKAAQ",
+        "smallRoad": "BwYEwAoAwAqgAASCAYA=",
+        "cockroachPig": "BgYDoA/wgAAAOAgQ",
+        "bigEyeBoy": "CAYF8AqAwAoAwAAAUAgk",
+        "newBigPairRoad": "CwYIgEAAAAAAAAoAAAAAAAAAgEAAAAAAAAomgAAAAAAAgEAAAAAAAAoEAAAAAAAAgCAAAAAAAAoCgAAAAAAAAgeABAA="
+      },
+      "bootReport":
+      {
+        "totalCount": 12,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 6
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 6
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 5
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 1
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 0
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 0
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 0
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "h035;h035h;h035s",
+      "lastUpdateTableCacheTime": 1753860758158,
+      "goodRoadPoints":
+      [],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c6c044f4c717f69f4078.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c6c044f4c717f69f4078.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753749328888,
+      "roadPaperVersion": 316835014,
+      "bootReportVersion": 316835014,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c6c044f4c717f69f4078.jpg",
+      "dealerNameLanguageMap":
+      {
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Clide"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2737":
+    {
+      "tableId": 2737,
+      "gameCasinoId": 10,
+      "gameCasinoName": "韩国厅",
+      "tableName": "极速百家乐H53",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Siêu tốc H53"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "SPD H53"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "極速バカラ H53"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "스피드 H53"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "SPD H53"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "极速百家乐H53"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "極速百家樂H53"
+        }
+      },
+      "physicsTableNo": "H53",
+      "gameStatus": 3,
+      "tableOpen": true,
+      "gameTypeId": 2002,
+      "gameTypeName": "极速百家乐",
+      "dealerId": 1750749773,
+      "dealerName": "Thera",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/685a524e44f4d44b59f441bf.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "PH",
+      "roundId": 316835170,
+      "countdownEndTime": 1753860757463,
+      "totalBetCountDown": 15000,
+      "serverTime": 1753860742463,
+      "bootNo": "B0H5325730017P-KR037",
+      "tableOnline":
+      {
+        "onlineNumber": 9,
+        "totalAmount": 0
+      },
+      "goodRoads": 10,
+      "roadPaper":
+      {
+        "bigRoad": "OAYdgAAAAAAoAAAAAAgQAAAAAoAAAAAAgQAAAAAoUKAAAAgQAAAAAoUAAAAAgQAAAAAoUAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgQAAAAAoUKFAAAgAAAAAAoUAAAAAgQAAAAAoAAAAAAgAAAAAAoUKFAAAgwAAAAAoAAAAAAgwAAAAAoUQAAAAgQYIAAAoAAAAAAgQAAAAAAB2BDgA==",
+        "newBigPairRoad2": "OAYdgAAAAAAAAAAAAAoAAAAAAAAAAAAAgEIAAAAAAAAAAAoAAAAAAAAAAAAAgCIBAAAAAAAAAAoAKBCgwAAAAAAAgEIAAAAAAAAAAAoIKBAAAAAAAAAAgEIAQAAAAAAAAAoAOAEAAAAAAAAAgMAAAAAAAAAAAAoAAAAAAAAAAAAAgGAAAAAAAAAAAAoAAAAAAAAAAAAAgBIBAAAAAAAAAAoAKBCgg4AQAAAAgGAAAAAAAAAAAAoAKAAAAAAAAAAAgQIBAAAAAAAAAAoEAAAAAAAAAAAAgBAAAAAAAAAAAAoQKBCgAoEAAAAAghIAAAAAAAAAAAoMAAAAAAAAAAAAgkIAAAAAAAAAAAoAKIAAAAAAAAAAgAIISCQAAAAAAAoAAAAAAAAAAAAAgBIBAAAAAAAAAAAB2BDg",
+        "winPointPlateRoad": "OAYKmGUwGQqlwyF0ymFwFQquUwFwwlswNEuF0uGQumEqtsuE0uliwGEuFWymEylwvFQyuQxFQumUzFQuEIyGJqlwwAAAAAAwmBhI",
+        "beatPlateRoad2": "OAYKgAoAgAgAoAhFgAoAoAqAgAgAqAoAgAgioA4LiAoAhFoAghgAoAoAqA4LhFoAoAkAgAoAghsAoAoAoAghwAgAqAgAwAgAoAoAwAgAghwAgAyAoAghgAAAAAAAAwmBhIA=",
+        "bigPairRoad2": "OAYdgAAAAAAAAAAAAoAAAAAAAAAAAAgAQAAAAAAAAAAoAAAAAAAAAAAAgEQAAAAAAAAAAoAUAKCAAAAAAAgAQAAAAAAAAAAoIUAAAAAAAAAAgAQBAAAAAAAAAoAcAQAAAAAAAAgIAAAAAAAAAAAoAAAAAAAAAAAAgEAAAAAAAAAAAoAAAAAAAAAAAAgCQAAAAAAAAAAoAUAKCHAEAAAAgEAAAAAAAAAAAoAUAAAAAAAAAAgQQAAAAAAAAAAoAAAAAAAAAAAAgCAAAAAAAAAAAoQUAKAFAAAAAAgiQAAAAAAAAAAoIAAAAAAAAAAAggQAAAAAAAAAAoAUQAAAAAAAAAgAQRIIAAAAAAAoAAAAAAAAAAAAgCQAAAAAAAAAAAB2BDg=",
+        "bigPairRoad3": "OAYdgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAIAAAAAAAAAAAoAAAAAAAAAAAAAgBYAAAAAAAAAAAoAKACggAAAAAAAgAIAAAAAAAAAAAoIKAAAAAAAAAAAgAIAIAAAAAAAAAoAOAsAAAAAAAAAgIAAAAAAAAAAAAoAAAAAAAAAAAAAgBQAAAAAAAAAAAoAAAAAAAAAAAAAgAYAAAAAAAAAAAoAKACgg4CwAAAAgBQAAAAAAAAAAAoAKAAAAAAAAAAAgQIAAAAAAAAAAAoAAAAAAAAAAAAAgAQAAAAAAAAAAAoQKACgAoAAAAAAggYAAAAAAAAAAAoIAAAAAAAAAAAAggIAAAAAAAAAAAoAKIAAAAAAAAAAgAIIGCAAAAAAAAoAAAAAAAAAAAAAgAYAAAAAAAAAAAAB2BDg",
+        "winLoseRoad": "OAYlgAAAAAAoAAAAAAgQAAAAAoAAAAAAgQAAAAAoUKgAAAgQAAAAAqUAAAAAgQAAAAAoUAAAAAiAAAAAAoAAAAAAgAAAAAAoAAAAAAgQAAAAAoUKlAAAgAAAAAAoUAAAAAkQAAAAAoAAAAAAgAAAAAAsUKFAAAgAAAAAAwAAAAAAgAAAAAAqAAAAAAgAAAAAAwAAAAAAgAAAAAAoUAAAAAwAAAAAAgQAAAAAwAAAAAAgAAAAAAyAAAAAAoAAAAAAgQAAAAAACWBEgA==",
+        "dragonBonusPlateRoad2": "OAYKgASAMAEACQBBFwASANAGoDABAA1AaAMAGCLQBYLxASAIIugDBDgAkAaAJQHguCLIA0AZAMAGgDBDsA0ASANAGCGgBgA1AYAKAGACQBoAoAQAMENADABSAkAQIcAAAAAAAAAwmBhI",
+        "bigSmallPlateRoad": "OAYKoVIFCpQgVIkWBQqxIFCpcg1IFShAqRKtyBUqUoEShWiVIlCxQiwJFCpUkUKFiBJqUIAAAAAwmBhI",
+        "newBigPairRoa3": "OAYdgAAAAAAAAAAAoAAAAAAAAAAAgEgAAAAAAAAAoAAAAAAAAAAAgAgEAAAAAAAAoAoEoMAAAAAAgEgAAAAAAAAAoIoEAAAAAAAAgEgAAAAAAAAAoA4BAAAAAAAAgMAAAAAAAAAAoAAAAAAAAAAAgEAAAAAAAAAAoAAAAAAAAAAAgAgEAAAAAAAAoAoEoI4BAAAAgEAAAAAAAAAAoAoAAAAAAAAAgQgEAAAAAAAAoEAAAAAAAAAAgAAAAAAAAAAAoQoEoAoEAAAAgggAAAAAAAAAoMAAAAAAAAAAgkgAAAAAAAAAoAogAAAAAAAAgAgggkAAAAAAoAAAAAAAAAAAgAgEAAAAAAAAAB2BDgA=",
+        "bigPairRoad": "OAYdgAAAAAAAAoAAAAAAAAgEAAAAAAAoAAAAAAAAgEAAAAAAAoFAoIAAAAgEAAAAAAAoNAAAAAAAgEAAAAAAAoHAAAAAAAgIAAAAAAAoAAAAAAAAgAAAAAAAAoAAAAAAAAgEAAAAAAAoFAoPAAAAgAAAAAAAAoFAAAAAAAgUAAAAAAAoAAAAAAAAgAAAAAAAAoVAoFAAAAgkAAAAAAAoIAAAAAAAgkAAAAAAAoFEAAAAAAgEEggAAAAoAAAAAAAAgEAAAAAAAAB2BDg=",
+        "dragonBonusPlateRoad": "OAYKgkwgkgwk01wg10ww0sxkg0wwk0l8gk0yw0w20k0wow1wowk0ogwowpkgwAAAAwmBhIA=",
+        "beatPlateRoad": "OAYKhSEKQhSlYQrSEKcjSFIQpSvIUpKFIWpSkMQrDEKUxCGIZpCAAAAwmBhI",
+        "smallRoad": "MAYWoA/AgAwAgA/AgA/woA8AqA8AoAwAqq8Aqg8AoAwAqAwAABYAisA=",
+        "cockroachPig": "LgYbwAoAwAqg/AgA8AqAwAqA8AgA/wgAwAgAwAgAwAqA8AgA8AgAwAoAwAARqADY",
+        "bigEyeBoy": "MQYYwAqowAoAwAgA//gA/AoAwAgAwAqg8AgAwAgA8AgAwAqg/AqgBBcADEA=",
+        "newBigPairRoad": "OAYdgAAAAAAAAAoAAAAAAAAAgGAAAAAAAAoAAAAAAAAAgCAQAAAAAAoCgaDAAAAAgGAAAAAAAAoKgQAAAAAAgGAAAAAAAAoDgAAAAAAAgMAAAAAAAAoAAAAAAAAAgEAAAAAAAAoAAAAAAAAAgCAQAAAAAAoCgaC4AAAAgEAAAAAAAAoCgAAAAAAAgSAQAAAAAAoEAAAAAAAAgAAAAAAAAAoSgaAoEAAAgiAAAAAAAAoMAAAAAAAAgmAAAAAAAAoCiAAAAAAAgCCIJAAAAAoAAAAAAAAAgCAQAAAAAAAB2BDg"
+      },
+      "bootReport":
+      {
+        "totalCount": 57,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 26
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 26
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 26
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 5
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 2
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 6
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 9
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 3
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 7
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 3
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "h053;h053h;h053s",
+      "lastUpdateTableCacheTime": 1753860757468,
+      "goodRoadPoints":
+      [
+        {
+          "goodRoadType": 10,
+          "goodRoadFlag": true,
+          "betPoint": false,
+          "putPoint": false,
+          "sort": 9
+        }
+      ],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c69c44f44a2b9f90936c.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c69c44f44a2b9f90936c.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753749328665,
+      "roadPaperVersion": 316835028,
+      "bootReportVersion": 316835028,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c69c44f44a2b9f90936c.jpg",
+      "dealerNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Thera"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "Thera"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "Thera"
+        },
+        "alb":
+        {
+          "languageCode": "alb",
+          "content": "Thera"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "Thera"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Thera"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Thera"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Thera"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2743":
+    {
+      "tableId": 2743,
+      "gameCasinoId": 10,
+      "gameCasinoName": "韩国厅",
+      "tableName": "竞咪百家乐X18",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Tranh nặn bài X18"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "Bid X18"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "百家楽を競う X18"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "스퀴즈(최고액만) X18"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Bid X18"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "竞咪百家乐X18"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "競咪百家樂X18"
+        }
+      },
+      "physicsTableNo": "X18",
+      "gameStatus": 2,
+      "tableOpen": true,
+      "gameTypeId": 2003,
+      "gameTypeName": "竞咪百家乐",
+      "dealerId": 3936,
+      "dealerName": "Brianna",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/682c303644f4d44b59ef8f77.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "PH",
+      "roundId": 316835256,
+      "countdownEndTime": 1753860782389,
+      "totalBetCountDown": 25000,
+      "serverTime": 1753860757389,
+      "bootNo": "B0X1825730010P-KR017",
+      "tableOnline":
+      {
+        "onlineNumber": 6,
+        "totalAmount": 0
+      },
+      "goodRoads": 0,
+      "roadPaper":
+      {
+        "newBigPairRoad2": "KAYMgBIIAAAAAAAAAAoMAAAAAAAAAAAAgAIBCAAgEAAAAAoAKACgQ4QaBAAAgAAAAAAAAAAAAAoAKBCggoAAAAAAgAIASAQgEIBCAQ4IQAAAAAAAACBAghAAAAAAAAACAAoEKBCgAoAKBAAAgkIASAAgBAAAAAooAAAAAAAAAAAAAQuABgA=",
+        "bigRoad": "KAYMgQQAAAAoAAAAAAgQIEAAAoUKFCgAgAAAAAAoUKFAAAgQIECBAoAAAABAggAAABAoUKFCgAgwIEAAAogAAAAAAQuABgA=",
+        "winPointPlateRoad": "KAYHuFgtOVyGQoGAwl0yluwmAomEyt0qFwyGQyGAwVgttwrGEymUwmEyGYuFQuF1xIABQaCgwA==",
+        "beatPlateRoad2": "KAYHghgAyAqAgAgAgAgAoAoAoA8LoAgAoAoAqAoAgAgigAgAgAgAkAgA6LghwAoAoAoAoAoAgAwAghgAghqAyAAABQaCgwA=",
+        "bigPairRoad2": "KAYMgCQQAAAAAAAAAoIAAAAAAAAAAAgAQAIAEAAAAAAoAUAKAHCGgAAAgAAAAAAAAAAAAoAUAKCFAAAAAAgAQBIAEACABAA4IgAAAAAAABAggiAAAAAAAABAAoAUAKAFACgAAAggQBIAEAQAAAAooAAAAAAAAAAAAQuABgA=",
+        "winLoseRoad": "KAYRgQAAAAAyAAAAAAqAAAAAAgQIEAAAoUKFigAgAAAAAAoUKlAAAgQIECBAqAAAABIgAAAABAwAAAAAAoUKFCgAgAAAAAAwAAAAAAgQIAAAAqAAAAAAyAAAAAAABGACIA==",
+        "bigPairRoad3": "KAYMgAYIAAAAAAAAAAoIAAAAAAAAAAAAgAIACAAgAAAAAAoAKACgA4S6AAAAgAAAAAAAAAAAAAoAKACggoAAAAAAgAIAKAAgAIACAA4KwAAAAAAAACBAggQAAAAAAAACAAoAKACgAoAKAAAAggIAGAAgAQAAAAooAAAAAAAAAAAAAQuABgA=",
+        "dragonBonusPlateRoad2": "KAYHwQ4AKQGoCABgAgAYAJAGgDQB8L0AQANAGgDUBoAwAYIsAGADABgAyAYALRcCGgBoA0AaANAGgDABQAwQ4AMEOoCkAAABQaCgwA==",
+        "newBigPairRoa3": "KAYMgAggAAAAAAAAoMAAAAAAAAAAgAgEgAgEAAAAoAoAoE4RoEAAgAAAAAAAAAAAoAoEoIoAAAAAgAgAgEgEgEgE4JAAAAAAAAgQggAAAAAAAAgAoEoEoAoAoEAAgkgAgAgAAAAAooAAAAAAAAAAAQuABgA=",
+        "bigSmallPlateRoad": "KAYHoULMWhAoQKlSJeiUKkSrUoUIECBApULtCxEiVKkSBIoUKFWSABQaCgw=",
+        "dragonBonusPlateRoad": "KAYHwwp1gwgwk00+0g0010wwwwwwywtgo00000wowww1pABQaCgw",
+        "bigPairRoad": "KAYMgEEAAAAAAoIAAAAAAAgEAgEAAAAoFAoHCoAAgAAAAAAAAoFAoNAAAAgEAgEAgEA4IAAAAAECggAAAAAEAoFAoFAoAAgkAgEAAAAooAAAAAAAAQuABgA=",
+        "beatPlateRoad": "KAYHhDNYQhClKepClK0hCEIQlDsMUpSlIYhCFcgBQaCgwA==",
+        "smallRoad": "IAYOwAgAwAoA/AoA/AoA//qg/AoA8AgAAA6AhoA=",
+        "cockroachPig": "HAYOwAgA8AgA//gD8DgDwAgA/woA8AgAAQ0AB0A=",
+        "bigEyeBoy": "IQYRoA8AgA/Aqg8AgA/AgA/AoAwAgA/AgA/AgAABGAiA",
+        "newBigPairRoad": "KAYMgCCAAAAAAAoMAAAAAAAAgCAYAgEAAAoCgKB4SgQAgAAAAAAAAAoCgaCoAAAAgCAIBgGAYB4IAAAAAAIEggAAAAAAIAoGgaAoCgQAgmAIAgAAAAooAAAAAAAAAQuABgA="
+      },
+      "bootReport":
+      {
+        "totalCount": 41,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 17
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 17
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 20
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 4
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 2
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 6
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 5
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 4
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 0
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "x018;x018h;x018s",
+      "lastUpdateTableCacheTime": 1753860757406,
+      "goodRoadPoints":
+      [],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c71844f44a2b9f9093aa.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c71844f44a2b9f9093aa.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753749327387,
+      "roadPaperVersion": 316835003,
+      "bootReportVersion": 316835003,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "miCountDown": 20000,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c71844f44a2b9f9093aa.jpg",
+      "dealerNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Brianna"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "Brianna"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "Brianna"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "Brianna"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Brianna"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Brianna"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Brianna"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2296":
+    {
+      "tableId": 2296,
+      "gameCasinoId": 12,
+      "gameCasinoName": "越南厅",
+      "tableName": "主播百家乐L12",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Bac MC L12"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "ANC L12"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "アンカー L12"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "BJ바카라 L12"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "ANC L12"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "主播百家乐L12"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "主播百家樂L12"
+        }
+      },
+      "physicsTableNo": "L12",
+      "gameStatus": 2,
+      "tableOpen": true,
+      "gameTypeId": 2030,
+      "gameTypeName": "主播百家乐",
+      "dealerId": 1752062523,
+      "dealerName": "Sachi",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/686f1ba544f44a2b9f8ca2fa.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "VN",
+      "roundId": 316835254,
+      "countdownEndTime": 1753860781777,
+      "totalBetCountDown": 25000,
+      "serverTime": 1753860756777,
+      "bootNo": "B0L1225730009P-JS224",
+      "tableOnline":
+      {
+        "onlineNumber": 2,
+        "totalAmount": 0
+      },
+      "goodRoads": 7,
+      "roadPaper":
+      {
+        "newBigPairRoad2": "LgYdgAAAAAAAAAAAAA4AQAAAAAAAAAAAgEIAgAAAAAAAAAoAAAAAAAAAAAAAgEAAAAAAAAAAAAoAKBAAAAAAAAAAg4AAAAAAAAAAAAosKAAAAAAAAAAAgEAAAAAAAAAAAAoAKACgQoAAAAAAgEIBAAAAAAAAAAoAAAAAAAAAAAAAgEIAQAAAAAAAAAoAAAAAAAAAAAAAgEAAAAAAAAAAAA4AQAAAAAAAAAAAgAAAAAAAAAAAAAoEAAAAAAAAAAAAgEIBAAAAAAAAAAoEKFAAAAAAAAAAgBAAAAAAAAAAAAogKAAAAAAAAAAAgAAAAAAAAAAAAAoEAAAAAAAAAAAAgAIBCAQAAAAAAAoAAAAAAAAAAAAAgIIAQAAAAAAAAAoMAAAAAAAAAAAAgEIFAAAAAAAAAAAB2BDg",
+        "bigRoad": "LgYdgAAAAAAoAAAAAAgQAAAAAoAAAAAAgAAAAAAoUAAAAAggAAAAAo0AAAAAgAAAAAAoUKFAAAgQAAAAAoAAAAAAgQAAAAAoAAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgQAAAAAoUAAAAAgAAAAAAo0AAAAAgAAAAAAoAAAAAAgQIAAAAoAAAAAAgQAAAAAoAAAAAAgQAAAAAAB2BDgA==",
+        "winPointPlateRoad": "LgYImFsyFwymAumEicYyt4umQok0wmEyGQqmAuGUyFsyF0wGQymGuF0vE0sGEsGQyGEsNwwuQwQABQeCg4A=",
+        "beatPlateRoad2": "LgYIgA4LgAhFoAgAoAoAmAwAqAwAoAgAoAoAoAoAgAgAoAgAghoAgA4LgAoAgAgAoAsAgioAwAoAgAoAgAgAgAoAiAghqAgAkAAABQeCg4A=",
+        "bigPairRoad2": "LgYdgAAAAAAAAAAAA4AgAAAAAAAAAAgAQCAAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAoAUAAAAAAAAAAg4AAAAAAAAAAAooUAAAAAAAAAAgAAAAAAAAAAAAoAUAKAFAAAAAAgAQAAAAAAAAAAoAAAAAAAAAAAAgAQBAAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAA4AgAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgAQAAAAAAAAAAoAUIAAAAAAAAAgCAAAAAAAAAAAogUAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgAQAIAAAAAAAAoAAAAAAAAAAAAgIQBAAAAAAAAAoIAAAAAAAAAAAgAQIAAAAAAAAAAB2BDg=",
+        "bigPairRoad3": "LgYdgAAAAAAAAAAAAA4CwAAAAAAAAAAAgAIAUAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoAKAAAAAAAAAAAg4AAAAAAAAAAAAooKAAAAAAAAAAAgAAAAAAAAAAAAAoAKACgAoAAAAAAgAIAAAAAAAAAAAoAAAAAAAAAAAAAgAIAEAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAA4CwAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAIAAAAAAAAAAAoAKEAAAAAAAAAAgAgAAAAAAAAAAAogKAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAIACAAAAAAAAAoAAAAAAAAAAAAAgIIAEAAAAAAAAAoIAAAAAAAAAAAAgAIEAAAAAAAAAAAB2BDg",
+        "winLoseRoad": "LgYigAAAAAAoAAAAAAgQAAAAAoAAAAAAgAAAAAAoUAAAAAmAAAAAAwAAAAAAqAAAAAAwAAAAAAoAAAAAAgAAAAAAoUKFAAAgQAAAAAoAAAAAAgQAAAAAoAAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgQAAAAAoWAAAAAgAAAAAAoAAAAAAwAAAAAAoAAAAAAgAAAAAAoAAAAAAgQIAAAAoAAAAAAiQAAAAAqAAAAAAgSAAAAAACKBEI",
+        "dragonBonusPlateRoad2": "LgYIgAeC8AEEXQBgA0AaAIwFADUBQAkAYAJAEgDQBoAwAYANAGADBDIAwAWC8AEgDABgA0AbAIEWgCgBIAgAaAIAGADABIAhAYIdQGADIAAABQeCg4A=",
+        "newBigPairRoa3": "LgYdgAAAAAAAAAAA4BAAAAAAAAAAgEgAAAAAAAAAoAAAAAAAAAAAgEAAAAAAAAAAoAoEAAAAAAAAg4AAAAAAAAAAosoAAAAAAAAAgEAAAAAAAAAAoAoAoEoAAAAAgEgEAAAAAAAAoAAAAAAAAAAAgEgAAAAAAAAAoAAAAAAAAAAAgEAAAAAAAAAA4BAAAAAAAAAAgAAAAAAAAAAAoEAAAAAAAAAAgEgEAAAAAAAAoEoUAAAAAAAAgAAAAAAAAAAAogoAAAAAAAAAgAAAAAAAAAAAoEAAAAAAAAAAgAgEgEAAAAAAoAAAAAAAAAAAgIgAAAAAAAAAoMAAAAAAAAAAgEgUAAAAAAAAAB2BDgA=",
+        "bigSmallPlateRoad": "LgYIoXIFCpAqRKdiLYqQKlSJUgQKkChUgXKESBAiRqFSRUoRKECBUo0IsCEABQeCg4A=",
+        "dragonBonusPlateRoad": "LgYIg8wg0w00jo1okwkk00ww0wwkwswkww02g0okg0gwwkhw1wyABQeCg4A=",
+        "bigPairRoad": "LgYdgAAAAAAAA4AAAAAAAAgEAAAAAAAoAAAAAAAAgAAAAAAAAoFAAAAAAAg4AAAAAAAotAAAAAAAgAAAAAAAAoFAoFAAAAgEAAAAAAAoAAAAAAAAgEAAAAAAAoAAAAAAAAgAAAAAAAA4AAAAAAAAgAAAAAAAAoAAAAAAAAgEAAAAAAAoFCAAAAAAgAAAAAAAAolAAAAAAAgAAAAAAAAoAAAAAAAAgEAgAAAAAoAAAAAAAAgMAAAAAAAoIAAAAAAAgECAAAAAAAB2BDg=",
+        "beatPlateRoad": "LgYIhyEKQpSeK4pClKUhCkIUhyFIQpaFMUhSEIUjCsJABQeCg4A=",
+        "smallRoad": "KAYSoAwAqA/8gAwAqg/AgA/Aqo/AoAwAgA8AgA8AAhGACQA=",
+        "cockroachPig": "JgYQ/8qg8AgA/woAwAgA8Aqg/AgA8AoAwAqgBA8ACEA=",
+        "bigEyeBoy": "KQYQwAqAwAqq8CgAwAqo/woA8AqgwAgAwAqqBRAACEA=",
+        "newBigPairRoad": "LgYdgAAAAAAAAA4AAAAAAAAAgGAAAAAAAAoAAAAAAAAAgEAAAAAAAAoCgQAAAAAAg4AAAAAAAAougAAAAAAAgEAAAAAAAAoCgKBoAAAAgGAQAAAAAAoAAAAAAAAAgGAAAAAAAAoAAAAAAAAAgEAAAAAAAA4AAAAAAAAAgAAAAAAAAAoEAAAAAAAAgGAQAAAAAAoGhQAAAAAAgAAAAAAAAAoigAAAAAAAgAAAAAAAAAoEAAAAAAAAgCAYBAAAAAoAAAAAAAAAgKAAAAAAAAoMAAAAAAAAgGBQAAAAAAAB2BDg"
+      },
+      "bootReport":
+      {
+        "totalCount": 47,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 21
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 21
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 23
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 3
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 3
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 4
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 4
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 1
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "tableAnchorId": 1752063640648,
+      "anchorLanguage": 3,
+      "anchorNameMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "婴儿"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "婴儿"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "婴儿"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "婴儿"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Sachi"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "婴儿"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "婴儿"
+        }
+      },
+      "tableAnchorHeadPictureUrl": "https://activitymanager.werhliuich.com/pre/casino-manage/anchorimage/686e890044f44a2b9f8c8fa3.png",
+      "tableAnchorName": "婴儿",
+      "videoUrl": "l012;l012h;l012s",
+      "lastUpdateTableCacheTime": 1753860756836,
+      "goodRoadPoints":
+      [
+        {
+          "goodRoadType": 5,
+          "goodRoadFlag": true,
+          "betPoint": true,
+          "putPoint": true,
+          "sort": 4
+        },
+        {
+          "goodRoadType": 7,
+          "goodRoadFlag": true,
+          "betPoint": false,
+          "putPoint": false,
+          "sort": 10
+        }
+      ],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9c644f44a2b9f9093d8.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9c644f44a2b9f9093d8.jpg",
+      "tableColour": 3,
+      "tableInfoVersion": 1753855071055,
+      "roadPaperVersion": 316835010,
+      "bootReportVersion": 316835010,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c9c644f44a2b9f9093d8.jpg",
+      "dealerNameLanguageMap":
+      {
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Sachi"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "婴儿"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "婴儿"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "deskVideo": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2681":
+    {
+      "tableId": 2681,
+      "gameCasinoId": 8,
+      "gameCasinoName": "新旗舰厅",
+      "tableName": "21点A42",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Blackjack A42"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "Blackjack A42"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "Blackjack A42"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "블랙잭 A42"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Blackjack A42"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "21点A42"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "21點A42"
+        }
+      },
+      "physicsTableNo": "A42",
+      "gameStatus": 3,
+      "tableOpen": true,
+      "gameTypeId": 2021,
+      "gameTypeName": "21点",
+      "dealerId": 3922,
+      "dealerName": "Arcy",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/67fe51f744f478998494baf7.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "PH",
+      "roundId": 316834940,
+      "countdownEndTime": 1753860710652,
+      "totalBetCountDown": 15000,
+      "serverTime": 1753860695652,
+      "bootNo": "B0A4225730021P-X015",
+      "tableOnline":
+      {
+        "onlineNumber": 8,
+        "totalAmount": 0
+      },
+      "goodRoads": 0,
+      "bootReport":
+      {
+        "totalCount": 10,
+        "items":
+        [
+          {
+            "betPointId": 4401,
+            "betPointName": "闲1_21+3",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4402,
+            "betPointName": "闲2_21+3",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4403,
+            "betPointName": "闲3_21+3",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4404,
+            "betPointName": "闲5_21+3",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4405,
+            "betPointName": "闲6_21+3",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4406,
+            "betPointName": "闲7_21+3",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4407,
+            "betPointName": "闲8_21+3",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4501,
+            "betPointName": "闲1_完美对子",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4502,
+            "betPointName": "闲2_完美对子",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4503,
+            "betPointName": "闲3_完美对子",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4504,
+            "betPointName": "闲5_完美对子",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4505,
+            "betPointName": "闲6_完美对子",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4506,
+            "betPointName": "闲7_完美对子",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4507,
+            "betPointName": "闲8_完美对子",
+            "winCount": 0
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "a042;a042h",
+      "lastUpdateTableCacheTime": 1753860758308,
+      "goodRoadPoints":
+      [],
+      "playerSeat":
+      [
+        {
+          "seatId": 7,
+          "playerId": 9543164,
+          "name": "老韩头"
+        },
+        {
+          "seatId": 2,
+          "playerId": 9543164,
+          "name": "老韩头"
+        },
+        {
+          "seatId": 1,
+          "playerId": 68051580,
+          "name": "PLAYER034854080512"
+        },
+        {
+          "seatId": 6,
+          "playerId": 42869706,
+          "name": "PLAYER28721655808"
+        },
+        {
+          "seatId": 8,
+          "playerId": 19046526,
+          "name": "PLAYER15355998208"
+        },
+        {
+          "seatId": 3,
+          "playerId": 19046526,
+          "name": "PLAYER15355998208"
+        }
+      ],
+      "seatWinStreak":
+      {
+        "7": 0,
+        "2": 0,
+        "1": 0,
+        "6": 0,
+        "3": 0,
+        "8": 1
+      },
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889ca0a44f4c717f69f40ec.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889ca0a44f4c717f69f40ec.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753749329912,
+      "roadPaperVersion": 316834433,
+      "bootReportVersion": 316834433,
+      "bootNumberLimitListVersion": 1648026588,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889ca0a44f4c717f69f40ec.jpg",
+      "dealerNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Arcy"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "Arcy"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "Arcy"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "Arcy"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Arcy"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Arcy"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Arcy"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2554":
+    {
+      "tableId": 2554,
+      "gameCasinoId": 5,
+      "gameCasinoName": "国际厅",
+      "tableName": "经典百家乐C06",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Cổ Điển C06"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "CLA C06"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "クラシック C06"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "클래식 C06"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "CLA C06"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "经典百家乐C06"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "經典百家樂C06"
+        }
+      },
+      "physicsTableNo": "C06",
+      "gameStatus": 4,
+      "tableOpen": true,
+      "gameTypeId": 2001,
+      "gameTypeName": "经典百家乐",
+      "dealerId": 3895,
+      "dealerName": "Royce",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/67fe4eaa44f4632bd20c905f.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "PH",
+      "roundId": 316835095,
+      "countdownEndTime": 1753860751972,
+      "totalBetCountDown": 25000,
+      "serverTime": 1753860726972,
+      "bootNo": "B0C0625730012P-GP365",
+      "tableOnline":
+      {
+        "onlineNumber": 11,
+        "totalAmount": 0
+      },
+      "goodRoads": 9,
+      "roadPaper":
+      {
+        "newBigPairRoad2": "FwYKoEKIAAAAAAAAAAggAAAAAAAAAAAAoAKAAAAAAAAAAAgEAAAAAAAAAAAA4QaACgAoEKDCgQgBAAAAAAAAAAAAoIKBAAAAAAAAAAgEIAAAAAAAAAAA4AaACgAAAAAAAAgAIBAAAAAAAAAAAAqBBIA=",
+        "bigRoad": "FwYKoUQAAAAggAAAAAoUAAAAAgAAAAAAoUKFChQgAAAAAAoUAAAAAgQAAAAAoUKAAAAgQAAAAAAAqBBI",
+        "winPointPlateRoad": "FwYEwlUxGQhdUumQt2EwmUyuUuElwmQsFsol0sGQAASAAgA=",
+        "beatPlateRoad2": "FwYEoAoAwAgA2AoAoAgA8LoAoAoAqAoAghqAoAgAgA4LoAoAgAgAAASAAgA=",
+        "bigPairRoad2": "FwYKoAUQAAAAAAAAAggAAAAAAAAAAAoAUAAAAAAAAAAgAAAAAAAAAAAA4Q0AKAFACghQAgCAAAAAAAAAAAoIUAAAAAAAAAAgAQAAAAAAAAAA4A0AKAAAAAAAAgAQAAAAAAAAAAAAqBBI",
+        "winLoseRoad": "FwYMoUAAAAAwAAAAAAgAAAAAA2AAAAAAoUAAAAAgAAAAAAsUKFCpQgAAAAAAqUAAAAAgQAAAAAoUKAAAAgQAAAAAAAyBBYA=",
+        "bigPairRoad3": "FwYKoAKIAAAAAAAAAAggAAAAAAAAAAAAoAKAAAAAAAAAAAgAAAAAAAAAAAAA4S6ACgAoAKCCgAgAQAAAAAAAAAAAoIKAAAAAAAAAAAgAIAAAAAAAAAAA4C6ACgAAAAAAAAgAIAAAAAAAAAAAAAqBBIA=",
+        "dragonBonusPlateRoad2": "FwYE0AaAKAGACsBIA0AYALhcgCQBoA1AaAIEMoDQBgAwAeC5AEgCABgAAASAAgA=",
+        "newBigPairRoa3": "FwYKoEogAAAAAAAAggAAAAAAAAAAoAoAAAAAAAAAgEAAAAAAAAAA4RoAoAoEoMoEgAAAAAAAAAAAoIoEAAAAAAAAgEgAAAAAAAAA4BoAoAAAAAAAgAgEAAAAAAAAAAqBBIA=",
+        "bigSmallPlateRoad": "FwYEiVLFC3UqQL1SpEixKFWJAoXKlShAAASAAgA=",
+        "bigPairRoad": "FwYKoFEAAAAAAggAAAAAAAoFAAAAAAAgAAAAAAAA4VAoFAoNAgAAAAAAAAoNAAAAAAAgEAAAAAAA4FAoAAAAAgEAAAAAAAAAqBBI",
+        "dragonBonusPlateRoad": "FwYE00owrk0wukk010gl0ww8kkgwAASAAgA=",
+        "beatPlateRoad": "FwYEpTEN0pD1KUrSFaQhylIQAASAAgA=",
+        "cockroachPig": "DwYIoA/wqgwAoAwAgAwAAQeABAA=",
+        "smallRoad": "EQYJ/wgA/AgA8AqAwAoAwAAQiABI",
+        "bigEyeBoy": "EgYGqo/wqg/AoAwAAAYAgsA=",
+        "newBigPairRoad": "FwYKoGiAAAAAAAggAAAAAAAAoCgAAAAAAAgEAAAAAAAA4SgKAoGg6BgAAAAAAAAAoKgQAAAAAAgGAAAAAAAA4CgKAAAAAAgCAQAAAAAAAAqBBIA="
+      },
+      "bootReport":
+      {
+        "totalCount": 24,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 15
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 15
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 7
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 2
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 2
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 3
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 0
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "c006;c006h;c006s",
+      "lastUpdateTableCacheTime": 1753860758026,
+      "goodRoadPoints":
+      [
+        {
+          "goodRoadType": 11,
+          "goodRoadFlag": true,
+          "betPoint": false,
+          "putPoint": false,
+          "sort": 7
+        },
+        {
+          "goodRoadType": 9,
+          "goodRoadFlag": true,
+          "betPoint": false,
+          "putPoint": false,
+          "sort": 8
+        }
+      ],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c70644f44a2b9f9093a1.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c70644f44a2b9f9093a1.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753768656934,
+      "roadPaperVersion": 316835095,
+      "bootReportVersion": 316835095,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c70644f44a2b9f9093a1.jpg",
+      "dealerNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Royce"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "Royce"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "Royce"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "Royce"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Royce"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Royce"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Royce"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2171":
+    {
+      "tableId": 2171,
+      "gameCasinoId": 4,
+      "gameCasinoName": "欧洲厅",
+      "tableName": "极速百家乐U12",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Siêu tốc U12"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "SPD U12"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "極速バカラ U12"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "스피드 U12"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "SPD U12"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "极速百家乐U12"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "極速百家樂U12"
+        }
+      },
+      "physicsTableNo": "U12",
+      "gameStatus": 3,
+      "tableOpen": true,
+      "gameTypeId": 2002,
+      "gameTypeName": "极速百家乐",
+      "dealerId": 3699,
+      "dealerName": "Golf",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/6762cd4c44f493c7eb526407.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "UA",
+      "roundId": 316835171,
+      "countdownEndTime": 1753860757533,
+      "totalBetCountDown": 15000,
+      "serverTime": 1753860742533,
+      "bootNo": "B0U1225730017P-CBUKR046",
+      "tableOnline":
+      {
+        "onlineNumber": 6,
+        "totalAmount": 0
+      },
+      "goodRoads": 0,
+      "roadPaper":
+      {
+        "bigRoad": "AQYBggAAAAAAAGAgAA==",
+        "newBigPairRoad2": "AQYBggAAAAAAAAAAAAAAGAgA",
+        "winPointPlateRoad": "AQYBwF4AAAAAAAgCBAA=",
+        "beatPlateRoad2": "AQYBgAwAAAAAAAAAAgCBAAA=",
+        "bigPairRoad2": "AQYBggAAAAAAAAAAAAAGAgA=",
+        "winLoseRoad": "AQYCgAAAAAAwAAAAAAAAKAAQ",
+        "bigPairRoad3": "AQYBggAAAAAAAAAAAAAAGAgA",
+        "dragonBonusPlateRoad2": "AQYBwAUAAAAAAAAAAAgCBAA=",
+        "bigSmallPlateRoad": "AQYBoSAAAAAAgCBAAA==",
+        "newBigPairRoa3": "AQYBggAAAAAAAAAAAAGAgAA=",
+        "bigPairRoad": "AQYBggAAAAAAAAAGAgA=",
+        "dragonBonusPlateRoad": "AQYBwoAAAAAgCBAA",
+        "beatPlateRoad": "AQYBhgAAAAgCBAA=",
+        "newBigPairRoad": "AQYBggAAAAAAAAAAGAgA"
+      },
+      "bootReport":
+      {
+        "totalCount": 2,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 0
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 0
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 1
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 1
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 0
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 0
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 0
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "u012;u012h;u012s",
+      "lastUpdateTableCacheTime": 1753860758097,
+      "goodRoadPoints":
+      [],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c7a544f4c717f69f40ac.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c7a544f4c717f69f40ac.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753845113933,
+      "roadPaperVersion": 316835036,
+      "bootReportVersion": 316835036,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c7a544f4c717f69f40ac.jpg",
+      "dealerNameLanguageMap":
+      {
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Golf"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Golf"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2619":
+    {
+      "tableId": 2619,
+      "gameCasinoId": 10,
+      "gameCasinoName": "韩国厅",
+      "tableName": "极速百家乐H21",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Siêu tốc H21"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "SPD H21"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "極速バカラ H21"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "스피드 H21"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "SPD H21"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "极速百家乐H21"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "極速百家樂H21"
+        }
+      },
+      "physicsTableNo": "H21",
+      "gameStatus": 4,
+      "tableOpen": true,
+      "gameTypeId": 2002,
+      "gameTypeName": "极速百家乐",
+      "dealerId": 1751352751,
+      "dealerName": "Seth",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/686385af44f47479a9587909.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "PH",
+      "roundId": 316835113,
+      "countdownEndTime": 1753860746170,
+      "totalBetCountDown": 15000,
+      "serverTime": 1753860731170,
+      "bootNo": "B0H2125730017P-KR426",
+      "tableOnline":
+      {
+        "onlineNumber": 7,
+        "totalAmount": 0
+      },
+      "goodRoads": 0,
+      "roadPaper":
+      {
+        "bigRoad": "GgYMgQAAAAAoUKAAAAgAAAAAAoAAAAAAgQAAAAAo0AAAAAgQAAAAAo0KFAAAgAAAAAAoAAAAAAgQIAAAAoUKAAAAAwuABgA=",
+        "newBigPairRoad2": "GgYMgIIBAAAAAAAAAAoQKAChAAAAAAAAgCAAAAAAAAAAAA4AgAAAAAAAAAAAgAIAAAAAAAAAAAokOAEAAAAAAAAAgAIBAAAAAAAAAA4gaBCgAoIAAAAAgAAAAAAAAAAAAAoEAAAAAAAAAAAAgAIBCBAAAAAAAAoAKFCgAAAAAAAAAwuABgA=",
+        "winPointPlateRoad": "GgYFsOQy2Eq1wtlAsGUxdsqGQtl4ymEytQulQwFiumGugAAAAAwSBgg=",
+        "beatPlateRoad2": "GgYFiAgAsAoAsAhF4UgAgAoA2A4LgAgA4LwAoAoAqAgAoAgAgAkAoAsAoAAAAAAAAwSBggA=",
+        "bigPairRoad2": "GgYMgIQAAAAAAAAAAoQUAKEAAAAAAAgEAAAAAAAAAAA4BAAAAAAAAAAAgAQAAAAAAAAAAogcAQAAAAAAAAgAQAAAAAAAAAA4g0AKAFBAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgAQAIEAAAAAAAoAUIKAAAAAAAAAwuABgA=",
+        "bigPairRoad3": "GgYMgIIAAAAAAAAAAAoQKAChAAAAAAAAgBQAAAAAAAAAAA4FAAAAAAAAAAAAgAIAAAAAAAAAAAogOAsAAAAAAAAAgAIAAAAAAAAAAA4i6ACgAoIAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAIACBAAAAAAAAoAKECgAAAAAAAAAwuABgA=",
+        "winLoseRoad": "GgYQiQAAAAAsULAAAAgAAAAAAoAAAAAAgQAAAAAoAAAAAA2AAAAAAoAAAAAAgQAAAAAoAAAAAAwAAAAAAoUKgAAAgAAAAAAoAAAAAAgQJAAAAoWKAAAAAw+ACAA=",
+        "dragonBonusPlateRoad2": "GgYFxAYAJgGgDYBBF8KQAMAGgCsBYLgAYALBdADQBoA1AQAJAEADABkAkAbANAAAAAAAAAwSBgg=",
+        "bigSmallPlateRoad": "GgYFowK1StQuUKES3coQLkiJUq0IlCBSqRqgAAAAwSBggA==",
+        "newBigPairRoa3": "GgYMgIgEAAAAAAAAoQoAoQAAAAAAgAAAAAAAAAAA4CAAAAAAAAAAgAgAAAAAAAAAok4BAAAAAAAAgAgEAAAAAAAA4hoEoAoIAAAAgAAAAAAAAAAAoEAAAAAAAAAAgAgEgQAAAAAAoAoUoAAAAAAAAwuABgA=",
+        "bigPairRoad": "GgYMgMAAAAAAAoVAoQAAAAgAAAAAAAA4AAAAAAAAgEAAAAAAAonAAAAAAAgEAAAAAAA4lAoFBAAAgAAAAAAAAoAAAAAAAAgEAgQAAAAoFCoAAAAAAwuABgA=",
+        "dragonBonusPlateRoad": "GgYFxwm02g8gw0rsgwso001gkgwyk20AAAAwSBgg",
+        "beatPlateRoad": "GgYFjC1LQ5CFN8hDmKUrCkISpagAAAwSBgg=",
+        "smallRoad": "EgYIqq/AgAwAqgwAoAwAAQeABAA=",
+        "cockroachPig": "EQYKgAwAqowAgAwAqA8AoAwAAQmABQA=",
+        "bigEyeBoy": "FQYNwAqAwAoA/8gAwAoAwAgAwAgA8AAA0BBk",
+        "newBigPairRoad": "GgYMgKAQAAAAAAoSgKEAAAAAgAAAAAAAAA4AAAAAAAAAgCAAAAAAAAongAAAAAAAgCAQAAAAAA4igaAoIAAAgAAAAAAAAAoEAAAAAAAAgCAYEAAAAAoChaAAAAAAAwuABgA="
+      },
+      "bootReport":
+      {
+        "totalCount": 27,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 14
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 14
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 11
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 2
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 5
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 3
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 3
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 1
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "h021;h021h;h021s",
+      "lastUpdateTableCacheTime": 1753860758067,
+      "goodRoadPoints":
+      [],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c68744f4c717f69f4047.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c68744f4c717f69f4047.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753749328559,
+      "roadPaperVersion": 316835113,
+      "bootReportVersion": 316835113,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c68744f4c717f69f4047.jpg",
+      "dealerNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Seth"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "Seth"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "Seth"
+        },
+        "alb":
+        {
+          "languageCode": "alb",
+          "content": "Seth"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "Seth"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Seth"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Seth"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Seth"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2302":
+    {
+      "tableId": 2302,
+      "gameCasinoId": 12,
+      "gameCasinoName": "越南厅",
+      "tableName": "主播百家乐L19",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Bac MC L19"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "ANC L19"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "アンカー L19"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "BJ바카라 L19"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "ANC L19"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "主播百家乐L19"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "主播百家樂L19"
+        }
+      },
+      "physicsTableNo": "L19",
+      "gameStatus": 3,
+      "tableOpen": true,
+      "gameTypeId": 2030,
+      "gameTypeName": "主播百家乐",
+      "dealerId": 4057,
+      "dealerName": "Wassi",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/682d7c6644f4d44b59efae58.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "VN",
+      "roundId": 316835118,
+      "countdownEndTime": 1753860757321,
+      "totalBetCountDown": 25000,
+      "serverTime": 1753860732321,
+      "bootNo": "B0L1925730009P-JS222",
+      "tableOnline":
+      {
+        "onlineNumber": 4,
+        "totalAmount": 0
+      },
+      "goodRoads": 9,
+      "roadPaper":
+      {
+        "newBigPairRoad2": "LQYToAAAAAAAAAAAAAgQIACAAAAAAAAAoMKBCiAoAAAAAAgIAAAAAAAAAAAAoEAAAAAAAAAAAAgAICCAAAAAAAAAoEAAAAAAAAAAAAgAAAAAAAAAAAAAoAKADgCoQAAAAAgIIACAAAAAAAAAoAKACgQAAAAAAAgGAAAAAAAAAAAAoAKACgAoAKACgQgAIEQAAAAAACgAooKACgQAAAAAAAgAAAAAAAAAAAAAoAKBAAAAAAAAAAgEICAAAAAAAAAAoEAAAAAAAAAAAAARKACY",
+        "bigRoad": "LQYToAAAAAAgQIAAAAoUKNAAAgAAAAAAoAAAAAAgQIAAAAoAAAAAAgAAAAAAoUKFAAAgQIAAAAoUKAAAAgAAAAAAoUKFChQgQAAABQo0KAAAAgAAAAAAoUAAAAAgQAAAAAoAAAAAAARKACY=",
+        "winPointPlateRoad": "LQYIymCwGAuuUymKmlhwkwsNgylgulUtlGsNQsEkqmEuF0olEqkUymUkFyut5mmUsFEwmAyOEAAABAeCA4A=",
+        "beatPlateRoad2": "LQYIoAkAgAgAqAoAoA0AoAiAoAgAiAgAoAgAoAoA4UsAiAgAgAoAoAoAhFoAoAoAoAoAoAoAgAkhqAyAoAoAgAoAoAgAiAoAAAAABAeCA4A=",
+        "bigPairRoad2": "LQYToAAAAAAAAAAAAgQQAIAAAAAAAAoIUAKIFAAAAAAgIAAAAAAAAAAAoAAAAAAAAAAAAgAQEIAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAoAUAOAVCAAAAAgIQAIAAAAAAAAoAUAKAAAAAAAAgEAAAAAAAAAAAoAUAKAFACgBQAgAQJAAAAAABQAooUAKAAAAAAAAgAAAAAAAAAAAAoAUAAAAAAAAAAgAQEAAAAAAAAAoAAAAAAAAAAAAARKACYA==",
+        "winLoseRoad": "LQYXoAAAAAAkQIAAAAqUKAAAA0AAAAAAoAAAAAAiAAAAAAoAAAAAAgRIAAAAoAAAAAAgAAAAAAoUKFgAAiQIAAAAoUKAAAAgAAAAAAoUKFChQgSAAABQqAAAAAAyAAAAAAoUAAAAAgAAAAAAoUAAAAAgRAAAAAoAAAAAAARaAC4=",
+        "bigPairRoad3": "LQYToAAAAAAAAAAAAAgQIACAAAAAAAAAoIKACiAoAAAAAAgIAAAAAAAAAAAAoAAAAAAAAAAAAAgAICCAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoAKADgUoQAAAAAgIIACAAAAAAAAAoAKACgAAAAAAAAgBQAAAAAAAAAAAoAKACgAoAKACgAgAIEEAAAAAACgAooKACgAAAAAAAAgAAAAAAAAAAAAAoAKAAAAAAAAAAAgAICAAAAAAAAAAoAAAAAAAAAAAAAARKACY",
+        "dragonBonusPlateRoad2": "LQYI0ARAIAEACUBoAkAVAJAGIDQBAAhAYANAEADQBoA8KbAMQEADABIA0AaAIIsgCQBoAkASANAEgCABkh1AUgJAGgCABIA0AYAMQGgAAAAABAeCA4A=",
+        "newBigPairRoa3": "LQYToAAAAAAAAAAAgQgAgAAAAAAAoMoEogoAAAAAgIAAAAAAAAAAoEAAAAAAAAAAgAgIgAAAAAAAoEAAAAAAAAAAgAAAAAAAAAAAoAoA4CoQAAAAgIgAgAAAAAAAoAoAoEAAAAAAgEAAAAAAAAAAoAoAoAoAoAoEgAgQAAAAAAoAoooAoEAAAAAAgAAAAAAAAAAAoAoEAAAAAAAAgEgIAAAAAAAAoEAAAAAAAAAAARKACYA=",
+        "bigSmallPlateRoad": "LQYIqUqFCLEqSqlGJQo0IlCpUuVqNChUqRIFSpUqVIlShSq2akShUiQKMQAABAeCA4A=",
+        "dragonBonusPlateRoad": "LQYI0iggl0kqkx0ghw0g0082xgwk00gkk0kk0kgy1pk0gk0wx0AABAeCA4A=",
+        "bigPairRoad": "LQYToAAAAAAAAgUAgAAAAAoNAolAAAAgIAAAAAAAoAAAAAAAAgEBgAAAAAoAAAAAAAAgAAAAAAAAoFA4FCAAAgMAgAAAAAoFAoAAAAAgAAAAAAAAoFAoFAoFAgECAAAAFAotAoAAAAAgAAAAAAAAoFAAAAAAAgEBAAAAAAoAAAAAAAAARKACYA==",
+        "beatPlateRoad": "LQYIpKEK0pqkaQjCkKU5aMIUpSFKUpSlISrmlIUpCNAABAeCA4A=",
+        "smallRoad": "JgYVgA8AqgwAgAwAoA8AoAwAgA8AoA8AgA/AqA8AoAwAqAABWBig",
+        "cockroachPig": "IgYUwAgA8AgA/wqAwAoAwAoA8AgA/AgAwAoAwAoA/AgAARMACkA=",
+        "bigEyeBoy": "KQYYgAwAgA8AqAwAgAwAoAwAgA8AgA8AgA/AoA/8gAwAgAwAqo8AAheADAA=",
+        "newBigPairRoad": "LQYToAAAAAAAAAgSAIAAAAAAoOgaIoAAAAgIAAAAAAAAoEAAAAAAAAgCAoAAAAAAoEAAAAAAAAgAAAAAAAAAoCgOAoQAAAgKAIAAAAAAoCgKBAAAAAgEAAAAAAAAoCgKAoCgKBgCBAAAAAKAoqgKBAAAAAgAAAAAAAAAoCgQAAAAAAgGAgAAAAAAoEAAAAAAAAARKACY"
+      },
+      "bootReport":
+      {
+        "totalCount": 46,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 27
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 27
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 17
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 2
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 4
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 7
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 1
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 2
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 0
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 1
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "tableAnchorId": 20580,
+      "anchorLanguage": 3,
+      "anchorNameMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "吉艾"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "吉艾"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "吉艾"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "吉艾"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Wassi"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "吉艾"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "吉艾"
+        }
+      },
+      "tableAnchorHeadPictureUrl": "https://activitymanager.werhliuich.com/pre/casino-manage/anchorimage/682d7c4544f4d44b59efae54.png",
+      "tableAnchorName": "吉艾",
+      "videoUrl": "l019;l019h;l019s",
+      "lastUpdateTableCacheTime": 1753860757694,
+      "goodRoadPoints":
+      [
+        {
+          "goodRoadType": 9,
+          "goodRoadFlag": true,
+          "betPoint": true,
+          "putPoint": true,
+          "sort": 8
+        }
+      ],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889ca6d44f44a2b9f909410.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889ca6f44f4c717f69f40ff.jpg",
+      "tableColour": 3,
+      "tableInfoVersion": 1753855071332,
+      "roadPaperVersion": 316834890,
+      "bootReportVersion": 316834890,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889b8ac44f4c717f69f3e22.jpg",
+      "dealerNameLanguageMap":
+      {
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Wassi"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "吉艾"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "吉艾"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "deskVideo": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    },
+    "2623":
+    {
+      "tableId": 2623,
+      "gameCasinoId": 10,
+      "gameCasinoName": "韩国厅",
+      "tableName": "极速百家乐H25",
+      "tableNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Siêu tốc H25"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "SPD H25"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "極速バカラ H25"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "스피드 H25"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "SPD H25"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "极速百家乐H25"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "極速百家樂H25"
+        }
+      },
+      "physicsTableNo": "H25",
+      "gameStatus": 3,
+      "tableOpen": true,
+      "gameTypeId": 2002,
+      "gameTypeName": "极速百家乐",
+      "dealerId": 3928,
+      "dealerName": "Carmie",
+      "dealerPic": "https://activitymanager.werhliuich.com/pre/casino-manage/dealer/67fe529944f478998494bb4b.png",
+      "dealerEntertainPic": "/dealer/readHeadImg?fileName=",
+      "dealerCountry": "PH",
+      "roundId": 316835169,
+      "countdownEndTime": 1753860757391,
+      "totalBetCountDown": 15000,
+      "serverTime": 1753860742391,
+      "bootNo": "B0H2525730017P-KR547",
+      "tableOnline":
+      {
+        "onlineNumber": 47,
+        "totalAmount": 0
+      },
+      "goodRoads": 8,
+      "roadPaper":
+      {
+        "bigRoad": "PAYjwAAAAAAoAAAAAAgAAAAAAogAAAAAgAAAAAAoUAAAAAggAAAAAogAAAAAgAAAAAAoAAAAAAgAAAAAAoUAAAAAgAAAAAAoUAAAAAgQAAAAAoAAAAAAgAAAAAAoUAAAAAgQAAAAAoAAAAAAgQIAAAAoAAAAAAgQAAAAAoUQAAAAgQIEAAAoUAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAgAAAAAAo0KNChRgAAAAAAACOAkQ=",
+        "newBigPairRoad2": "PAYjwAAAAAAAAAAAAAoAAAAAAAAAAAAAgEAAAAAAAAAAAAogAAAAAAAAAAAAgCAAAAAAAAAAAAoUKBAAAAAAAAAAgkAAAAAAAAAAAAowAAAAAAAAAAAAgAAAAAAAAAAAAAoEAAAAAAAAAAAAgAAAAAAAAAAAAAoAOAIAAAAAAAAAgAAAAAAAAAAAAAoEKBAAAAAAAAAAgAIBAAAAAAAAAAoMAAAAAAAAAAAAgBAAAAAAAAAAAAoEKBAAAAAAAAAAgUIAgAAAAAAAAA4AgAAAAAAAAAAAgBIACBEAAAAAAAoIAAAAAAAAAAAAgCIBAAAAAAAAAAoEKIAAAAAAAAAAgQIBCAIgAAAAAAoEOAEAAAAAAAAAgEAAAAAAAAAAAAoAAAAAAAAAAAAAgEAAAAAAAAAAAAoAAAAAAAAAAAAAgMAAAAAAAAAAAAoAAAAAAAAAAAAAgEAAAAAAAAAAAAokKACigoAKBCiAgQAAAAAAAAAAAAACOAkQ",
+        "winPointPlateRoad": "PAYLrEUyGUpVww2UyFYy1oyGEmF0tlQumUmGAwtwymEwVwtlwsFymtwwGUuk4oWQuGQwlsyFUwF0wOEyGUvGUuuYmmUyl4sQAAAAAAAAQqAhQA==",
+        "beatPlateRoad2": "PAYLwAoAgAoA0AhFsAoAgAwAsAwAgAoAgAoA4UgAoAoAgAgAqAgioAoAkAhF4UghgAkiqAhFgAoAoAwAkAgAhFgAoA4LgAoAgAoAiAoAgAoAwAoAqAwAoAoAoAwAkAAAAAAAAAAAAQqAhQA=",
+        "bigPairRoad2": "PAYjwAAAAAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAogAAAAAAAAAAAgEAAAAAAAAAAAoQUAAAAAAAAAAggAAAAAAAAAAAowAAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAoAcAgAAAAAAAAgAAAAAAAAAAAAoAUAAAAAAAAAAgAQAAAAAAAAAAoIAAAAAAAAAAAgCAAAAAAAAAAAoAUAAAAAAAAAAgQQCAAAAAAAAA4BAAAAAAAAAAAgCQAIEgAAAAAAoIAAAAAAAAAAAgEQAAAAAAAAAAoAUQAAAAAAAAAgQQAIBEAAAAAAoAcAQAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAoAAAAAAAAAAAAgIAAAAAAAAAAAoAAAAAAAAAAAAgAAAAAAAAAAAAogUAKKFACgBRAgQAAAAAAAAAAAACOAkQA==",
+        "bigPairRoad3": "PAYjwAAAAAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAogAAAAAAAAAAAAgBQAAAAAAAAAAAoQKAAAAAAAAAAAggAAAAAAAAAAAAowAAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoAOBQAAAAAAAAAgAAAAAAAAAAAAAoAKAAAAAAAAAAAgAIAAAAAAAAAAAoIAAAAAAAAAAAAgAgAAAAAAAAAAAoAKAAAAAAAAAAAgQIAUAAAAAAAAA4FAAAAAAAAAAAAgAYACBCAAAAAAAoIAAAAAAAAAAAAgBYAAAAAAAAAAAoAKIAAAAAAAAAAgQIACAFgAAAAAAoAOAsAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAoAAAAAAAAAAAAAgIAAAAAAAAAAAAoAAAAAAAAAAAAAgAAAAAAAAAAAAAogKACigoAKACiAgQAAAAAAAAAAAAACOAkQ",
+        "winLoseRoad": "PAYswAAAAAAoAAAAAAgAAAAAAoAAAAAA0AAAAAAgAAAAAAsUAAAAAgAAAAAAwAAAAAAsAAAAAAwAAAAAAgAAAAAAoAAAAAAgAAAAAAoUAAAAAgAAAAAAoUAAAAAgQAAAAAqAAAAAAgAAAAAAoUAAAAAkQAAAAAoAAAAAAgQJAAAAqAAAAAAgQAAAAAoUAAAAAwAAAAAAkQIEAAAoUAAAAAgAAAAAAoAAAAAAgAAAAAAoAAAAAAiAAAAAAoAAAAAAgAAAAAAoAAAAAAwAAAAAAoVAAAAAwAAAAAAoUKAAAAwAAAAAAkAAAAAAACyAlYA=",
+        "dragonBonusPlateRoad2": "PAYLoASAMAGgCoBBF2AaAMAFADYBQAgAaAIAGgCwpgAkAaAIAGADUBgi0AaAMgEEXwpghgAZIpQEEXABoAkAUAIgGACCLAA0AWC8AGgDABIAxAaAMAGgCgBIAlAUAJAGgDQBQAyAAAAAAAAAAAAAQqAhQA==",
+        "bigSmallPlateRoad": "PAYLsVIFS1QjRIFitIoRKFS5QiRKECLQiRIVC5QoUqtCBEqWKUChQiXIFSBUg1IESxUqyKkSpIpAAAAAAAQqAhQ=",
+        "newBigPairRoa3": "PAYjwAAAAAAAAAAAoAAAAAAAAAAAgEAAAAAAAAAAogAAAAAAAAAAgAAAAAAAAAAAoUoEAAAAAAAAgkAAAAAAAAAAowAAAAAAAAAAgAAAAAAAAAAAoEAAAAAAAAAAgAAAAAAAAAAAoA4CAAAAAAAAgAAAAAAAAAAAoEoEAAAAAAAAgAgEAAAAAAAAoMAAAAAAAAAAgAAAAAAAAAAAoEoEAAAAAAAAgUgAAAAAAAAA4CAAAAAAAAAAgAgAgQAAAAAAoIAAAAAAAAAAgAgEAAAAAAAAoEogAAAAAAAAgQgEgAgAAAAAoE4BAAAAAAAAgEAAAAAAAAAAoAAAAAAAAAAAgEAAAAAAAAAAoAAAAAAAAAAAgMAAAAAAAAAAoAAAAAAAAAAAgEAAAAAAAAAAokoAoooAoEoggQAAAAAAAAAAACOAkQA=",
+        "bigPairRoad": "PAYjwAAAAAAAAoAAAAAAAAgAAAAAAAAogAAAAAAAgAAAAAAAAoVAAAAAAAggAAAAAAAowAAAAAAAgAAAAAAAAoAAAAAAAAgAAAAAAAAoHAAAAAAAgAAAAAAAAoFAAAAAAAgEAAAAAAAoIAAAAAAAgAAAAAAAAoFAAAAAAAgUAAAAAAA4AAAAAAAAgEAgQAAAAoIAAAAAAAgEAAAAAAAoFEAAAAAAgUAgEAAAAoHAAAAAAAgAAAAAAAAoAAAAAAAAgAAAAAAAAoAAAAAAAAgIAAAAAAAoAAAAAAAAgAAAAAAAAolAotAoFEgQAAAAAAAACOAkQA==",
+        "dragonBonusPlateRoad": "PAYLokw0qg20wo2og0g0swk0gw1w00yg8wgylgw0koiwgg0sw0wkx0w0oklok00oyAAAAAAQqAhQ",
+        "beatPlateRoad": "PAYLxSFNQtSGLYhSFOQpSEKwpSUOQhKsIUpiUIQpyFIUjSFMUrilKYkAAAAAQqAhQA==",
+        "smallRoad": "MgYW/AoAwAgA/AoA/AqqwCoC8CqAwAgAwAgA8AoA/8gA/wgAABaAioA=",
+        "cockroachPig": "MQYY8AoA8AgA8AoAwAoA/AgA8AoA8AqowAoA8AgA8AqA/wgA/wgAABiAi4A=",
+        "bigEyeBoy": "MwYW/wqA/wqo8AgAwAoA8AoAwAqg/AgAwAgAwAoA//gA/wgAARUAC0A=",
+        "newBigPairRoad": "PAYjwAAAAAAAAAoAAAAAAAAAgEAAAAAAAAogAAAAAAAAgAAAAAAAAAoWgQAAAAAAgkAAAAAAAAowAAAAAAAAgAAAAAAAAAoEAAAAAAAAgAAAAAAAAAoDgAAAAAAAgAAAAAAAAAoGgQAAAAAAgCAQAAAAAAoMAAAAAAAAgAAAAAAAAAoGgQAAAAAAgWAAAAAAAA4AAAAAAAAAgCAIEAAAAAoIAAAAAAAAgCAQAAAAAAoGiAAAAAAAgSAYAgAAAAoHgAAAAAAAgEAAAAAAAAoAAAAAAAAAgEAAAAAAAAoAAAAAAAAAgMAAAAAAAAoAAAAAAAAAgEAAAAAAAAomgKKoCgaIgQAAAAAAAAACOAkQ"
+      },
+      "bootReport":
+      {
+        "totalCount": 61,
+        "items":
+        [
+          {
+            "betPointId": 3001,
+            "betPointName": "庄",
+            "winCount": 28
+          },
+          {
+            "betPointId": 3013,
+            "betPointName": "庄免佣",
+            "winCount": 28
+          },
+          {
+            "betPointId": 3002,
+            "betPointName": "闲",
+            "winCount": 25
+          },
+          {
+            "betPointId": 3003,
+            "betPointName": "和",
+            "winCount": 8
+          },
+          {
+            "betPointId": 3004,
+            "betPointName": "庄对",
+            "winCount": 7
+          },
+          {
+            "betPointId": 3005,
+            "betPointName": "闲对",
+            "winCount": 4
+          },
+          {
+            "betPointId": 3012,
+            "betPointName": "超级六",
+            "winCount": 3
+          },
+          {
+            "betPointId": 5817,
+            "betPointName": "幸运七",
+            "winCount": 7
+          },
+          {
+            "betPointId": 5818,
+            "betPointName": "超级幸运七",
+            "winCount": 4
+          },
+          {
+            "betPointId": 4113,
+            "betPointName": "大老虎",
+            "winCount": 2
+          },
+          {
+            "betPointId": 4114,
+            "betPointName": "小老虎",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5819,
+            "betPointName": "小龙",
+            "winCount": 1
+          },
+          {
+            "betPointId": 5820,
+            "betPointName": "大龙",
+            "winCount": 6
+          },
+          {
+            "betPointId": 5821,
+            "betPointName": "龙虎斗",
+            "winCount": 4
+          }
+        ]
+      },
+      "gameFlag": 0,
+      "anchorLanguage": 0,
+      "videoUrl": "h025;h025h;h025s",
+      "lastUpdateTableCacheTime": 1753860757395,
+      "goodRoadPoints":
+      [
+        {
+          "goodRoadType": 8,
+          "goodRoadFlag": true,
+          "betPoint": true,
+          "putPoint": true,
+          "sort": 11
+        }
+      ],
+      "dealerLoginOut": 0,
+      "dealerPicInstant": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c68544f44a2b9f909359.jpg",
+      "dealerPicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c68544f44a2b9f909359.jpg",
+      "tableColour": 1,
+      "tableInfoVersion": 1753749329013,
+      "roadPaperVersion": 316835002,
+      "bootReportVersion": 316835002,
+      "bootNumberLimitListVersion": 1638761573,
+      "openStatus": 7,
+      "roadPaperFlag": false,
+      "stage2BettingFlag": 0,
+      "dealCardMode": 1,
+      "phonePicTable": "https://dealerimage.werhliuich.com/pre/dealer-manage/obsshotimg/pic/6889c68544f44a2b9f909359.jpg",
+      "dealerNameLanguageMap":
+      {
+        "vi":
+        {
+          "languageCode": "vi",
+          "content": "Carmie"
+        },
+        "th":
+        {
+          "languageCode": "th",
+          "content": "Carmie"
+        },
+        "jp":
+        {
+          "languageCode": "jp",
+          "content": "Carmie"
+        },
+        "kr":
+        {
+          "languageCode": "kr",
+          "content": "Carmie"
+        },
+        "en":
+        {
+          "languageCode": "en",
+          "content": "Carmie"
+        },
+        "cn":
+        {
+          "languageCode": "cn",
+          "content": "Carmie"
+        },
+        "tc":
+        {
+          "languageCode": "tc",
+          "content": "Carmie"
+        }
+      },
+      "joinMode": 0,
+      "drawStageStatus": 0,
+      "anchorVideoHeadUrl": "",
+      "isPausedCountDown": false,
+      "electronicDisable": 1,
+      "environmentType": 1
+    }
+  },
+  "groupId": 41,
+  "totalTable": 26,
+  "serverTime": 1753860758739,
+  "onlineNumber": 8076
+}
