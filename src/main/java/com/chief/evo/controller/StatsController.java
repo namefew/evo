@@ -1,10 +1,8 @@
 package com.chief.evo.controller;
+import com.chief.evo.dto.ColorDiskStatsDTO;
 import com.chief.evo.dto.RouletteStatsDTO;
 import com.chief.evo.dto.SicboStatsDTO;
-import com.chief.evo.entity.DbTable;
-import com.chief.evo.entity.GameTable;
-import com.chief.evo.entity.RouletteStats;
-import com.chief.evo.entity.SicboStats;
+import com.chief.evo.entity.*;
 import com.chief.evo.service.DbGameResultService;
 import com.chief.evo.service.DbTableService;
 import com.chief.evo.service.GameTableService;
@@ -408,6 +406,78 @@ public class StatsController {
         );
 
         return finalResults;
+    }
+
+    @GetMapping("/db/color_disk")
+    public List<ColorDiskStatsDTO> dbColorDiskStats(@RequestParam(name="from")  @DateTimeFormat(pattern = "yyyy-M-d")
+                                                  LocalDate fromDate, @RequestParam(name="to") @DateTimeFormat(pattern = "yyyy-M-d") LocalDate toDate) {
+        List<ColorDiskStats> stats =  dbGameResultService.queryAllColorDiskStats(fromDate, toDate);
+        Map<Integer, DbTable> tableMap = dbTableService.getAllTables();
+        List<ColorDiskStatsDTO> results = new ArrayList<>();
+        for (ColorDiskStats stat : stats) {
+            ColorDiskStatsDTO result = converteColorDiskState(stat);
+            result.setTableTitle(tableMap.get(Integer.parseInt(stat.getTableId())).getTableName());
+            result.setTableId(stat.getTableId());
+            results.add(result);
+        }
+        Map<String, List<ColorDiskStatsDTO>> groups = results.stream().collect(Collectors.groupingBy(ColorDiskStatsDTO::getTableId));
+        List<ColorDiskStatsDTO> finalResults = new ArrayList<>();
+        groups.forEach((tableId, group) -> {
+            // 添加原始数据
+            finalResults.addAll(group);
+
+            // 创建聚合对象
+            ColorDiskStatsDTO sum = new ColorDiskStatsDTO();
+            sum.setTableId(tableId);
+            sum.setTableTitle(group.get(0).getTableTitle());
+            sum.setDate(null); // 聚合对象日期为空
+
+            // 聚合统计值
+            sum.setTotalCount(group.stream().mapToInt(ColorDiskStatsDTO::getTotalCount).sum());
+            sum.setBigCount(group.stream().mapToInt(ColorDiskStatsDTO::getBigCount).sum());
+            sum.setSmallCount(group.stream().mapToInt(ColorDiskStatsDTO::getSmallCount).sum());
+            sum.setOddCount(group.stream().mapToInt(ColorDiskStatsDTO::getOddCount).sum());
+            sum.setEvenCount(group.stream().mapToInt(ColorDiskStatsDTO::getEvenCount).sum());
+            // 聚合数字统计
+            Map<Integer, Integer> sumNumbs = new LinkedHashMap<>();
+            for (int i = 0; i <= 4; i++) {
+                int finalI = i;
+                int total = group.stream()
+                        .mapToInt(dto -> dto.getNumbs().getOrDefault(finalI, 0))
+                        .sum();
+                sumNumbs.put(i, total);
+            }
+            sum.setNumbs(sumNumbs);
+
+            finalResults.add(sum);
+        });
+
+        // 按tableId和date排序
+        finalResults.sort(Comparator
+                .comparing(ColorDiskStatsDTO::getTableId)
+                .thenComparing(ColorDiskStatsDTO::getDate,
+                        Comparator.nullsLast(Comparator.naturalOrder()))
+        );
+
+        return finalResults;
+    }
+
+    private ColorDiskStatsDTO converteColorDiskState(ColorDiskStats stat) {
+        ColorDiskStatsDTO result = new ColorDiskStatsDTO();
+        result.setDate(stat.getDate());
+        result.setTotalCount(stat.getTotalCount());
+        result.setBigCount(stat.getBigCount());
+        result.setSmallCount(stat.getSmallCount());
+        result.setOddCount(stat.getOddCount());
+        result.setEvenCount(stat.getEvenCount());
+        Map< Integer,Integer> numbs = new LinkedHashMap<>();
+        result.setNumbs(numbs);
+        numbs.put(0, stat.getNum0());
+        numbs.put(1, stat.getNum1());
+        numbs.put(2, stat.getNum2());
+        numbs.put(3, stat.getNum3());
+        numbs.put(4, stat.getNum4());
+        return result;
     }
 
 }

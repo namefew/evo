@@ -119,7 +119,7 @@ public class DBDataHandler extends TextWebSocketHandler {
             }else if(DBConstant.gameTypeId_color_disk==dbTable.getGameTypeId()){
                 JsonNode tableInfo = entry.getValue();
                 JsonNode roadInfo = tableInfo.path("roadPaper");
-                List<Integer> winNumbers =RoadParser.RouletteParser.parseBoot(roadInfo.path("singlePointRoad").asText());
+                List<Integer> winNumbers =RoadParser.ColorDiskParser.parseBoot(roadInfo.path("beadPlateRoad").asText());
                 List<DbColorDiskResult> resultList = new ArrayList<>();
                 for (Integer winNumber : winNumbers) {
                     DbColorDiskResult result = new DbColorDiskResult();

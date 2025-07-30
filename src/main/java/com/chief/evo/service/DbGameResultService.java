@@ -198,4 +198,7 @@ public class DbGameResultService {
         return dbSicboResultMapper.findByDate(fromDate, toDate);
     }
 
+    public List<ColorDiskStats> queryAllColorDiskStats(LocalDate fromDate, LocalDate toDate) {
+        return dbColorDiskResultMapper.findByDate(fromDate, toDate);
+    }
 }

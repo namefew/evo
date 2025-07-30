@@ -19,10 +19,10 @@ public class RoadParser {
         }
 
         public Integer getNextInteger(int e) {
-            if(e+this.pointer > this.length())return null;
-            int t = Integer.parseInt(this.bitString.substring(this.pointer, e+this.pointer), 2);
-            this.pointer += e;
+             int t = Integer.parseInt(this.bitString.substring(this.pointer, e+this.pointer), 2);
+             this.pointer += e;
             return t;
+
         }
 
 
