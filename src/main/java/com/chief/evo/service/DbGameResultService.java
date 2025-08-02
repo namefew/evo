@@ -8,8 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class DbGameResultService {
@@ -200,5 +202,16 @@ public class DbGameResultService {
 
     public List<ColorDiskStats> queryAllColorDiskStats(LocalDate fromDate, LocalDate toDate) {
         return dbColorDiskResultMapper.findByDate(fromDate, toDate);
+    }
+
+    public Optional<LocalDateTime> findLatestRouletteCreateTime() {
+        return dbRouletteResultMapper.findLatestCreateTimestamp();
+    }
+
+    public Optional<LocalDateTime> findLatestSicboCreateTime() {
+        return dbSicboResultMapper.findLatestCreateTimestamp();
+    }
+    public Optional<LocalDateTime> findLatestColorDiskCreateTime() {
+        return dbColorDiskResultMapper.findLatestCreateTimestamp();
     }
 }

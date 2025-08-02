@@ -7,7 +7,9 @@ import com.chief.evo.entity.SicboResult;
 import org.apache.ibatis.annotations.Select;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
 @Mapper
 public interface SicboResultMapper {
@@ -66,5 +68,8 @@ public interface SicboResultMapper {
         "</script>"
     })
     List<SicboStats> findByDate(LocalDate startDate, LocalDate endDate);
+
+    @Select("SELECT MAX(create_time) AS latest_time FROM sicbo_result")
+    Optional<LocalDateTime> findLatestCreateTimestamp();
 
 }

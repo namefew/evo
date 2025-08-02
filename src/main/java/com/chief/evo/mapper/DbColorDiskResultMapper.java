@@ -8,7 +8,9 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
 @Mapper
 public interface DbColorDiskResultMapper {
@@ -50,5 +52,8 @@ public interface DbColorDiskResultMapper {
             "</script>"
     })
     List<ColorDiskStats> findByDate(LocalDate startDate, LocalDate endDate);
+
+    @Select("SELECT MAX(create_time) AS latest_time FROM db_color_disk_result")
+    Optional<LocalDateTime> findLatestCreateTimestamp();
 
 }

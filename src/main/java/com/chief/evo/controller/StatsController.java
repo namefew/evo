@@ -8,18 +8,16 @@ import com.chief.evo.service.DbTableService;
 import com.chief.evo.service.GameTableService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.chief.evo.service.GameResultService;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.time.LocalDateTime;
+import java.util.*;
 import java.util.stream.Collectors;
-import java.util.Comparator; // 添加Comparator用于排序
 
 @RestController
 @RequestMapping("/api/stats")
@@ -478,6 +476,43 @@ public class StatsController {
         numbs.put(3, stat.getNum3());
         numbs.put(4, stat.getNum4());
         return result;
+    }
+
+    @GetMapping("/roulette/latest")
+    public ResponseEntity<String> rouletteLatestRecordTime() {
+        Optional<LocalDateTime> latestTime = gameResultService.findLatestRouletteCreateTime();
+        return latestTime.map(time -> ResponseEntity.ok(time.toString()))
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+
+    @GetMapping("/sicbo/latest")
+    public ResponseEntity<String> sicboLatestRecordTime() {
+        Optional<LocalDateTime> latestTime = gameResultService.findLatestSicboCreateTime();
+        return latestTime.map(time -> ResponseEntity.ok(time.toString()))
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    @GetMapping("/db/roulette/latest")
+    public ResponseEntity<String> dbRouletteLatestRecordTime() {
+        Optional<LocalDateTime> latestTime = dbGameResultService.findLatestRouletteCreateTime();
+        return latestTime.map(time -> ResponseEntity.ok(time.toString()))
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+
+    @GetMapping("/db/sicbo/latest")
+    public ResponseEntity<String> dbSicboLatestRecordTime() {
+        Optional<LocalDateTime> latestTime = dbGameResultService.findLatestSicboCreateTime();
+        return latestTime.map(time -> ResponseEntity.ok(time.toString()))
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    @GetMapping("/db/color_disk/latest")
+    public ResponseEntity<String> dbColorDiskLatestRecordTime() {
+        Optional<LocalDateTime> latestTime = dbGameResultService.findLatestColorDiskCreateTime();
+        return latestTime.map(time -> ResponseEntity.ok(time.toString()))
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
 }

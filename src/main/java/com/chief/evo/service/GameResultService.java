@@ -7,8 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class GameResultService {
@@ -136,4 +138,10 @@ public class GameResultService {
         return sicboResultMapper.findByDate(fromDate, toDate);
     }
 
+    public Optional<LocalDateTime> findLatestRouletteCreateTime() {
+        return rouletteResultMapper.findLatestCreateTimestamp();
+    }
+    public Optional<LocalDateTime> findLatestSicboCreateTime() {
+        return sicboResultMapper.findLatestCreateTimestamp();
+    }
 }
