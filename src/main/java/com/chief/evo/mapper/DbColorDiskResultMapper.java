@@ -37,7 +37,7 @@ public interface DbColorDiskResultMapper {
             "   SUM(CASE WHEN t.result=3 or t.result=4 THEN t.cnt ELSE 0 END) AS bigCount,",
             "   SUM(CASE WHEN t.result=0 or t.result=1 THEN t.cnt ELSE 0 END) AS smallCount,",
             "   SUM(CASE WHEN t.result % 2 = 1 THEN t.cnt ELSE 0 END) AS oddCount,",
-            "   SUM(CASE WHEN t.result % 2 = 0 AND t.result!=0 THEN t.cnt ELSE 0 END) AS evenCount,",
+            "   SUM(CASE WHEN t.result % 2 = 0 THEN t.cnt ELSE 0 END) AS evenCount,",
             "   SUM(CASE WHEN t.result = 0 THEN t.cnt ELSE 0 END) AS num0,",
             "   SUM(CASE WHEN t.result = 1 THEN t.cnt ELSE 0 END) AS num1,",
             "   SUM(CASE WHEN t.result = 2 THEN t.cnt ELSE 0 END) AS num2,",
