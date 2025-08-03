@@ -1,0 +1,155 @@
+{
+  "totalSeatedPlayers": 150,
+  "last20Results":
+  [
+    {
+      "time": "Aug 3, 2025 6:57:40 AM",
+      "result": "30",
+      "color": "red",
+      "gameId": "9302051215"
+    },
+    {
+      "time": "Aug 3, 2025 6:57:06 AM",
+      "result": "3",
+      "color": "red",
+      "gameId": "9302048915"
+    },
+    {
+      "time": "Aug 3, 2025 6:56:29 AM",
+      "result": "19",
+      "color": "red",
+      "gameId": "9302046915"
+    },
+    {
+      "time": "Aug 3, 2025 6:55:54 AM",
+      "result": "10",
+      "color": "black",
+      "gameId": "9302044515"
+    },
+    {
+      "time": "Aug 3, 2025 6:55:18 AM",
+      "result": "24",
+      "color": "black",
+      "gameId": "9302042415"
+    },
+    {
+      "time": "Aug 3, 2025 6:54:43 AM",
+      "result": "5",
+      "color": "red",
+      "gameId": "9302040215"
+    },
+    {
+      "time": "Aug 3, 2025 6:54:08 AM",
+      "result": "35",
+      "color": "black",
+      "gameId": "9302038115"
+    },
+    {
+      "time": "Aug 3, 2025 6:53:33 AM",
+      "result": "10",
+      "color": "black",
+      "gameId": "9302035715"
+    },
+    {
+      "time": "Aug 3, 2025 6:52:54 AM",
+      "result": "27",
+      "color": "red",
+      "gameId": "9302033615"
+    },
+    {
+      "time": "Aug 3, 2025 6:52:20 AM",
+      "result": "15",
+      "color": "black",
+      "gameId": "9302031215"
+    },
+    {
+      "time": "Aug 3, 2025 6:51:43 AM",
+      "result": "9",
+      "color": "red",
+      "gameId": "9302028815"
+    },
+    {
+      "time": "Aug 3, 2025 6:51:06 AM",
+      "result": "17",
+      "color": "black",
+      "gameId": "9302026715"
+    },
+    {
+      "time": "Aug 3, 2025 6:50:30 AM",
+      "result": "35",
+      "color": "black",
+      "gameId": "9302024715"
+    },
+    {
+      "time": "Aug 3, 2025 6:49:55 AM",
+      "result": "5",
+      "color": "red",
+      "gameId": "9302022415"
+    },
+    {
+      "time": "Aug 3, 2025 6:49:20 AM",
+      "result": "13",
+      "color": "black",
+      "gameId": "9302020315"
+    },
+    {
+      "time": "Aug 3, 2025 6:48:45 AM",
+      "result": "27",
+      "color": "red",
+      "gameId": "9302017815"
+    },
+    {
+      "time": "Aug 3, 2025 6:48:07 AM",
+      "result": "29",
+      "color": "black",
+      "gameId": "9302015615"
+    },
+    {
+      "time": "Aug 3, 2025 6:47:30 AM",
+      "result": "15",
+      "color": "black",
+      "gameId": "9302013215"
+    },
+    {
+      "time": "Aug 3, 2025 6:46:51 AM",
+      "result": "27",
+      "color": "red",
+      "gameId": "9302010915"
+    },
+    {
+      "time": "Aug 3, 2025 6:46:17 AM",
+      "result": "20",
+      "color": "black",
+      "gameId": "9302008615"
+    }
+  ],
+  "tableId": "237",
+  "tableName": "Brazilian Roulette",
+  "newTable": false,
+  "dedicatedLanguage": "pt",
+  "tableImage": "https://client.pragmaticplaylive.net/desktop/assets/snaps/rwbrzportrwa16rg/poster.jpg?v=0.6210577882351954",
+  "tableLimits":
+  {
+    "ranges":
+    [
+      0.1,
+      0.2,
+      0.25,
+      0.4,
+      0.5,
+      1.0
+    ],
+    "minBet": 0.5,
+    "maxBet": 30000.0,
+    "maxPlayers": 2000
+  },
+  "dealer":
+  {
+    "name": "Bernardo"
+  },
+  "tableOpen": true,
+  "tableType": "ROULETTE",
+  "tableSubtype": "pp_dev_test_roulette",
+  "gameLoaderKey": "classic-roulette2",
+  "currency": "CNY"
+}

@@ -1,7 +1,8 @@
 package com.chief.evo.config;
 
 import com.chief.evo.websocket.EVODataHandler;
-import com.chief.evo.websocket.DBDataHandler; // 导入新的处理器类
+import com.chief.evo.websocket.DBDataHandler;
+import com.chief.evo.websocket.PPDataHandler; // 导入新的处理器类
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;
@@ -22,6 +23,10 @@ public class WebSocketConfig implements WebSocketConfigurer {
         // 新增路径
         registry.addHandler(dbDataHandler(), "/db")
                 .setAllowedOrigins("*");
+
+        // PP路径
+        registry.addHandler(ppDataHandler(), "/pp")
+                .setAllowedOrigins("*");
     }
 
     @Bean
@@ -33,5 +38,11 @@ public class WebSocketConfig implements WebSocketConfigurer {
     @Bean
     public DBDataHandler dbDataHandler() {
         return new DBDataHandler();
+    }
+
+    // PP处理器Bean
+    @Bean
+    public PPDataHandler ppDataHandler() {
+        return new PPDataHandler();
     }
 }

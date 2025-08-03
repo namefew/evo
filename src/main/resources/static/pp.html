@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PP游戏数据统计</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .game-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .stats-table {
+            font-size: 0.9rem;
+        }
+        .stats-table th {
+            position: sticky;
+            top: 0;
+            background: white;
+        }
+        .dice-point {
+            display: inline-block;
+            width: 50px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            text-align: center;
+            margin: 2px;
+        }
+        /* 盈利率样式类 */
+        .win-rate-positive {
+            color: red;
+        }
+        .win-rate-negative {
+            color: green;
+        }
+        .win-rate-neutral {
+            color: black;
+        }
+        /* 饼图容器 */
+        .chart-container {
+            position: relative;
+            height: 70vh;
+            width: 100%;
+        }
+       .bg-light {
+           background-color: #e0f0f0 !important;
+       }
+       .stats-table td {
+           background-color: transparent !important; /* 确保 td 不覆盖 tr 的背景颜色 */
+       }
+
+    </style>
+</head>
+<body>
+<div class="container py-4">
+    <h3 class="text-center mb-4"><i class="bi bi-graph-up"></i> PP游戏数据统计</h3>
+
+    <!-- 日期选择器 -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-md-5">
+                    <label class="form-label">开始日期</label>
+                    <input type="date" id="startDate" class="form-control">
+                </div>
+                <div class="col-md-5">
+                    <label class="form-label">结束日期</label>
+                    <input type="date" id="endDate" class="form-control">
+                </div>
+                <div class="col-md-2 d-flex align-items-end">
+                    <button id="loadDataBtn" class="btn btn-primary w-100">
+                        <i class="bi bi-cloud-download"></i> 加载数据
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 游戏类型选择 -->
+    <ul class="nav nav-tabs mb-4" id="gameTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="roulette-tab" data-bs-toggle="tab"
+                    data-bs-target="#roulette" type="button" role="tab">
+                <i class="bi bi-arrow-repeat"></i> 轮盘游戏
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="sicbo-tab" data-bs-toggle="tab"
+                    data-bs-target="#sicbo" type="button" role="tab">
+                <i class="bi bi-dice-6"></i> 骰子游戏
+            </button>
+        </li>
+    </ul>
+
+    <!-- 轮盘游戏统计 -->
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="roulette" role="tabpanel">
+            <!-- 添加显示最新数据插入时间的元素 -->
+            <div class="alert alert-info mb-3" id="rouletteLatestTime">最新数据插入时间: --</div>
+            <div class="table-responsive">
+                <table class="table table-hover stats-table">
+                    <thead class="table-light">
+                    <tr>
+                        <th>日期</th>
+                        <th>桌子</th>
+                        <th>总次数</th>
+                        <th>大</th>
+                        <th>小</th>
+                        <th>单数</th>
+                        <th>双数</th>
+                        <th>红色</th>
+                        <th>黑色</th>
+                        <th>1-12</th>
+                        <th>13-24</th>
+                        <th>25-36</th>
+                        <th>详细数据</th>
+                    </tr>
+                    </thead>
+                    <tbody id="rouletteStatsBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 骰子游戏统计 -->
+        <div class="tab-pane fade" id="sicbo" role="tabpanel">
+            <!-- 添加显示最新数据插入时间的元素 -->
+            <div class="alert alert-info mb-3" id="sicboLatestTime">最新数据插入时间: --</div>
+            <div class="table-responsive">
+                <table class="table table-hover stats-table">
+                    <thead class="table-light">
+                    <tr>
+                        <th>日期</th>
+                        <th>桌子</th>
+                        <th>总次数</th>
+                        <th>大</th>
+                        <th>小</th>
+                        <th>单数</th>
+                        <th>双数</th>
+                        <th>点数统计</th>
+                        <th>豹子</th>
+                        <th>详细数据</th>
+                    </tr>
+                    </thead>
+                    <tbody id="sicboStatsBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 详细数据模态框 -->
+<div class="modal fade" id="detailsModal" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="chart-container">
+                    <canvas id="detailsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // 设置默认日期
+    document.addEventListener('DOMContentLoaded', () => {
+        const today = new Date();
+        const sevenDaysAgo = new Date();
+        sevenDaysAgo.setDate(today.getDate() - 7);
+        today.setDate(today.getDate() + 1);
+        document.getElementById('startDate').value = formatDate(sevenDaysAgo);
+        document.getElementById('endDate').value = formatDate(today);
+    });
+
+    // 加载数据按钮事件
+    document.getElementById('loadDataBtn').addEventListener('click', loadStatsData);
+
+    // 日期格式化函数
+    function formatDate(date) {
+        return `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')}`;
+    }
+
+    // 加载统计数据
+    async function loadStatsData() {
+        const startDate = document.getElementById('startDate').value;
+        const endDate = document.getElementById('endDate').value;
+
+        if (!startDate || !endDate) {
+            alert('请选择开始日期和结束日期');
+            return;
+        }
+
+        try {
+            // 获取最新数据插入时间
+            const rouletteLatestResponse = await fetch(`/api/stats/pp/roulette/latest`);
+            const sicboLatestResponse = await fetch(`/api/stats/pp/sicbo/latest`);
+
+            const rouletteLatestTime = await rouletteLatestResponse.text();
+            const sicboLatestTime = await sicboLatestResponse.text();
+
+            document.getElementById('rouletteLatestTime').textContent = `最新数据插入时间: ${rouletteLatestTime}`;
+            document.getElementById('sicboLatestTime').textContent = `最新数据插入时间: ${sicboLatestTime}`;
+
+            // 加载轮盘数据
+            const rouletteResponse = await fetch(`/api/stats/pp/roulette?from=${startDate}&to=${endDate}`);
+            const rouletteData = await rouletteResponse.json();
+            window.rouletteData = rouletteData;
+            renderRouletteStats();
+
+            // 加载骰子数据
+            const sicboResponse = await fetch(`/api/stats/pp/sicbo?from=${startDate}&to=${endDate}`);
+            const sicboData = await sicboResponse.json();
+            window.sicboData = sicboData;
+            renderSicboStats();
+        } catch (error) {
+            console.error('加载数据失败:', error);
+            alert('加载数据失败，请检查控制台查看详情');
+        }
+    }
+
+    // 计算盈利率函数
+    function calculateWinRate(count, total, multiplier = 2) {
+        if (!total) return NaN;
+        return (count * multiplier / total - 1) * 100; // 转换为百分比
+    }
+
+    // 格式化盈利率为1位小数
+    function formatWinRate(rate) {
+        if (isNaN(rate)) return '--';
+        return rate.toFixed(1) + '%';
+    }
+
+    // 渲染轮盘统计数据
+    function renderRouletteStats() {
+        const tbody = document.getElementById('rouletteStatsBody');
+        tbody.innerHTML = '';
+
+        window.rouletteData.forEach(item => {
+            // 处理日期为 null 的情况
+            const dateDisplay = item.date === null ? '汇总' : item.date;
+            const rowClass = item.date === null ? 'bg-light' : ''; // 设置背景颜色
+
+            // 计算各项盈利率
+            const bigWinRate = calculateWinRate(item.bigCount, item.totalCount);
+            const smallWinRate = calculateWinRate(item.smallCount, item.totalCount);
+            const oddWinRate = calculateWinRate(item.oddCount, item.totalCount);
+            const evenWinRate = calculateWinRate(item.evenCount, item.totalCount);
+            const redWinRate = calculateWinRate(item.redCount, item.totalCount);
+            const blackWinRate = calculateWinRate(item.blackCount, item.totalCount);
+            const section1_12WinRate = calculateWinRate(item.section1_12, item.totalCount, 3);
+            const section13_24WinRate = calculateWinRate(item.section13_24, item.totalCount, 3);
+            const section25_36WinRate = calculateWinRate(item.section25_36, item.totalCount, 3);
+
+            let peilv = {};
+            for (let i = 0; i <= 36; i++) {
+                peilv[i] = 36;
+            }
+            const encodedNumbs = encodeURIComponent(JSON.stringify(item.numbs));
+            const encodedPeilv = encodeURIComponent(JSON.stringify(peilv)); // 编码 peilv
+
+            const row = document.createElement('tr');
+            row.className = rowClass; // 应用背景颜色类
+
+            row.innerHTML = `
+                <td>${dateDisplay}</td>
+                <td>${item.tableTitle}</td>
+                <td>${item.totalCount}</td>
+                <td>${item.bigCount}${bigWinRate >= 0 ? ` <span class="${bigWinRate > 0 ? 'win-rate-positive' : bigWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(bigWinRate)})</span>` : ''}</td>
+                <td>${item.smallCount}${smallWinRate >= 0 ? ` <span class="${smallWinRate > 0 ? 'win-rate-positive' : smallWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(smallWinRate)})</span>` : ''}</td>
+                <td>${item.oddCount}${oddWinRate >= 0 ? ` <span class="${oddWinRate > 0 ? 'win-rate-positive' : oddWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(oddWinRate)})</span>` : ''}</td>
+                <td>${item.evenCount}${evenWinRate >= 0 ? ` <span class="${evenWinRate > 0 ? 'win-rate-positive' : evenWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(evenWinRate)})</span>` : ''}</td>
+                <td>${item.redCount}${redWinRate >= 0 ? ` <span class="${redWinRate > 0 ? 'win-rate-positive' : redWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(redWinRate)})</span>` : ''}</td>
+                <td>${item.blackCount}${blackWinRate >= 0 ? ` <span class="${blackWinRate > 0 ? 'win-rate-positive' : blackWinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(blackWinRate)})</span>` : ''}</td>
+                <td>${item.section1_12}${section1_12WinRate >= 0 ? ` <span class="${section1_12WinRate > 0 ? 'win-rate-positive' : section1_12WinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(section1_12WinRate)})</span>` : ''}</td>
+                <td>${item.section13_24}${section13_24WinRate >= 0 ? ` <span class="${section13_24WinRate > 0 ? 'win-rate-positive' : section13_24WinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(section13_24WinRate)})</span>` : ''}</td>
+                <td>${item.section25_36}${section25_36WinRate >= 0 ? ` <span class="${section25_36WinRate > 0 ? 'win-rate-positive' : section25_36WinRate < 0 ? 'win-rate-negative' : 'win-rate-neutral'}">(${formatWinRate(section25_36WinRate)})</span>` : ''}</td>
+                <td>
+                    <button class="btn btn-sm btn-outline-primary"
+                            onclick="showDetails('${item.tableTitle} - ${dateDisplay}', '${encodedNumbs}','${encodedPeilv}','${item.tableId}',false)">
+                        <i class="bi bi-eye"></i> 查看
+                    </button>
+                </td>
+            `;
+            tbody.appendChild(row);
+        });
+    }
+
+    // 渲染骰子统计数据
+    function renderSicboStats() {
+        const tbody = document.getElementById('sicboStatsBody');
+        tbody.innerHTML = '';
+
+        window.sicboData.forEach(item => {
+            // 处理日期为 null 的情况
+            const dateDisplay = item.date === null ? '汇总' : item.date;
+            const rowClass = item.date === null ? 'bg-light' : ''; // 设置背景颜色
+
+            // 计算大、小、单、双的盈利率
+            const bigWinRate = calculateWinRate(item.bigCount, item.totalCount);
+            const smallWinRate = calculateWinRate(item.smallCount, item.totalCount);
+            const oddWinRate = calculateWinRate(item.oddCount, item.totalCount);
+            const evenWinRate = calculateWinRate(item.evenCount, item.totalCount);
+
+            // 生成点数统计展示
+            const pointsHtml = `
+                <div class="d-flex">
+                    <span class="dice-point" title="点1">${item.dot1Count}</span>
+                    <span class="dice-point" title="点2">${item.dot2Count}</span>
+                    <span class="dice-point" title="点3">${item.dot3Count}</span>
+                    <span class="dice-point" title="点4">${item.dot4Count}</span>
+                    <span class="dice-point" title="点5">${item.dot5Count}</span>
+                    <span class="dice-point" title="点6">${item.dot6Count}</span>
+                </div>
+            `;
+
+            // 修改点：使用encodeURIComponent转义JSON数据
+            const encodedSumNumbs = encodeURIComponent(JSON.stringify(item.sumNumbs));
+
+            const row = document.createElement('tr');
+            row.className = rowClass; // 应用背景颜色类
+
+            const peilv = {"4":51,"5":21,"6":16,"7":13,"8":9,"9":7,"10":7,"11":7,"12":7,"13":9,"14":13,"15":16,"16":21,"17":51};
+            const encodedPeilv = encodeURIComponent(JSON.stringify(peilv)); // 编码 peilv
+
+            row.innerHTML = `
+                <td>${dateDisplay}</td>
+                <td>${item.tableTitle}</td>
+                <td>${item.totalCount}</td>
+                <td>${item.bigCount}${bigWinRate > 0 ? ` <span class="win-rate-positive">(${formatWinRate(bigWinRate)})</span>` : ''}</td>
+                <td>${item.smallCount}${smallWinRate > 0 ? ` <span class="win-rate-positive">(${formatWinRate(smallWinRate)})</span>` : ''}</td>
+                <td>${item.oddCount}${oddWinRate > 0 ? ` <span class="win-rate-positive">(${formatWinRate(oddWinRate)})</span>` : ''}</td>
+                <td>${item.evenCount}${evenWinRate > 0 ? ` <span class="win-rate-positive">(${formatWinRate(evenWinRate)})</span>` : ''}</td>
+                <td>${pointsHtml}</td>
+                <td>${item.tripleCount}</td>
+                <td>
+                    <button class="btn btn-sm btn-outline-primary"
+                            onclick="showDetails('${item.tableTitle} - ${dateDisplay}', '${encodedSumNumbs}','${encodedPeilv}','${item.tableId}',true)">
+                        <i class="bi bi-eye"></i> 查看
+                    </button>
+                </td>
+            `;
+            tbody.appendChild(row);
+        });
+    }
+
+
+    // 显示详细数据（饼图）
+     function showDetails(title, encodedData, encodedPeilv,tableId,isSicbo) {
+        try {
+            const data = JSON.parse(decodeURIComponent(encodedData));
+            const peilv = JSON.parse(decodeURIComponent(encodedPeilv));
+            document.getElementById('modalTitle').textContent = `${title} - 分布饼图`;
+
+            const ctx = document.getElementById('detailsChart').getContext('2d');
+
+            const existingChart = Chart.getChart(ctx);
+            if (existingChart) {
+                existingChart.destroy();
+            }
+
+            // 将数据转换为数组并排序
+            const dataArray = Object.entries(data).map(([label, value]) => ({ label, value }));
+            dataArray.sort((a, b) => b.value - a.value);
+
+            // 重新提取 labels 和 values
+            const labels = dataArray.map(item => item.label);
+            const values = dataArray.map(item => item.value);
+
+            // 生成随机颜色
+            const backgroundColors = labels.map(() =>
+                `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, 0.7)`
+            );
+
+            // 创建饼图并保存实例
+            const myChart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: values,
+                        backgroundColor: backgroundColors,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                        },
+                        title: {
+                            display: true,
+                            text: '数字分布饼图'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.raw || 0;
+                                    const total = context.chart.getDatasetMeta(0).total;
+                                    const percentage = ((value / total) * 100).toFixed(1);
+                                    const wins = ((value * peilv[label] - total) / total * 100).toFixed(1);
+                                    return `${label}: ${value}【占比${percentage}%】 (赔率1:${peilv[label]} 盈利${wins}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // 修复：使用保存的图表实例
+            ctx.canvas.addEventListener('click', function(event) {
+                const activePoints = myChart.getElementsAtEventForMode(event, 'nearest', { intersect: true }, true);
+                if (activePoints.length > 0) {
+                    const clickedLabel = labels[activePoints[0].index];
+                    showHistoricalFundsCurve(clickedLabel, peilv,isSicbo,tableId);
+                }
+            });
+
+            const modal = new bootstrap.Modal(document.getElementById('detailsModal'));
+            modal.show();
+        } catch (error) {
+            console.error('解析数据失败:', error);
+            alert('无法显示详细数据，请检查控制台查看详情');
+        }
+    }
+
+    // 新增：展示历史资金曲线函数
+    async function showHistoricalFundsCurve(label, peilv,isSicbo,tableId) {
+        try {
+            // 创建新的模态框
+            const modalId = 'historicalFundsModal';
+            let modalElement = document.getElementById(modalId);
+
+            // 如果模态框不存在则创建
+            if (!modalElement) {
+                modalElement = document.createElement('div');
+                modalElement.className = 'modal fade';
+                modalElement.id = modalId;
+                modalElement.innerHTML = `
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">${label} - 历史资金曲线</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="chart-container">
+                                    <canvas id="historicalFundsChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(modalElement);
+            }
+
+            // 设置标题
+            modalElement.querySelector('.modal-title').textContent = `${label} - 历史资金曲线`;
+
+            // 显示模态框
+            const modal = new bootstrap.Modal(modalElement);
+            modal.show();
+
+            // 获取canvas上下文
+            const ctx = document.getElementById('historicalFundsChart').getContext('2d');
+
+            // 销毁现有图表
+            const existingChart = Chart.getChart(ctx);
+            if (existingChart) {
+                existingChart.destroy();
+            }
+
+
+             // 直接从 data 对象提取历史资金数据
+            let tableData = [];
+            let sourceData = isSicbo ? window.sicboData:window.rouletteData
+
+            tableData = sourceData.filter(item => item.tableId === tableId && item.date !== null);
+            // 按日期排序
+            tableData.sort((a, b) => new Date(a.date) - new Date(b.date));
+            let cumulativeProfit = 0;
+            const dates = [];
+            const cumulativeProfits = []; // 累计收益
+            tableData.forEach(item => {
+                let count = 0;
+                if (isSicbo) {
+                    // 骰子游戏
+                    count = item.sumNumbs ? (item.sumNumbs[label] || 0) : 0;
+                } else {
+                    // 轮盘游戏
+                    count = item.numbs ? (item.numbs[label] || 0) : 0;
+                }
+                const dailyProfit = (count * peilv[label]) - item.totalCount;
+                cumulativeProfit += dailyProfit;
+                dates.push(item.date);
+                cumulativeProfits.push(cumulativeProfit);
+            });
+
+            // 创建折线图
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: dates,
+                    datasets: [{
+                        label: '资金变化',
+                        data: cumulativeProfits,
+                        borderColor: 'rgb(75, 192, 192)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderWidth: 2,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '历史资金曲线'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `资金: ${context.parsed.y.toFixed(2)}`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            title: {
+                                display: true,
+                                text: '资金变化'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: '日期'
+                            }
+                        }
+                    }
+                }
+            });
+
+        } catch (error) {
+            console.error('加载历史资金数据失败:', error);
+            alert('加载历史资金数据失败，请检查控制台查看详情');
+        }
+    }
+
+</script>
+</body>
+</html>

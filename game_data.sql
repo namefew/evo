@@ -91,3 +91,42 @@ CREATE TABLE db_color_disk_result (
 );
 create index idx_table_id on db_color_disk_result(table_id);
 create index idx_create_time on db_color_disk_result(create_time);
+
+
+
+-- 轮盘结果表 (PP)
+DROP TABLE IF EXISTS pp_roulette_result;
+CREATE TABLE pp_roulette_result (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    table_id VARCHAR(50) NOT NULL,
+    round_id VARCHAR(50) COMMENT '轮次ID',
+    result INT NOT NULL COMMENT '轮盘结果数字',
+    color VARCHAR(20) COMMENT '轮盘颜色',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP
+
+);
+create index idx_table_id on pp_roulette_result(table_id);
+create index idx_create_time on pp_roulette_result(create_time);
+
+-- 骰子结果表 (PP)
+DROP TABLE IF EXISTS pp_sicbo_result;
+CREATE TABLE pp_sicbo_result (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    table_id VARCHAR(50) NOT NULL,
+    round_id VARCHAR(50) COMMENT '轮次ID',
+    dice1 INT NOT NULL COMMENT '骰子1点数',
+    dice2 INT NOT NULL COMMENT '骰子2点数',
+    dice3 INT NOT NULL COMMENT '骰子3点数',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+create index idx_table_id on pp_sicbo_result(table_id);
+create index idx_create_time on pp_sicbo_result(create_time);
+
+DROP TABLE IF EXISTS pp_tables;
+CREATE TABLE pp_tables (
+    table_id varchar(50) PRIMARY KEY COMMENT '桌子ID',
+    table_name VARCHAR(255) NOT NULL COMMENT '桌子名称',
+    table_name_en VARCHAR(255) NOT NULL COMMENT '桌子名称英文名称',
+    table_type VARCHAR(50) NOT NULL COMMENT '游戏类型名称:ROULETTE，SICBO',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP
+);
