@@ -55,8 +55,8 @@ public class RoadParser {
         }
         public static Integer parseSingle(RS rs) {
             boolean t = 1 != rs.getNextInteger(1);
-            if(t)return null;
-            return rs.getNextInteger(6);
+            int a = rs.getNextInteger(6);
+            return t ? null : a;
         }
     }
     public static class ColorDiskParser{

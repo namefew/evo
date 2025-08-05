@@ -406,10 +406,10 @@
             const rowClass = item.date === null ? 'bg-light' : ''; // 设置背景颜色
 
             // 计算大、小、单、双的盈利率
-            const bigWinRate = calculateWinRate(item.bigCount, item.totalCount);
-            const smallWinRate = calculateWinRate(item.smallCount, item.totalCount);
-            const oddWinRate = calculateWinRate(item.oddCount, item.totalCount);
-            const evenWinRate = calculateWinRate(item.evenCount, item.totalCount);
+            const bigWinRate = item.bigWinRate*100;
+            const smallWinRate = item.smallWinRate*100;
+            const oddWinRate = item.oddWinRate*100;
+            const evenWinRate = item.evenWinRate*100;
 
             // 生成数字分布展示
             const colorsHtml = `
