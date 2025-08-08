@@ -130,3 +130,55 @@ CREATE TABLE pp_tables (
     table_type VARCHAR(50) NOT NULL COMMENT '游戏类型名称:ROULETTE，SICBO',
     create_time DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
+-- Ezugi相关表
+DROP TABLE IF EXISTS ezugi_tables;
+CREATE TABLE ezugi_tables (
+    table_id varchar(50) PRIMARY KEY COMMENT '桌子ID',
+    table_name VARCHAR(255) NOT NULL COMMENT '桌子名称',
+    table_name_en VARCHAR(255) NOT NULL COMMENT '桌子名称英文名称',
+    table_type VARCHAR(50) NOT NULL COMMENT '游戏类型名称:ROULETTE，SICBO',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 轮盘结果表 (Ezugi)
+DROP TABLE IF EXISTS ezugi_roulette_result;
+CREATE TABLE ezugi_roulette_result (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    table_id VARCHAR(50) NOT NULL,
+    round_id VARCHAR(50) COMMENT '轮次ID',
+    result INT NOT NULL COMMENT '轮盘结果数字',
+    color VARCHAR(20) COMMENT '轮盘颜色',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE KEY uk_round_id (round_id)
+);
+create index idx_table_id on ezugi_roulette_result(table_id);
+create index idx_create_time on ezugi_roulette_result(create_time);
+
+-- 骰子结果表 (Ezugi)
+DROP TABLE IF EXISTS ezugi_sicbo_result;
+CREATE TABLE ezugi_sicbo_result (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    table_id VARCHAR(50) NOT NULL,
+    round_id VARCHAR(50) COMMENT '轮次ID',
+    dice1 INT NOT NULL COMMENT '骰子1点数',
+    dice2 INT NOT NULL COMMENT '骰子2点数',
+    dice3 INT NOT NULL COMMENT '骰子3点数',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE KEY uk_round_id (round_id)
+);
+create index idx_table_id on ezugi_sicbo_result(table_id);
+create index idx_create_time on ezugi_sicbo_result(create_time);
+
+-- 轮盘结果表
+DROP TABLE IF EXISTS ezugi_color_disk_result;
+CREATE TABLE ezugi_color_disk_result (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    table_id INT NOT NULL,
+    round_id VARCHAR(50) COMMENT '轮次ID',
+    result INT NOT NULL COMMENT '色碟结果数字',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE KEY uk_round_id (round_id)
+);
+create index idx_table_id on db_color_disk_result(table_id);
+create index idx_create_time on db_color_disk_result(create_time);
