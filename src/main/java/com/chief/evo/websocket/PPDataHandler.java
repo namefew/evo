@@ -48,7 +48,7 @@ public class PPDataHandler extends TextWebSocketHandler {
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) {
         String payload = message.getPayload();
-        log.info("Received message: " + payload);
+        log.info("PP message: " + payload);
         try {
             JsonNode rootNode = objectMapper.readTree(payload);
             if(!rootNode.has("tableId")){

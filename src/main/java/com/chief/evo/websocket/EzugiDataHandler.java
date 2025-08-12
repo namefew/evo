@@ -43,7 +43,7 @@ public class EzugiDataHandler extends TextWebSocketHandler {
     protected void handleTextMessage(WebSocketSession session, TextMessage message) {
         String payload = message.getPayload();
         try {
-            log.info("Message : {}", payload);
+            log.info("Ezugi Message : {}", payload);
 
             JsonNode jsonNode = objectMapper.readTree(payload);
             String messageType = jsonNode.has("MessageType") ? jsonNode.get("MessageType").asText() : null;

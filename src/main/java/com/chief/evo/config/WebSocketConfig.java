@@ -1,9 +1,6 @@
 package com.chief.evo.config;
 
-import com.chief.evo.websocket.EVODataHandler;
-import com.chief.evo.websocket.DBDataHandler;
-import com.chief.evo.websocket.PPDataHandler;
-import com.chief.evo.websocket.EzugiDataHandler; // 新增导入
+import com.chief.evo.websocket.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;
@@ -31,6 +28,10 @@ public class WebSocketConfig implements WebSocketConfigurer {
         // Ezugi路径
         registry.addHandler(ezugiDataHandler(), "/ezugi")
                 .setAllowedOrigins("*");
+
+        // WL路径
+        registry.addHandler(wlDataHandler(), "/wl")
+                .setAllowedOrigins("*");
     }
 
     @Bean
@@ -49,10 +50,17 @@ public class WebSocketConfig implements WebSocketConfigurer {
     public PPDataHandler ppDataHandler() {
         return new PPDataHandler();
     }
-    
+
+
     // Ezugi处理器Bean
     @Bean
     public EzugiDataHandler ezugiDataHandler() {
         return new EzugiDataHandler();
     }
+
+    @Bean
+    public WLDataHandler wlDataHandler() {
+        return new WLDataHandler();
+    }
+
 }

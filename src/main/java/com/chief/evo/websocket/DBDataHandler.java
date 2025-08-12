@@ -65,18 +65,18 @@ public class DBDataHandler extends TextWebSocketHandler {
                         updateGameTableMap(gameTableMap);
                          log.info("Type:{}",nameByValue);
                     }else{
-                         log.debug("Type : {} data : {}", nameByValue,dataNode.toString());
+                         log.debug("DB Type : {} data : {}", nameByValue,dataNode.toString());
                      }
                 } else {
-                    log.info("Type : {} jsonData : {}", nameByValue,jsonNode.toString());
+                    log.info("DB Type : {} jsonData : {}", nameByValue,jsonNode.toString());
                 }
 
             } else {
-                log.info("Message : {}",rootNode.toString());
+                log.info("DBMessage : {}",rootNode.toString());
             }
         } catch (Exception e) {
             e.printStackTrace();
-            log.error("处理消息失败", e);
+            log.error("DB 处理消息失败", e);
         }
     }
 

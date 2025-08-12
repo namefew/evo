@@ -46,7 +46,7 @@ public class EVODataHandler extends TextWebSocketHandler {
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) {
         String payload = message.getPayload();
-        log.info("Received message: " + payload);
+        log.info("EVO message: " + payload);
         try {
             JsonNode rootNode = objectMapper.readTree(payload);
             String messageType = rootNode.path("type").asText();
