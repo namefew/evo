@@ -930,9 +930,257 @@ public class StatsController {
     }
 
 
+    // 新增WL相关服务
+    @Autowired
+    private WlGameResultService wlGameResultService;
+
+    @Autowired
+    private WlTableService wlTableService;
+
     @GetMapping("/ezugi/color_disk/latest")
     public ResponseEntity<String> ezugiColorDiskLatestRecordTime() {
         Optional<LocalDateTime> latestTime = ezugiGameResultService.findLatestColorDiskCreateTime();
+        return latestTime.map(time -> ResponseEntity.ok(time.toString()))
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    // WL平台轮盘游戏统计接口
+    @GetMapping("/wl/roulette")
+    public List<RouletteStatsDTO> wlRouletteStats(@RequestParam(name="from")  @DateTimeFormat(pattern = "yyyy-M-d")
+                                                  LocalDate fromDate, @RequestParam(name="to") @DateTimeFormat(pattern = "yyyy-M-d") LocalDate toDate) {
+        List<RouletteStats> stats =  wlGameResultService.queryAllRouletteStats(fromDate, toDate);
+        Map<Integer, WlTable> tableMap = wlTableService.getAllTables();
+        List<RouletteStatsDTO> results = new ArrayList<>();
+        for (RouletteStats stat : stats) {
+            RouletteStatsDTO result = converteRouletteState(stat);
+            WlTable table = tableMap.get(stat.getTableId());
+            result.setTableTitle(table==null?"":table.getTableName());
+            result.setTableId(stat.getTableId());
+            results.add(result);
+        }
+        Map<String, List<RouletteStatsDTO>> groups = results.stream().collect(Collectors.groupingBy(RouletteStatsDTO::getTableId));
+        List<RouletteStatsDTO> finalResults = new ArrayList<>();
+        groups.forEach((tableId, group) -> {
+            // 添加原始数据
+            finalResults.addAll(group);
+
+            // 创建聚合对象
+            RouletteStatsDTO sum = new RouletteStatsDTO();
+            sum.setTableId(tableId);
+            sum.setTableTitle(group.get(0).getTableTitle());
+            sum.setDate(null); // 聚合对象日期为空
+
+            // 聚合统计值
+            sum.setTotalCount(group.stream().mapToInt(RouletteStatsDTO::getTotalCount).sum());
+            sum.setBigCount(group.stream().mapToInt(RouletteStatsDTO::getBigCount).sum());
+            sum.setSmallCount(group.stream().mapToInt(RouletteStatsDTO::getSmallCount).sum());
+            sum.setOddCount(group.stream().mapToInt(RouletteStatsDTO::getOddCount).sum());
+            sum.setEvenCount(group.stream().mapToInt(RouletteStatsDTO::getEvenCount).sum());
+            sum.setRedCount(group.stream().mapToInt(RouletteStatsDTO::getRedCount).sum());
+            sum.setBlackCount(group.stream().mapToInt(RouletteStatsDTO::getBlackCount).sum());
+            sum.setSection1_12(group.stream().mapToInt(RouletteStatsDTO::getSection1_12).sum());
+            sum.setSection13_24(group.stream().mapToInt(RouletteStatsDTO::getSection13_24).sum());
+            sum.setSection25_36(group.stream().mapToInt(RouletteStatsDTO::getSection25_36).sum());
+
+            // 聚合数字统计
+            Map<Integer, Integer> sumNumbs = new LinkedHashMap<>();
+            for (int i = 0; i <= 36; i++) {
+                int finalI = i;
+                int total = group.stream()
+                        .mapToInt(dto -> dto.getNumbs().getOrDefault(finalI, 0))
+                        .sum();
+                sumNumbs.put(i, total);
+            }
+            sum.setNumbs(sumNumbs);
+
+            finalResults.add(sum);
+        });
+
+        // 按tableId和date排序
+        finalResults.sort(Comparator
+                .comparing(RouletteStatsDTO::getTableId)
+                .thenComparing(RouletteStatsDTO::getDate,
+                        Comparator.nullsLast(Comparator.naturalOrder()))
+        );
+
+        return finalResults;
+    }
+
+    // WL平台骰子游戏统计接口
+    @GetMapping("/wl/sicbo")
+    public List<SicboStatsDTO> wlSicboStats(@RequestParam(name="from")  @DateTimeFormat(pattern = "yyyy-M-d")
+                                            LocalDate fromDate, @RequestParam(name="to") @DateTimeFormat(pattern = "yyyy-M-d") LocalDate toDate) {
+        List<SicboStats> stats =  wlGameResultService.queryAllSicboStats(fromDate, toDate);
+        Map<Integer, WlTable> tableMap = wlTableService.getAllTables();
+        List<SicboStatsDTO> results = new ArrayList<>();
+        for (SicboStats stat : stats) {
+            SicboStatsDTO result = new SicboStatsDTO();
+            result.setTableId(stat.getTableId());
+            WlTable table = tableMap.get(stat.getTableId());
+            result.setTableTitle(table==null?"":table.getTableName());
+            result.setDate(stat.getDate());
+            result.setTotalCount(stat.getTotalCount());
+            result.setBigCount(stat.getBigCount());
+            result.setSmallCount(stat.getSmallCount());
+            result.setOddCount(stat.getOddCount());
+            result.setEvenCount(stat.getEvenCount());
+            result.setDot1Count(stat.getDot1Count());
+            result.setDot2Count(stat.getDot2Count());
+            result.setDot3Count(stat.getDot3Count());
+            result.setDot4Count(stat.getDot4Count());
+            result.setDot5Count(stat.getDot5Count());
+            result.setDot6Count(stat.getDot6Count());
+            result.setTripleCount(stat.getTripleCount());
+
+            Map< Integer,Integer> numbs = new LinkedHashMap<>();
+            result.setSumNumbs(numbs);
+            numbs.put(4,stat.getNum4());
+            numbs.put(5,stat.getNum5());
+            numbs.put(6,stat.getNum6());
+            numbs.put(7,stat.getNum7());
+            numbs.put(8,stat.getNum8());
+            numbs.put(9,stat.getNum9());
+            numbs.put(10,stat.getNum10());
+            numbs.put(11,stat.getNum11());
+            numbs.put(12,stat.getNum12());
+            numbs.put(13,stat.getNum13());
+            numbs.put(14,stat.getNum14());
+            numbs.put(15,stat.getNum15());
+            numbs.put(16,stat.getNum16());
+            numbs.put(17,stat.getNum17());
+            results.add(result);
+        }
+
+        // 按tableId分组
+        Map<String, List<SicboStatsDTO>> groups = results.stream()
+                .collect(Collectors.groupingBy(SicboStatsDTO::getTableId));
+
+        // 创建新的结果集，包含原始数据和聚合数据
+        List<SicboStatsDTO> finalResults = new ArrayList<>();
+
+        groups.forEach((tableId, group) -> {
+            // 添加原始数据
+            finalResults.addAll(group);
+
+            // 创建聚合对象
+            SicboStatsDTO sum = new SicboStatsDTO();
+            sum.setTableId(tableId);
+            sum.setTableTitle(group.get(0).getTableTitle());
+            sum.setDate(null); // 聚合对象日期为空
+
+            // 聚合基本统计值
+            sum.setTotalCount(group.stream().mapToInt(SicboStatsDTO::getTotalCount).sum());
+            sum.setBigCount(group.stream().mapToInt(SicboStatsDTO::getBigCount).sum());
+            sum.setSmallCount(group.stream().mapToInt(SicboStatsDTO::getSmallCount).sum());
+            sum.setOddCount(group.stream().mapToInt(SicboStatsDTO::getOddCount).sum());
+            sum.setEvenCount(group.stream().mapToInt(SicboStatsDTO::getEvenCount).sum());
+            sum.setDot1Count(group.stream().mapToInt(SicboStatsDTO::getDot1Count).sum());
+            sum.setDot2Count(group.stream().mapToInt(SicboStatsDTO::getDot2Count).sum());
+            sum.setDot3Count(group.stream().mapToInt(SicboStatsDTO::getDot3Count).sum());
+            sum.setDot4Count(group.stream().mapToInt(SicboStatsDTO::getDot4Count).sum());
+            sum.setDot5Count(group.stream().mapToInt(SicboStatsDTO::getDot5Count).sum());
+            sum.setDot6Count(group.stream().mapToInt(SicboStatsDTO::getDot6Count).sum());
+            sum.setTripleCount(group.stream().mapToInt(SicboStatsDTO::getTripleCount).sum());
+
+            // 聚合数字统计
+            Map<Integer, Integer> sumNumbs = new LinkedHashMap<>();
+            for (int i = 4; i <= 17; i++) {
+                int finalI = i;
+                int total = group.stream()
+                        .mapToInt(dto -> dto.getSumNumbs().getOrDefault(finalI, 0))
+                        .sum();
+                sumNumbs.put(i, total);
+            }
+            sum.setSumNumbs(sumNumbs);
+
+            finalResults.add(sum);
+        });
+
+        // 按tableId和date排序
+        finalResults.sort(Comparator
+                .comparing(SicboStatsDTO::getTableId)
+                .thenComparing(SicboStatsDTO::getDate,
+                        Comparator.nullsLast(Comparator.naturalOrder()))
+        );
+
+        return finalResults;
+    }
+
+    // WL平台轮盘游戏最新记录时间接口
+    @GetMapping("/wl/roulette/latest")
+    public ResponseEntity<String> wlRouletteLatestRecordTime() {
+        Optional<LocalDateTime> latestTime = wlGameResultService.findLatestRouletteCreateTime();
+        return latestTime.map(time -> ResponseEntity.ok(time.toString()))
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    // WL平台骰子游戏最新记录时间接口
+    @GetMapping("/wl/sicbo/latest")
+    public ResponseEntity<String> wlSicboLatestRecordTime() {
+        Optional<LocalDateTime> latestTime = wlGameResultService.findLatestSicboCreateTime();
+        return latestTime.map(time -> ResponseEntity.ok(time.toString()))
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    @GetMapping("/wl/color_disk")
+    public List<ColorDiskStatsDTO> wlColorDiskStats(@RequestParam(name="from")  @DateTimeFormat(pattern = "yyyy-M-d")
+                                                    LocalDate fromDate, @RequestParam(name="to") @DateTimeFormat(pattern = "yyyy-M-d") LocalDate toDate) {
+        List<ColorDiskStats> stats =  wlGameResultService.queryAllColorDiskStats(fromDate, toDate);
+        Map<Integer, WlTable> tableMap = wlTableService.getAllTables();
+        List<ColorDiskStatsDTO> results = new ArrayList<>();
+        for (ColorDiskStats stat : stats) {
+            ColorDiskStatsDTO result = converteColorDiskState(stat);
+            WlTable table = tableMap.get(stat.getTableId());
+            result.setTableTitle(table==null?"":table.getTableName());
+            result.setTableId(stat.getTableId());
+            results.add(result);
+        }
+        Map<String, List<ColorDiskStatsDTO>> groups = results.stream().collect(Collectors.groupingBy(ColorDiskStatsDTO::getTableId));
+        List<ColorDiskStatsDTO> finalResults = new ArrayList<>();
+        groups.forEach((tableId, group) -> {
+            // 添加原始数据
+            finalResults.addAll(group);
+
+            // 创建聚合对象
+            ColorDiskStatsDTO sum = new ColorDiskStatsDTO();
+            sum.setTableId(tableId);
+            sum.setTableTitle(group.get(0).getTableTitle());
+            sum.setDate(null); // 聚合对象日期为空
+
+            // 聚合统计值
+            sum.setTotalCount(group.stream().mapToInt(ColorDiskStatsDTO::getTotalCount).sum());
+            sum.setBigCount(group.stream().mapToInt(ColorDiskStatsDTO::getBigCount).sum());
+            sum.setSmallCount(group.stream().mapToInt(ColorDiskStatsDTO::getSmallCount).sum());
+            sum.setOddCount(group.stream().mapToInt(ColorDiskStatsDTO::getOddCount).sum());
+            sum.setEvenCount(group.stream().mapToInt(ColorDiskStatsDTO::getEvenCount).sum());
+            // 聚合数字统计
+            Map<Integer, Integer> sumNumbs = new LinkedHashMap<>();
+            for (int i = 0; i <= 4; i++) {
+                int finalI = i;
+                int total = group.stream()
+                        .mapToInt(dto -> dto.getNumbs().getOrDefault(finalI, 0))
+                        .sum();
+                sumNumbs.put(i, total);
+            }
+            sum.setNumbs(sumNumbs);
+
+            finalResults.add(sum);
+        });
+
+        // 按tableId和date排序
+        finalResults.sort(Comparator
+                .comparing(ColorDiskStatsDTO::getTableId)
+                .thenComparing(ColorDiskStatsDTO::getDate,
+                        Comparator.nullsLast(Comparator.naturalOrder()))
+        );
+
+        return finalResults;
+    }
+
+    // WL平台色碟游戏最新记录时间接口
+    @GetMapping("/wl/color_disk/latest")
+    public ResponseEntity<String> wlColorDiskLatestRecordTime() {
+        Optional<LocalDateTime> latestTime = wlGameResultService.findLatestColorDiskCreateTime();
         return latestTime.map(time -> ResponseEntity.ok(time.toString()))
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }

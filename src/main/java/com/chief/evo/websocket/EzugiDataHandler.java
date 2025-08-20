@@ -1,7 +1,6 @@
 package com.chief.evo.websocket;
 
 import com.chief.evo.dto.EzugiTableNames;
-import com.chief.evo.dto.RoadParser;
 import com.chief.evo.entity.EzugiColorDiskResult;
 import com.chief.evo.entity.EzugiRouletteResult;
 import com.chief.evo.entity.EzugiSicboResult;

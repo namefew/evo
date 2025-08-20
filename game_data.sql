@@ -165,10 +165,10 @@ CREATE TABLE ezugi_sicbo_result (
     dice2 INT NOT NULL COMMENT '骰子2点数',
     dice3 INT NOT NULL COMMENT '骰子3点数',
     create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
-    UNIQUE KEY uk_round_id (round_id)
+    UNIQUE KEY uk_round_id (round_id),
+    Key idx_table_id(table_id),
+    key idx_create_time(create_time)
 );
-create index idx_table_id on ezugi_sicbo_result(table_id);
-create index idx_create_time on ezugi_sicbo_result(create_time);
 
 -- 轮盘结果表
 DROP TABLE IF EXISTS ezugi_color_disk_result;
@@ -178,7 +178,98 @@ CREATE TABLE ezugi_color_disk_result (
     round_id VARCHAR(50) COMMENT '轮次ID',
     result INT NOT NULL COMMENT '色碟结果数字',
     create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
-    UNIQUE KEY uk_round_id (round_id)
+    UNIQUE KEY uk_round_id (round_id),
+    Key idx_table_id(table_id),
+    key idx_create_time(create_time)
 );
-create index idx_table_id on db_color_disk_result(table_id);
-create index idx_create_time on db_color_disk_result(create_time);
+
+-- WL相关表
+DROP TABLE IF EXISTS wl_table;
+CREATE TABLE wl_table (
+    table_id varchar(50) PRIMARY KEY COMMENT '桌子ID',
+    table_name VARCHAR(255) NOT NULL COMMENT '桌子名称',
+    type INT NOT NULL COMMENT '游戏类型，1：百家乐，2：轮盘，3：骰宝，4：色碟',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    Key idx_create_time(create_time)
+);
+
+-- 轮盘结果表 (WL)
+DROP TABLE IF EXISTS wl_roulette_result;
+CREATE TABLE wl_roulette_result (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    table_id INT NOT NULL,
+    result INT NOT NULL COMMENT '轮盘结果数字',
+    round_id varchar(50) not null,
+    round INT  COMMENT '轮次',
+    dealer_id INT default 0 COMMENT '荷官ID',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE KEY uk_round_id (round_id),
+    Key idx_table_id(table_id),
+    key idx_create_time(create_time)
+);
+
+-- 骰子结果表 (WL)
+DROP TABLE IF EXISTS wl_sicbo_result;
+CREATE TABLE wl_sicbo_result (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    table_id INT NOT NULL,
+    round_id varchar(50) not null,
+    round INT  COMMENT '轮次',
+    dice1 INT NOT NULL COMMENT '骰子1点数',
+    dice2 INT NOT NULL COMMENT '骰子2点数',
+    dice3 INT NOT NULL COMMENT '骰子3点数',
+    total INT NOT NULL COMMENT '骰子点数和',
+    dealer_id INT default 0 COMMENT '荷官ID',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE KEY uk_round_id (round_id),
+    Key idx_table_id(table_id),
+    key idx_create_time(create_time)
+);
+
+-- 色碟结果表 (WL)
+DROP TABLE IF EXISTS wl_color_disk_result;
+CREATE TABLE wl_color_disk_result (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    table_id INT NOT NULL,
+    result INT NOT NULL COMMENT '色碟结果数字',
+    round_id varchar(50) not null ,
+    round INT  COMMENT '轮次',
+    dealer_id INT default 0 COMMENT '荷官ID',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE KEY uk_round_id (round_id),
+    Key idx_table_id(table_id),
+    key idx_create_time(create_time)
+);
+
+DROP TABLE IF EXISTS wl_baccarat_result;
+CREATE TABLE wl_baccarat_result (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    table_id INT NOT NULL,
+    round_id varchar(50) not null,
+    round INT  COMMENT '轮次',
+    player_card1 INT  COMMENT '玩家牌1点数',
+    player_card2 INT  COMMENT '玩家牌2点数',
+    player_card3 INT  COMMENT '玩家牌3点数',
+    banker_card1 INT COMMENT '庄家牌1点数',
+    banker_card2 INT  COMMENT '庄家牌2点数',
+    banker_card3 INT  COMMENT '庄家牌3点数',
+    dealer_id INT default 0 COMMENT '荷官ID',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE KEY uk_round_id (round_id),
+    Key idx_table_id(table_id),
+    key idx_create_time(create_time)
+);
+
+DROP TABLE IF EXISTS wl_dealer_info;
+CREATE TABLE wl_dealer_info (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    dealer_id INT NOT NULL COMMENT '荷官ID',
+    dealer_name VARCHAR(50) NOT NULL COMMENT '荷官名称',
+    img_nation INT COMMENT '荷官民族',
+    img_url VARCHAR(128) NOT NULL COMMENT '荷官头像链接',
+    img_md5 VARCHAR(128) NOT NULL COMMENT '荷官头像MD5',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE KEY uk_dealer_id (dealer_id),
+    Key idx_create_time(create_time)
+)
+

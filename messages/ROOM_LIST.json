@@ -1,0 +1,1636 @@
+{
+  "group":
+  [
+    {
+      "infos":
+      [
+        {
+          "roomId": 8201,
+          "name": "极速 B01",
+          "name4H5": "极速 B01",
+          "type": 1,
+          "subType": 82,
+          "state": 5,
+          "betDuration": 21000,
+          "round": 64,
+          "countdown": 0,
+          "roomMin": 1000,
+          "roomMax": 5000000,
+          "dealerInfo":
+          {
+            "dealerName": "Diana",
+            "imgNation": 2,
+            "imgUrl": "https://d3mp1h85h24821.cloudfront.net/B084A333205ADBC8116FAD765812540B.jpeg",
+            "imgMD5": "+5DC0298379209578FB0EC7427ABD666B",
+            "dealerId": 81171
+          },
+          "road":
+          {
+            "roomId": 8201,
+            "trendStatus": 1,
+            "trendId": 1,
+            "trendAmount": 5,
+            "weight": 1,
+            "time": "1755218182454"
+          },
+          "roundId": "5220099FF16C1",
+          "scenarioType": 1,
+          "roomUserCount": 327,
+          "areaLimit":
+          [
+            {
+              "areaId": 1,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 2,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 3,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 4,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 5,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 6,
+              "areaBetMin": 1000,
+              "areaBetMax": 3500000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 7,
+              "areaBetMin": 1000,
+              "areaBetMax": 3500000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 8,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 9,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 10,
+              "areaBetMin": 1000,
+              "areaBetMax": 30000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 11,
+              "areaBetMin": 1000,
+              "areaBetMax": 20000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 12,
+              "areaBetMin": 1000,
+              "areaBetMax": 20000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 13,
+              "areaBetMin": 1000,
+              "areaBetMax": 20000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 14,
+              "areaBetMin": 1000,
+              "areaBetMax": 30000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 15,
+              "areaBetMin": 1000,
+              "areaBetMax": 30000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 16,
+              "areaBetMin": 1000,
+              "areaBetMax": 100000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 17,
+              "areaBetMin": 1000,
+              "areaBetMax": 100000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 18,
+              "areaBetMin": 1000,
+              "areaBetMax": 50000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 19,
+              "areaBetMin": 1000,
+              "areaBetMax": 50000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 20,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 21,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 22,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 23,
+              "areaBetMin": 1000,
+              "areaBetMax": 4000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 24,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 25,
+              "areaBetMin": 1000,
+              "areaBetMax": 400000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 26,
+              "areaBetMin": 1000,
+              "areaBetMax": 250000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 27,
+              "areaBetMin": 1000,
+              "areaBetMax": 130000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 28,
+              "areaBetMin": 1000,
+              "areaBetMax": 100000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 29,
+              "areaBetMin": 1000,
+              "areaBetMax": 250000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 30,
+              "areaBetMin": 1000,
+              "areaBetMax": 200000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 31,
+              "areaBetMin": 1000,
+              "areaBetMax": 2000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 32,
+              "areaBetMin": 1000,
+              "areaBetMax": 3000000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 33,
+              "areaBetMin": 1000,
+              "areaBetMax": 2000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 34,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 35,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 36,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 37,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 38,
+              "areaBetMin": 1000,
+              "areaBetMax": 200000,
+              "roundLimit": 30
+            }
+          ]
+        },
+        {
+          "roomId": 8202,
+          "name": "极速 B02",
+          "name4H5": "极速 B02",
+          "type": 1,
+          "subType": 82,
+          "state": 3,
+          "betDuration": 21000,
+          "round": 63,
+          "countdown": 0,
+          "roomMin": 1000,
+          "roomMax": 5000000,
+          "matchInfos":
+          [
+            821222,
+            911011,
+            821202,
+            821202,
+            811001,
+            921202,
+            921002,
+            921002,
+            911101,
+            811101,
+            621002,
+            811101,
+            801020,
+            703002,
+            701001,
+            501021,
+            501000,
+            101011,
+            601002,
+            621022,
+            704012,
+            711001,
+            821002,
+            921202,
+            501001,
+            911101,
+            921202,
+            921202,
+            401001,
+            401012,
+            921202,
+            621002,
+            401001,
+            301001,
+            921002,
+            821202,
+            921002,
+            921202,
+            601000,
+            602001,
+            811001,
+            601000,
+            723012,
+            911301,
+            821002,
+            612001,
+            821222,
+            703002,
+            301002,
+            821202,
+            921002,
+            711001,
+            201002,
+            501000,
+            921212,
+            602001,
+            911101,
+            821202,
+            301001,
+            723002,
+            602021,
+            811101
+          ],
+          "pokers":
+          [
+            {
+              "pos": 0,
+              "card": 8,
+              "roomId": 8202
+            },
+            {
+              "pos": 1,
+              "card": 31,
+              "roomId": 8202
+            },
+            {
+              "pos": 2,
+              "card": 2,
+              "roomId": 8202
+            },
+            {
+              "pos": 3,
+              "card": 8,
+              "roomId": 8202
+            },
+            {
+              "pos": 4,
+              "card": 41,
+              "roomId": 8202
+            }
+          ],
+          "dealerInfo":
+          {
+            "dealerName": "Dawn",
+            "imgNation": 3,
+            "imgUrl": "https://d3mp1h85h24821.cloudfront.net/0BAAEA5EDE66EF6981A8A40029BBD5AD.jpeg",
+            "imgMD5": "+ED53B01941C53D53BE8CFB64782593E8",
+            "dealerId": 81648
+          },
+          "road":
+          {
+            "roomId": 8202,
+            "trendStatus": 2,
+            "trendId": 4,
+            "trendAmount": 3,
+            "weight": 0,
+            "time": "1755218200131"
+          },
+          "roundId": "52200A9FF16F8",
+          "scenarioType": 1,
+          "roomUserCount": 70,
+          "areaLimit":
+          [
+            {
+              "areaId": 1,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 2,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 3,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 4,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 5,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 6,
+              "areaBetMin": 1000,
+              "areaBetMax": 3500000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 7,
+              "areaBetMin": 1000,
+              "areaBetMax": 3500000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 8,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 9,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 10,
+              "areaBetMin": 1000,
+              "areaBetMax": 30000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 11,
+              "areaBetMin": 1000,
+              "areaBetMax": 20000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 12,
+              "areaBetMin": 1000,
+              "areaBetMax": 20000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 13,
+              "areaBetMin": 1000,
+              "areaBetMax": 20000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 14,
+              "areaBetMin": 1000,
+              "areaBetMax": 30000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 15,
+              "areaBetMin": 1000,
+              "areaBetMax": 30000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 16,
+              "areaBetMin": 1000,
+              "areaBetMax": 100000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 17,
+              "areaBetMin": 1000,
+              "areaBetMax": 100000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 18,
+              "areaBetMin": 1000,
+              "areaBetMax": 50000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 19,
+              "areaBetMin": 1000,
+              "areaBetMax": 50000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 20,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 21,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 22,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 23,
+              "areaBetMin": 1000,
+              "areaBetMax": 4000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 24,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 25,
+              "areaBetMin": 1000,
+              "areaBetMax": 400000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 26,
+              "areaBetMin": 1000,
+              "areaBetMax": 250000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 27,
+              "areaBetMin": 1000,
+              "areaBetMax": 130000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 28,
+              "areaBetMin": 1000,
+              "areaBetMax": 100000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 29,
+              "areaBetMin": 1000,
+              "areaBetMax": 250000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 30,
+              "areaBetMin": 1000,
+              "areaBetMax": 200000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 31,
+              "areaBetMin": 1000,
+              "areaBetMax": 2000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 32,
+              "areaBetMin": 1000,
+              "areaBetMax": 3000000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 33,
+              "areaBetMin": 1000,
+              "areaBetMax": 2000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 34,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 35,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 36,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 37,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 38,
+              "areaBetMin": 1000,
+              "areaBetMax": 200000,
+              "roundLimit": 30
+            }
+          ]
+        },
+        {
+          "roomId": 8203,
+          "name": "极速 B03",
+          "name4H5": "极速 B03",
+          "type": 1,
+          "subType": 82,
+          "state": 2,
+          "betDuration": 21000,
+          "round": 65,
+          "countdown": 1239,
+          "roomMin": 1000,
+          "roomMax": 5000000,
+          "matchInfos":
+          [
+            921002,
+            701021,
+            911301,
+            602001,
+            811001,
+            921202,
+            921212,
+            811101,
+            723012,
+            301001,
+            821202,
+            711001,
+            821002,
+            811101,
+            811101,
+            911101,
+            701001,
+            821202,
+            701001,
+            411001,
+            401000,
+            601002,
+            401002,
+            723002,
+            621002,
+            723002,
+            921202,
+            821012,
+            401000,
+            701001,
+            821202,
+            921212,
+            821202,
+            301002,
+            921202,
+            704002,
+            921202,
+            811101,
+            811101,
+            501000,
+            501001,
+            301001,
+            811021,
+            801300,
+            612001,
+            821202,
+            701001,
+            821202,
+            401001,
+            601000,
+            921302,
+            101001,
+            701000,
+            723002,
+            723002,
+            701000,
+            811101,
+            612001,
+            621002,
+            921202,
+            821202,
+            911101,
+            921002,
+            701000
+          ],
+          "dealerInfo":
+          {
+            "dealerName": "Cheyl",
+            "imgNation": 1,
+            "imgUrl": "https://d3mp1h85h24821.cloudfront.net/C5CB19DD4FA4EDF8FDBCB07E2F3D321D.jpeg",
+            "imgMD5": "+0BCD224170F0F0DB8A416FE40D2CFB02",
+            "dealerId": 81309
+          },
+          "road":
+          {
+            "roomId": 8203,
+            "trendStatus": 2,
+            "trendId": 2,
+            "trendAmount": 3,
+            "weight": 0,
+            "time": "1755218210503"
+          },
+          "roundId": "52200B9FF1706",
+          "scenarioType": 1,
+          "roomUserCount": 63,
+          "areaLimit":
+          [
+            {
+              "areaId": 1,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 2,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 3,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 4,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 5,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 6,
+              "areaBetMin": 1000,
+              "areaBetMax": 3500000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 7,
+              "areaBetMin": 1000,
+              "areaBetMax": 3500000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 8,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 9,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 10,
+              "areaBetMin": 1000,
+              "areaBetMax": 30000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 11,
+              "areaBetMin": 1000,
+              "areaBetMax": 20000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 12,
+              "areaBetMin": 1000,
+              "areaBetMax": 20000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 13,
+              "areaBetMin": 1000,
+              "areaBetMax": 20000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 14,
+              "areaBetMin": 1000,
+              "areaBetMax": 30000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 15,
+              "areaBetMin": 1000,
+              "areaBetMax": 30000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 16,
+              "areaBetMin": 1000,
+              "areaBetMax": 100000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 17,
+              "areaBetMin": 1000,
+              "areaBetMax": 100000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 18,
+              "areaBetMin": 1000,
+              "areaBetMax": 50000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 19,
+              "areaBetMin": 1000,
+              "areaBetMax": 50000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 20,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 21,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 22,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 23,
+              "areaBetMin": 1000,
+              "areaBetMax": 4000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 24,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 25,
+              "areaBetMin": 1000,
+              "areaBetMax": 400000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 26,
+              "areaBetMin": 1000,
+              "areaBetMax": 250000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 27,
+              "areaBetMin": 1000,
+              "areaBetMax": 130000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 28,
+              "areaBetMin": 1000,
+              "areaBetMax": 100000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 29,
+              "areaBetMin": 1000,
+              "areaBetMax": 250000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 30,
+              "areaBetMin": 1000,
+              "areaBetMax": 200000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 31,
+              "areaBetMin": 1000,
+              "areaBetMax": 2000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 32,
+              "areaBetMin": 1000,
+              "areaBetMax": 3000000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 33,
+              "areaBetMin": 1000,
+              "areaBetMax": 2000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 34,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 35,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 36,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 37,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 38,
+              "areaBetMin": 1000,
+              "areaBetMax": 200000,
+              "roundLimit": 30
+            }
+          ]
+        },
+        {
+          "roomId": 8204,
+          "name": "极速 B04",
+          "name4H5": "极速 B04",
+          "type": 1,
+          "subType": 82,
+          "state": 3,
+          "betDuration": 21000,
+          "round": 52,
+          "countdown": 0,
+          "roomMin": 1000,
+          "roomMax": 5000000,
+          "matchInfos":
+          [
+            501001,
+            723002,
+            501001,
+            723002,
+            911101,
+            811101,
+            811001,
+            501001,
+            612001,
+            911101,
+            701001,
+            811101,
+            301002,
+            601000,
+            811121,
+            511001,
+            501022,
+            821202,
+            911001,
+            821202,
+            723002,
+            811111,
+            723002,
+            723002,
+            703002,
+            701021,
+            511011,
+            921202,
+            911301,
+            601002,
+            701001,
+            821202,
+            301001,
+            821202,
+            911001,
+            201002,
+            811101,
+            723002,
+            921002,
+            711001,
+            821202,
+            911101,
+            701001,
+            921202,
+            921002,
+            521002,
+            501001,
+            704002,
+            821202,
+            921202,
+            911101
+          ],
+          "pokers":
+          [
+            {
+              "pos": 0,
+              "card": 29,
+              "roomId": 8204
+            },
+            {
+              "pos": 1,
+              "card": 25,
+              "roomId": 8204
+            },
+            {
+              "pos": 2,
+              "card": 35,
+              "roomId": 8204
+            },
+            {
+              "pos": 3,
+              "card": 25,
+              "roomId": 8204
+            },
+            {
+              "pos": 4,
+              "card": 46,
+              "roomId": 8204
+            },
+            {
+              "pos": 5,
+              "card": 5,
+              "roomId": 8204
+            }
+          ],
+          "dealerInfo":
+          {
+            "dealerName": "Dana",
+            "imgNation": 3,
+            "imgUrl": "https://d3mp1h85h24821.cloudfront.net/41B0C0D2CC095842274E4FC54EAB0A3A.jpeg",
+            "imgMD5": "+E031CF0C4D061122F21F79085A55B5E3",
+            "dealerId": 81148
+          },
+          "road":
+          {
+            "roomId": 8204,
+            "trendStatus": 2,
+            "trendId": 4,
+            "trendAmount": 3,
+            "weight": 0,
+            "time": "1755218200586"
+          },
+          "roundId": "52200C9FF16F9",
+          "scenarioType": 1,
+          "roomUserCount": 61,
+          "areaLimit":
+          [
+            {
+              "areaId": 1,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 2,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 3,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 4,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 5,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 6,
+              "areaBetMin": 1000,
+              "areaBetMax": 3500000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 7,
+              "areaBetMin": 1000,
+              "areaBetMax": 3500000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 8,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 9,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 10,
+              "areaBetMin": 1000,
+              "areaBetMax": 30000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 11,
+              "areaBetMin": 1000,
+              "areaBetMax": 20000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 12,
+              "areaBetMin": 1000,
+              "areaBetMax": 20000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 13,
+              "areaBetMin": 1000,
+              "areaBetMax": 20000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 14,
+              "areaBetMin": 1000,
+              "areaBetMax": 30000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 15,
+              "areaBetMin": 1000,
+              "areaBetMax": 30000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 16,
+              "areaBetMin": 1000,
+              "areaBetMax": 100000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 17,
+              "areaBetMin": 1000,
+              "areaBetMax": 100000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 18,
+              "areaBetMin": 1000,
+              "areaBetMax": 50000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 19,
+              "areaBetMin": 1000,
+              "areaBetMax": 50000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 20,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 21,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 22,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 23,
+              "areaBetMin": 1000,
+              "areaBetMax": 4000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 24,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 25,
+              "areaBetMin": 1000,
+              "areaBetMax": 400000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 26,
+              "areaBetMin": 1000,
+              "areaBetMax": 250000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 27,
+              "areaBetMin": 1000,
+              "areaBetMax": 130000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 28,
+              "areaBetMin": 1000,
+              "areaBetMax": 100000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 29,
+              "areaBetMin": 1000,
+              "areaBetMax": 250000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 30,
+              "areaBetMin": 1000,
+              "areaBetMax": 200000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 31,
+              "areaBetMin": 1000,
+              "areaBetMax": 2000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 32,
+              "areaBetMin": 1000,
+              "areaBetMax": 3000000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 33,
+              "areaBetMin": 1000,
+              "areaBetMax": 2000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 34,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 35,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 36,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 37,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 38,
+              "areaBetMin": 1000,
+              "areaBetMax": 200000,
+              "roundLimit": 30
+            }
+          ]
+        },
+        {
+          "roomId": 8205,
+          "name": "极速 B05",
+          "name4H5": "极速 B05",
+          "type": 1,
+          "subType": 82,
+          "state": 2,
+          "betDuration": 21000,
+          "round": 46,
+          "countdown": 17988,
+          "roomMin": 1000,
+          "roomMax": 5000000,
+          "matchInfos":
+          [
+            811101,
+            701001,
+            911001,
+            501001,
+            921002,
+            511001,
+            921212,
+            911001,
+            821202,
+            723002,
+            901300,
+            901300,
+            101002,
+            921002,
+            723012,
+            911101,
+            921002,
+            911001,
+            911101,
+            621002,
+            401010,
+            901300,
+            701001,
+            711001,
+            501001,
+            701000,
+            601000,
+            612001,
+            811101,
+            911101,
+            901300,
+            801300,
+            521002,
+            811101,
+            601000,
+            701000,
+            701001,
+            921202,
+            601010,
+            601000,
+            811101,
+            911101,
+            602011,
+            601012,
+            701001
+          ],
+          "dealerInfo":
+          {
+            "dealerName": "Cara",
+            "imgNation": 2,
+            "imgUrl": "https://d3mp1h85h24821.cloudfront.net/9D48C09F9A547BB70BF5065714BA59EF.jpeg",
+            "imgMD5": "+92B506BED93620FFE244D7B97B93CD2F",
+            "dealerId": 80847
+          },
+          "road":
+          {
+            "roomId": 8205,
+            "trendStatus": 2,
+            "trendId": 2,
+            "trendAmount": 3,
+            "weight": 0,
+            "time": "1755218227193"
+          },
+          "roundId": "52200D9FF1710",
+          "scenarioType": 1,
+          "roomUserCount": 43,
+          "areaLimit":
+          [
+            {
+              "areaId": 1,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 2,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 3,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 4,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 5,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 6,
+              "areaBetMin": 1000,
+              "areaBetMax": 3500000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 7,
+              "areaBetMin": 1000,
+              "areaBetMax": 3500000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 8,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 9,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 10,
+              "areaBetMin": 1000,
+              "areaBetMax": 30000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 11,
+              "areaBetMin": 1000,
+              "areaBetMax": 20000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 12,
+              "areaBetMin": 1000,
+              "areaBetMax": 20000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 13,
+              "areaBetMin": 1000,
+              "areaBetMax": 20000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 14,
+              "areaBetMin": 1000,
+              "areaBetMax": 30000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 15,
+              "areaBetMin": 1000,
+              "areaBetMax": 30000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 16,
+              "areaBetMin": 1000,
+              "areaBetMax": 100000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 17,
+              "areaBetMin": 1000,
+              "areaBetMax": 100000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 18,
+              "areaBetMin": 1000,
+              "areaBetMax": 50000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 19,
+              "areaBetMin": 1000,
+              "areaBetMax": 50000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 20,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 21,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 22,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 23,
+              "areaBetMin": 1000,
+              "areaBetMax": 4000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 24,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 25,
+              "areaBetMin": 1000,
+              "areaBetMax": 400000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 26,
+              "areaBetMin": 1000,
+              "areaBetMax": 250000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 27,
+              "areaBetMin": 1000,
+              "areaBetMax": 130000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 28,
+              "areaBetMin": 1000,
+              "areaBetMax": 100000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 29,
+              "areaBetMin": 1000,
+              "areaBetMax": 250000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 30,
+              "areaBetMin": 1000,
+              "areaBetMax": 200000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 31,
+              "areaBetMin": 1000,
+              "areaBetMax": 2000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 32,
+              "areaBetMin": 1000,
+              "areaBetMax": 3000000,
+              "roundLimit": 30
+            },
+            {
+              "areaId": 33,
+              "areaBetMin": 1000,
+              "areaBetMax": 2000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 34,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 35,
+              "areaBetMin": 1000,
+              "areaBetMax": 1000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 36,
+              "areaBetMin": 1000,
+              "areaBetMax": 5000000,
+              "roundLimit": 9999
+            },
+            {
+              "areaId": 37,
+              "areaBetMin": 1000,
+              "areaBetMax": 500000,
+              "roundLimit": 50
+            },
+            {
+              "areaId": 38,
+              "areaBetMin": 1000,
+              "areaBetMax": 200000,
+              "roundLimit": 30
+            }
+          ]
+        }
+      ],
+      "roomType": 1
+    }
+  ],
+  "lastRoom": 0,
+  "selectedGoodRoadIndexes":
+  [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "nodeIdx": 0
+}
