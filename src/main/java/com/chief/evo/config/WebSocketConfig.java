@@ -32,6 +32,10 @@ public class WebSocketConfig implements WebSocketConfigurer {
         // WL路径
         registry.addHandler(wlDataHandler(), "/wl")
                 .setAllowedOrigins("*");
+
+        // BG路径
+        registry.addHandler(bgDataHandler(), "/bg")
+                .setAllowedOrigins("*");
     }
 
     @Bean
@@ -61,6 +65,10 @@ public class WebSocketConfig implements WebSocketConfigurer {
     @Bean
     public WLDataHandler wlDataHandler() {
         return new WLDataHandler();
+    }
+  @Bean
+    public BGDataHandler bgDataHandler() {
+        return new BGDataHandler();
     }
 
 }

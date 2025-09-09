@@ -1,10 +1,7 @@
 package com.chief.evo.service;
 
 import com.chief.evo.entity.*;
-import com.chief.evo.mapper.WlBaccaratResultMapper;
-import com.chief.evo.mapper.WlColorDiskResultMapper;
-import com.chief.evo.mapper.WlRouletteResultMapper;
-import com.chief.evo.mapper.WlSicboResultMapper;
+import com.chief.evo.mapper.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -28,6 +25,9 @@ public class WlGameResultService {
 
     @Autowired
     private WlBaccaratResultMapper wlBaccaratResultMapper;
+
+    @Autowired
+    private WlGoldenFlowerResultMapper wlGoldenFlowerResultMapper;
 
     public void saveRouletteResult(WlRouletteResult  result){
         wlRouletteResultMapper.insertList(Arrays.asList( result));
@@ -64,5 +64,12 @@ public class WlGameResultService {
 
     public Optional<LocalDateTime> findLatestColorDiskCreateTime() {
         return wlColorDiskResultMapper.findLatestCreateTimestamp();
+    }
+    public void saveGoldenFlowerResult(WlGoldenFlowerResult result){
+        wlGoldenFlowerResultMapper.insertList(Arrays.asList( result));
+    }
+
+    public Optional<LocalDateTime> findLatestGoldenFlowerCreateTime() {
+        return wlGoldenFlowerResultMapper.findLatestCreateTimestamp();
     }
 }

@@ -271,5 +271,24 @@ CREATE TABLE wl_dealer_info (
     create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
     UNIQUE KEY uk_dealer_id (dealer_id),
     Key idx_create_time(create_time)
-)
+);
+
+DROP TABLE IF EXISTS wl_golden_flower;
+CREATE TABLE wl_golden_flower (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    table_id INT NOT NULL,
+    round_id varchar(50) not null,
+    round INT  COMMENT '轮次',
+    dragon_card1 INT  COMMENT '龙1点数',
+    dragon_card2 INT  COMMENT '龙2点数',
+    dragon_card3 INT  COMMENT '龙3点数',
+    phoenix_card1 INT COMMENT '凤1点数',
+    phoenix_card2 INT  COMMENT '凤2点数',
+    phoenix_card3 INT  COMMENT '凤3点数',
+    dealer_id INT default 0 COMMENT '荷官ID',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE KEY uk_round_id (round_id),
+    Key idx_table_id(table_id),
+    key idx_create_time(create_time)
+);
 

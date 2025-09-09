@@ -160,7 +160,22 @@ public class WlGameBusiness {
                         wlGameResultService.saveColorDiskResult(result);
                         // 色碟
                     }else if(WLRoom.TYPE_goldenFlowerBomb==room.getType()){
-                        // 金花
+                        // TODO 完成 炸金花 结果 数据保存
+                        WlGoldenFlowerResult result = new WlGoldenFlowerResult();
+                        result.setTableId(room.getRoomId());
+                        result.setRoundId(room.getRoundId());
+                        result.setDealerId(room.getDealerInfo().getDealerId());
+                        result.setRound(room.getRound());
+                        WLRoom.Poker other = new WLRoom.Poker();
+                        // 龙方牌
+                        result.setDragonCard1(pokers.stream().filter(a -> a.getPos() == 1).findFirst().orElse(other).getCard());
+                        result.setDragonCard2(pokers.stream().filter(a -> a.getPos() == 2).findFirst().orElse(other).getCard());
+                        result.setDragonCard3(pokers.stream().filter(a -> a.getPos() == 3).findFirst().orElse(other).getCard());
+                        // 凤方牌
+                        result.setPhoenixCard1(pokers.stream().filter(a -> a.getPos() == 4).findFirst().orElse(other).getCard());
+                        result.setPhoenixCard2(pokers.stream().filter(a -> a.getPos() == 5).findFirst().orElse(other).getCard());
+                        result.setPhoenixCard3(pokers.stream().filter(a -> a.getPos() == 6).findFirst().orElse(other).getCard());
+                        wlGameResultService.saveGoldenFlowerResult(result);
                     }else if(WLRoom.TYPE_bullBull==room.getType()) {
                         //
                     }
